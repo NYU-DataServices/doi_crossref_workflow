@@ -13,7 +13,7 @@ Workflow for establishing new NYU CrossRef DOIs and transforming required metatd
 
 ### Proposed components
 
-
+<pre>
 doi_crossref_workflow
 │───README.md
 │───LICENSE    
@@ -32,7 +32,7 @@ doi_crossref_workflow
 │	└───xml_builder.py
 │
 └───doi_manage.py
-
+</pre>
 
 
  1. Three utilities to handle separate aspects of the workflows:
