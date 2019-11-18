@@ -28,8 +28,8 @@ doi_crossref_workflow
 │   │
 │   │───__init__.py   
 │   │───doi_mets.py
-│	│───gsheets_manager.py
-│	└───xml_builder.py
+│   │───gsheets_manager.py
+│   └───xml_builder.py
 │
 └───doi_manage.py
 </pre>
