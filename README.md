@@ -38,10 +38,12 @@ doi_crossref_workflow
  1. Three utilities to handle separate aspects of the workflows:
  
  	- **doi_mets.py** : classes and functions to handle instantiating a doi production session (including "minting" proposed DOIs). These might include:
- 	<pre>class CrefDoi()</pre> A list-of-dictionaries object representing the set of all  objects receiving Dois in a single session, each object in turn represented by a dictionary with the keys as metadata fields (i.e. column headers from gsheet template) and values the user-entered values. Has methods that 1. produce proposed non-colliding DOI suffixes for each object, 2. produces alternative formats for re-updating the gsheet (e.g. a list-of-lists version of itself).<br/><br/>
+ 	 <pre>class CrefDoi()</pre>
+ 	  A list-of-dictionaries object representing the set of all  objects receiving Dois in a single session, each object in turn represented by a dictionary with the keys as metadata fields (i.e. column headers from gsheet template) and values the user-entered values. Has methods that 1. produce proposed non-colliding DOI suffixes for each object, 2. produces alternative formats for re-updating the gsheet (e.g. a list-of-lists version of itself).<br/><br/>
  	
  	- **gsheets_manager.py**: classes and functions to handle the read/write of metadata to and from template gsheets we provide to users as well as reading from our current registry of CrossRef NYU DOIs to handle collisions. These might include:
- 	<pre>def retrieve_doi_mets(sheet_num, gsheet_connection)</pre> A function to access the metadata in a gsheet template (identified using sheet_num) using previous oauth access object. <br/><br/>
+ 	<pre>def retrieve_doi_mets(sheet_num, gsheet_connection)</pre>
+ 	 A function to access the metadata in a gsheet template (identified using sheet_num) using previous oauth access object. <br/><br/>
  	
  	- **xml_builder.py**: functions to build a valid XML file using Django template-like variable replacement and some regex.<br/><br/>
  	
