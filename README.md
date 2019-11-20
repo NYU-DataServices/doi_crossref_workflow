@@ -47,7 +47,7 @@ doi_crossref_workflow
  	
 >	- **xml_builder.py**: functions to build a valid XML file using Django template-like variable replacement and some regex.<br/><br/>
  	
- 2. **/xml_templates/serials_template.xml**, **weebsite_template.xml**, etc.: set of XML formatted templates meeting CrossRef upload standards and Django template-like approach to passing variables in the content of tags.
+ 2. **/xml_templates/serials_template.xml**, **website_template.xml**, etc.: set of XML formatted templates meeting CrossRef upload standards and Django template-like approach to passing variables in the content of tags.
 
  3. **doi_manager.py**: main script to run workflow. Should take as sysargv input the gsheet being used as the template and a setting as to whether this is a preliminary doi creation or an xml creation job.
 
