@@ -60,7 +60,7 @@ Our sample GSheet template is at: [https://docs.google.com/spreadsheets/d/1lRSZc
 
 Google's Sheets API modules
 
-<pre>pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+<pre>pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib</pre>
 
 #### Pulling Journal, Issue, and Article Metadata from GSheet and generating XML
 
