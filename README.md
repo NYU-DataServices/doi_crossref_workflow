@@ -21,6 +21,7 @@ doi_crossref_workflow
 │───xml_templates/
 │   │  
 │   │───serials_template.xml
+|   │───serials_template.xml
 │   └───website_template.xml
 │   
 │   
@@ -28,26 +29,51 @@ doi_crossref_workflow
 │   │
 │   │───__init__.py   
 │   │───doi_mets.py
-│   │───gsheets_manager.py
-│   └───xml_builder.py
+│   │───sheets_creds_builder.py
+│   └───gsheets_manager.py
 │
 └───doi_manage.py
 </pre>
 
 
- 1. Three utilities to handle separate aspects of the workflows:
+ 1. Two utilities to handle separate aspects of the workflows:
  
-> 	- **doi_mets.py** : classes and functions to handle instantiating a doi production session (including "minting" proposed DOIs). These might include:
-><pre>class CrefDoi()</pre>
+> 	- **doi_mets.py** : classes and functions to handle instantiating a doi production session (including "minting" proposed DOIs and generating resulting XML). These might include:
+><pre>class MetsHandler()</pre>
 >A list-of-dictionaries object representing the set of all  objects receiving Dois in a single session, each object in turn represented by a dictionary with the keys as metadata fields (i.e. column headers from gsheet template) and values the user-entered values. Has methods that 1. produce proposed non-colliding DOI suffixes for each object, 2. produces alternative formats for re-updating the gsheet (e.g. a list-of-lists version of itself).<br/><br/>
  	
 >	- **gsheets_manager.py**: classes and functions to handle the read/write of metadata to and from template gsheets we provide to users as well as reading from our current registry of CrossRef NYU DOIs to handle collisions. These might include:
 ><pre>def retrieve_doi_mets(sheet_id)</pre>
 >A function to access the metadata in a gsheet template (identified using sheet_num) using previous oauth access object. <br/><br/>
- 	
->	- **xml_builder.py**: functions to build a valid XML file using Django template-like variable replacement and some regex.<br/><br/>
- 	
+ 	 	
  2. **/xml_templates/serials_template.xml**, **website_template.xml**, etc.: set of XML formatted templates meeting CrossRef upload standards and Django template-like approach to passing variables in the content of tags.
 
  3. **doi_manager.py**: main script to run workflow. Should take as sysargv input the gsheet being used as the template and a setting as to whether this is a preliminary doi creation or an xml creation job.
 
+ 4. **/utils/sheets_creds_builder.py**, a one-time use utility to generate GSheets access
+
+### Usage
+
+Our sample GSheet template is at: [https://docs.google.com/spreadsheets/d/1lRSZcW-5me13p823kK7q_ow6cdZq1pw9-ohKENJ8N1k/edit#gid=0](https://docs.google.com/spreadsheets/d/1lRSZcW-5me13p823kK7q_ow6cdZq1pw9-ohKENJ8N1k/edit#gid=0)
+
+#### Dependencies
+
+Google's Sheets API modules
+
+<pre>pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+
+#### Pulling Journal, Issue, and Article Metadata from GSheet and generating XML
+
+1. <pre>git clone https://github.com/NYU-DataServices/doi_crossref_workflow.git</pre>
+
+2. <pre>cd doi_crossref_workflow</pre>
+
+3. Copy <pre>credentials.json</pre> and <pre>doi_workflow_token.pickle</pre> files to this directory
+
+4. <pre>python doi_manager.py CONTENT-TYPE GSHEET-ID</pre>
+
+e.g.
+
+<pre>python doi_manager.py serials 1lRSZcW-5me13p823kK7q_ow6cdZq1pw9-ohKENJ8N1k</pre>
+
+5. If successful resulting XML will be produced in a 'crossref_xml_output.xml' file.

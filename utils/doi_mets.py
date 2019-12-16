@@ -3,41 +3,37 @@
 
 
 class MetsHandler():
-    def __init__(self, mets_type):
+    def __init__(self, mets_type, table):
         self.mets_type = mets_type
-        self.mets_issue_dict = {"journal_metadata-lang=\"en\"":
-                             {"full_title": "",
-                              "issn-media_type=\"print\"": ""
+        self.mets_issue_dict = {"journal_metadata lang=\"en\"":
+                             {"full_title": table[2][0],
+                              "issn media_type=\"" + table[2][1] + "\"": table[2][2]
                               },
                              "journal_issue": {
-                                 "publication_date-media_type=\"print\"": {"year":""},
-                                 "journal_volume": {"volume": ""},
-                                 "issue": ""
+                                 "publication_date media_type=\"" + table[2][1] + "\"": {"year":table[5][0]},
+                                 "journal_volume": {"volume": table[5][1]},
+                                 "issue": table[5][2]
                              }}
         self.mets_articles_list = [
-                                 {"journal_article-publication_type=\"full_text\"":{
-                                    "titles": {"title":""},
-                                    "contributors": [{"person_name-contributor_role=\"author\"":{
+                                 {"journal_article publication_type=\"full_text\"":{
+                                    "titles": {"title":entry[1]},
+                                    "contributors": [{"person_name contributor_role=\"author\"":{
                                         "given_name": "",
                                         "surname": ""}}],
-                                    "publication_date-media_type=\"print\"": {"year":""},
+                                    "publication_date media_type=\"print\"": {"year":entry[3][0:5]},
                                     "pages": {"first_page": ""},
-                                    "doi_data": {"doi": "","resource": ""}
-                                    #"citation_list":[]
+                                    "doi_data": {"doi": entry[7],"resource": entry[8]}
                                     }
                                  }
-                                ]
+                                for entry in table[8:]]
 
     @staticmethod
     def starttag(tag_name):
-        return '<' + tag_name.replace('-', ' ') + '>'
+        return '<' + tag_name + '>'
 
     @staticmethod
     def endtag(tag_name):
-        return '</' + tag_name.split('-')[0] + '>'
-
-    def parse_mets_table(self, table):
-        pass
+        return '</' + tag_name.split(' ')[0] + '>\n'
 
     def build_serials_xml(self):
         """
@@ -52,7 +48,7 @@ class MetsHandler():
 
         if self.mets_type == 'serials':
 
-            with open('../xml_templates/' + self.mets_type + '_template.xml') as f:
+            with open('xml_templates/' + self.mets_type + '_template.xml') as f:
                 xml = f.read()
                 f.close()
 
@@ -121,15 +117,12 @@ class MetsHandler():
                     insert_xml += self.endtag(article_parent_met)
 
             xml = xml.replace('{{ issue_body }}', insert_xml)
-            return xml
-
+            with open('crossref_xml_output.xml', 'w') as f:
+                f.write(xml)
+                f.close
+            return("XML was successfully created")
         else:
             return False
 
     def __str__(self):
         return "A DOI minting event metadata for %s group" % (self.mets_type)
-
-g = MetsHandler('serials')
-
-
-g.build_serials_xml()

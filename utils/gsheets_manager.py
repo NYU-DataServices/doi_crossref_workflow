@@ -5,16 +5,12 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 
 
-G_CREDS_FILE = 'path to G CREDS FILE'
-G_TOKEN_FILE = 'path to G TOKEN FILE'
-
-
-#We have some options for setting scopes based on the request; requests to the main DOI registry should be read-only?
-SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
+G_CREDS_FILE = 'credentials.json'
+G_TOKEN_FILE = 'doi_workflow_token.pickle'
 
 
 # We can adjust this to refer to the exact range in the gsheet template that is the actual data (i.e. not instructions rows)
-METS_TEMPLATE_RANGE = 'Sheet1!C1:L'
+METS_TEMPLATE_RANGE = 'Sheet1!A1:Z'
 
 
 def retrieve_doi_mets(sheet_id):
@@ -31,35 +27,16 @@ def retrieve_doi_mets(sheet_id):
     [['dc.title','dc.contributors'],['Sample Title'],['Smith, Jane; Jones, Nancy']]
     """
 
-    # The file token.pickle stores the user's access and refresh tokens, and is
-    # created automatically when the authorization flow completes for the first
-    # time. So the following needs to be run once, and once pickle file created and authentication happens
-    # it will now longer be needed
-
-    creds = None
-
-    if os.path.exists('token.pickle'):
-        with open('token.pickle', 'rb') as token:
+    if os.path.exists(G_TOKEN_FILE):
+        with open(G_TOKEN_FILE, 'rb') as token:
             creds = pickle.load(token)
-
-    # If there are no (valid) credentials available, let the user log in.
-    if not creds or not creds.valid:
-        if creds and creds.expired and creds.refresh_token:
-            creds.refresh(Request())
-        else:
-            flow = InstalledAppFlow.from_client_secrets_file(
-                'credentials.json', ['https://www.googleapis.com/auth/spreadsheets'])
-            creds = flow.run_local_server(port=0)
-        # Save the credentials for the next run
-        with open('token.pickle', 'wb') as token:
-            pickle.dump(creds, token)
 
     service = build('sheets', 'v4', credentials=creds)
 
     # Call the Sheets API
     sheet = service.spreadsheets()
     result = sheet.values().get(spreadsheetId=sheet_id,
-                                range=SAMPLE_RANGE_NAME).execute()
+                                range=METS_TEMPLATE_RANGE).execute()
     values = result.get('values', [])
 
     return values
