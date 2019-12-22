@@ -1,5 +1,5 @@
-
-
+from utils.gsheets_manager import retrieve_doi_mets
+from random import random
 
 
 class MetsHandler():
@@ -26,6 +26,30 @@ class MetsHandler():
                                     }
                                  }
                                 for entry in table[8:]]
+
+    def generate_pseudo_dois(self, reg_sheet_id, number_needed):
+        """
+        This function checks the current registry of all NYU-minted DOIs and then generates proposed DOIs
+        for upload to CrossRef that do not collide with previous DOIs
+        :return:
+        1KXyBq47ciMnQD0mTns4Q9OUZC11kISIWA0yh6hjyLBo
+        """
+        previous_suffixes = [row[7].replace('https://doi.org/10.33682/','') for row in retrieve_doi_mets(reg_sheet_id, 'registry')]
+        allowed_chars = ['0','1','2','3','4','5','6','7','8','9',
+                         'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o''p','q','r','s','t','u','v','w','x','y','z']
+        generated_dois = []
+
+        for j in range(0,number_needed):
+            pseudo_doi = ""
+            while True:
+                for i in range(0,8):
+                    pseudo_doi += allowed_chars[int(random() * len(allowed_chars))]
+                    if i == 3:
+                        pseudo_doi += '-'
+                if pseudo_doi not in previous_suffixes:
+                    generated_dois.append('https://doi.org/10.33682/' + pseudo_doi)
+                    break
+        return generated_dois
 
     @staticmethod
     def starttag(tag_name):

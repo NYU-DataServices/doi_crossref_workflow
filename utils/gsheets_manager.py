@@ -4,16 +4,10 @@ from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 
+from utils.global_settings import G_CREDS_FILE, G_TOKEN_FILE, METS_SERIALS_TEMPLATE_RANGE, \
+    REGISTRY_TEMPLATE_RANGE, METS_SERIALS_DOI_COLUMN_RANGE, REGISTRY_TEMPLATE_COLUMN_RANGE
 
-G_CREDS_FILE = 'credentials.json'
-G_TOKEN_FILE = 'doi_workflow_token.pickle'
-
-
-# We can adjust this to refer to the exact range in the gsheet template that is the actual data (i.e. not instructions rows)
-METS_TEMPLATE_RANGE = 'Sheet1!A1:Z'
-
-
-def retrieve_doi_mets(sheet_id):
+def retrieve_doi_mets(sheet_id, retrieve_type='patron'):
     """
     This workflow follows from this https://developers.google.com/sheets/api/quickstart/python
     This function pulls the metadata available in the client-facing gsheet that we provide for user to
@@ -23,9 +17,13 @@ def retrieve_doi_mets(sheet_id):
     column headers and will be used later to generate dictionary keys (and to match against elements in the XML template)
     :param sheet_id: string representing the id for the sheets containing mets information
     :return: list of lists, each inner list a row fromo gsheet template; first list contains column headers/mets fields
-    >>> read_template_mets('sample_sheet_id')
+    >>> read_template_mets('sample_sheet_id', 'patron')
     [['dc.title','dc.contributors'],['Sample Title'],['Smith, Jane; Jones, Nancy']]
     """
+    if retrieve_type == 'patron':
+        range = METS_SERIALS_TEMPLATE_RANGE
+    elif retrieve_type == 'registry':
+        range = REGISTRY_TEMPLATE_RANGE
 
     if os.path.exists(G_TOKEN_FILE):
         with open(G_TOKEN_FILE, 'rb') as token:
@@ -36,35 +34,39 @@ def retrieve_doi_mets(sheet_id):
     # Call the Sheets API
     sheet = service.spreadsheets()
     result = sheet.values().get(spreadsheetId=sheet_id,
-                                range=METS_TEMPLATE_RANGE).execute()
+                                range=range).execute()
     values = result.get('values', [])
 
     return values
 
 
 
-def write_doi_mets(sheet_id, CrefDoiObject):
+def write_doi_mets(sheet_id, append_vals, retrieve_type='patron'):
     """
 
     :param sheet_id: string representing the id for the sheets containing mets information
-    :param CrefDoiObject: a special object representing in Python the set of doi mets for an upload/minting session
+    :param retrieve_type:
     :return:
-    >>> write_doi_mets('sample_sheet_id', CrefDoi object)
+    >>> write_doi_mets('sample_sheet_id', 'patron')
     """
+    if retrieve_type == 'patron':
+        range = METS_SERIALS_DOI_COLUMN_RANGE + str(8 + len(append_vals))
+    elif retrieve_type == 'registry':
+        range = REGISTRY_TEMPLATE_COLUMN_RANGE
 
-    if os.path.exists('token.pickle'):
-        with open('token.pickle', 'rb') as token:
+    if os.path.exists(G_TOKEN_FILE):
+        with open(G_TOKEN_FILE, 'rb') as token:
             creds = pickle.load(token)
 
     service = build('sheets', 'v4', credentials=creds)
 
     sheet = service.spreadsheets()
 
-    add_values_body = {"values": [append_row]}
+    add_values_body = {"values": [append_vals], 'majorDimension':'COLUMNS'}
 
     response = sheet.values().append(
-        spreadsheetId=sheet_id, range=METS_TEMPLATE_RANGE, valueInputOption='RAW',
-        insertDataOption='INSERT_ROWS', body=add_values_body).execute()
+        spreadsheetId=sheet_id, range=range, valueInputOption='RAW',
+        body=add_values_body).execute()
 
     return response
 
@@ -115,6 +117,10 @@ def update_registrations(rows, gsheet_id):
     response1 = sheet.values().update(
         spreadsheetId=gsheet_id, range='Sheet1!A1:Z', valueInputOption='RAW',
         body=add_values_body).execute()
+        
+    response = sheet.values().append(
+        spreadsheetId=sheet_id, range=range, valueInputOption='RAW',
+        insertDataOption='INSERT_ROWS', body=add_values_body).execute()
 
     response2 = service.spreadsheets().batchUpdate(spreadsheetId=gsheet_id, body=add_bold).execute()
 

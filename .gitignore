@@ -2,6 +2,7 @@
 credentials.json
 doi_workflow_token.pickle
 crossref_xml_output.xml
+global_settings.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
