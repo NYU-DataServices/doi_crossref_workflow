@@ -18,13 +18,14 @@ if __name__ == "__main__":
     else:
         if sys.argv[1] == 'build-doi':
             patron_provided_mets = retrieve_doi_mets(sys.argv[3])
-            session = MetsHandler(sys.argv[2], patron_provided_mets)
+            session = MetsHandler(sys.argv[2])
             dois = session.generate_pseudo_dois(MAIN_DOI_REGISTRY_SHEET, len(patron_provided_mets[8:]))
             write_doi_mets(sys.argv[3], dois)
 
         elif sys.argv[1] == 'build-xml':
             patron_provided_mets = retrieve_doi_mets(sys.argv[3])
-            session = MetsHandler(sys.argv[2], patron_provided_mets)
+            session = MetsHandler(sys.argv[2])
+            session.pull_patron_mets(patron_provided_mets)
             session_xml_results = session.build_serials_xml()
             if session_xml_results != False:
                 print(session_xml_results)

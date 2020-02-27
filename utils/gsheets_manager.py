@@ -43,11 +43,13 @@ def retrieve_doi_mets(sheet_id, retrieve_type='patron'):
 
 def write_doi_mets(sheet_id, append_vals, retrieve_type='patron'):
     """
-
+    Function to write values to our GSheets. Currently, it is configured to write to cells only in two circumstances:
+    1. To write the proposed DOI URLs to column H in the patron-facing template
+    TODO: 2. To write the proposed DOI URLS to the master registry of NYU DOIs
     :param sheet_id: string representing the id for the sheets containing mets information
-    :param retrieve_type:
+    :param retrieve_type: whether for the patron-facing sheet or the NYU DOI registry
     :return:
-    >>> write_doi_mets('sample_sheet_id', 'patron')
+    >>> write_doi_mets('sample_sheet_id', [['val1','val2']] 'patron')
     """
     if retrieve_type == 'patron':
         range = METS_SERIALS_DOI_COLUMN_RANGE + str(8 + len(append_vals))

@@ -3,29 +3,32 @@ from random import random
 
 
 class MetsHandler():
-    def __init__(self, mets_type, table):
+    def __init__(self, mets_type):
         self.mets_type = mets_type
+
+
+    def pull_patron_mets(self, table):
         self.mets_issue_dict = {"journal_metadata lang=\"en\"":
-                             {"full_title": table[2][0],
-                              "issn media_type=\"" + table[2][1] + "\"": table[2][2]
-                              },
-                             "journal_issue": {
-                                 "publication_date media_type=\"" + table[2][1] + "\"": {"year":table[5][0]},
-                                 "journal_volume": {"volume": table[5][1]},
-                                 "issue": table[5][2]
-                             }}
+                                    {"full_title": table[2][0],
+                                     "issn media_type=\"" + table[2][1] + "\"": table[2][2]
+                                     },
+                                "journal_issue": {
+                                    "publication_date media_type=\"" + table[2][1] + "\"": {"year": table[5][0]},
+                                    "journal_volume": {"volume": table[5][1]},
+                                    "issue": table[5][2]
+                                }}
         self.mets_articles_list = [
-                                 {"journal_article publication_type=\"full_text\"":{
-                                    "titles": {"title":entry[1]},
-                                    "contributors": [{"person_name contributor_role=\"author\"":{
-                                        "given_name": "",
-                                        "surname": ""}}],
-                                    "publication_date media_type=\"print\"": {"year":entry[3][0:5]},
-                                    "pages": {"first_page": ""},
-                                    "doi_data": {"doi": entry[7],"resource": entry[8]}
-                                    }
-                                 }
-                                for entry in table[8:]]
+            {"journal_article publication_type=\"full_text\"": {
+                "titles": {"title": entry[1]},
+                "contributors": [{"person_name contributor_role=\"author\"": {
+                    "given_name": "",
+                    "surname": ""}}],
+                "publication_date media_type=\"print\"": {"year": entry[3][0:5]},
+                "pages": {"first_page": ""},
+                "doi_data": {"doi": entry[7], "resource": entry[8]}
+            }
+            }
+            for entry in table[8:]]
 
     def generate_pseudo_dois(self, reg_sheet_id, number_needed):
         """
@@ -34,9 +37,19 @@ class MetsHandler():
         :return:
         1KXyBq47ciMnQD0mTns4Q9OUZC11kISIWA0yh6hjyLBo
         """
+
+        ##
+        #   First pull the previously minted DOIs so we don't allow collisions, build a list of allowable chars
+        ##
+
         previous_suffixes = [row[7].replace('https://doi.org/10.33682/','') for row in retrieve_doi_mets(reg_sheet_id, 'registry')]
         allowed_chars = ['0','1','2','3','4','5','6','7','8','9',
                          'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o''p','q','r','s','t','u','v','w','x','y','z']
+
+        ##
+        #   Generate the list of proposed DOIs
+        ##
+
         generated_dois = []
 
         for j in range(0,number_needed):

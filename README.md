@@ -70,10 +70,16 @@ Google's Sheets API modules
 
 3. Copy <pre>credentials.json</pre> and <pre>doi_workflow_token.pickle</pre> files to this directory
 
-4. <pre>python doi_manager.py CONTENT-TYPE GSHEET-ID</pre>
+4. After patron fills out basic information (journal and issue info; titles of articles), we can generate proposed DOIs for them:
+
+<pre>python doi_manager.py build-doi serials GSHEET-ID</pre>
 
 e.g.
 
-<pre>python doi_manager.py serials 1lRSZcW-5me13p823kK7q_ow6cdZq1pw9-ohKENJ8N1k</pre>
+<pre>python doi_manager.py build-doi serials 1lRSZcW-5me13p823kK7q_ow6cdZq1pw9-ohKENJ8N1k</pre>
 
-5. If successful resulting XML will be produced in a 'crossref_xml_output.xml' file.
+5. This allows patron to then add the proposed DOIs to the e-copy and make the deposit in FDA, enabling Handle creation, record URL, etc. Patron then needs to finish filling out rest of GSheet so that we can make XML:
+
+<pre>python doi_manager.py build-xml serials GSHEET-ID</pre>
+
+6. If successful resulting XML will be produced in a 'crossref_xml_output.xml' file.
