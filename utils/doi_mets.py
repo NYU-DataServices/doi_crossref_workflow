@@ -44,7 +44,7 @@ class MetsHandler():
 
         previous_suffixes = [row[7].replace('https://doi.org/10.33682/','') for row in retrieve_doi_mets(reg_sheet_id, 'registry')]
         allowed_chars = ['0','1','2','3','4','5','6','7','8','9',
-                         'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o''p','q','r','s','t','u','v','w','x','y','z']
+                         'a','b','c','d','e','f','g','h','j','k','m','n','p','q','r','s','t','u','v','w','x','y','z']
 
         ##
         #   Generate the list of proposed DOIs
@@ -52,7 +52,7 @@ class MetsHandler():
 
         generated_dois = []
 
-        for j in range(0,number_needed):
+        for j in range(0,number_needed + 1):
             pseudo_doi = ""
             while True:
                 for i in range(0,8):

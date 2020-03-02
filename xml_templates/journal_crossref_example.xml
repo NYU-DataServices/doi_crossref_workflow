@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doi_batch version="4.3.7" xmlns="http://www.crossref.org/schema/4.3.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.crossref.org/schema/4.3.7 
+http://www.crossref.org/schemas/crossref4.3.7.xsd">
+
+	<head>
+		<doi_batch_id>123456</doi_batch_id>
+		<timestamp>19990628123304</timestamp>
+		<depositor>
+			<depositor_name>Sample Master</depositor_name>
+			<email_address>support@crossref.org</email_address>
+		</depositor>
+		<registrant>Crossref</registrant>
+	</head>
+	<body>
+		<journal>
+			<journal_metadata language="en">
+				<full_title>Applied Physics Letters</full_title>
+				<abbrev_title>Appl. Phys. Lett.</abbrev_title>
+				<issn media_type="print">0003-6951</issn>
+				<coden>applab</coden>
+			</journal_metadata>
+			<journal_issue>
+				<publication_date media_type="print">
+					<year>1999</year>
+				</publication_date>
+				<journal_volume>
+					<volume>74</volume>
+				</journal_volume>
+				<issue>16</issue>
+			</journal_issue>
+			<journal_article publication_type="full_text">
+				<titles>
+					<title>Sub-5-fs visible pulse generation by pulse-front-matched noncollinear optical parametric amplification</title>
+				</titles>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>Ann P.</given_name>
+						<surname>Shirakawa</surname>
+					</person_name>
+					<organization sequence="additional" contributor_role="author">Sample Organization</organization>
+				</contributors>
+				<publication_date media_type="print">
+					<year>1999</year>
+				</publication_date>
+				<pages>
+					<first_page>2268</first_page>
+				</pages>
+				<publisher_item>
+					<identifier id_type="pii">S000369519903216</identifier>
+				</publisher_item>
+				<doi_data>
+					<doi>10.9876/S000369519903216</doi>
+					<timestamp>19990628123304</timestamp>
+					<resource>http://ojps.aip.org/link/?apl/74/2268/ab</resource>
+				</doi_data>
+			</journal_article>
+			<journal_article publication_type="full_text">
+				<titles>
+					<title>Ultrafast (GaIn)(NAs)/GaAs vertical-cavity surface-emitting laser</title>
+				</titles>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>M</given_name>
+						<surname>van Exter</surname>
+						<suffix>III</suffix>
+					</person_name>
+				</contributors>
+				<publication_date media_type="print">
+					<year>1999</year>
+				</publication_date>
+				<pages>
+					<first_page>2274</first_page>
+				</pages>
+				<publisher_item>
+					<identifier id_type="pii">S0003695199038164</identifier>
+				</publisher_item>
+				<doi_data>
+					<doi>10.9876/S0003695199034166</doi>
+					<resource>http://ojps.aip.org/link/?apl/74/2271/ab</resource>
+				</doi_data>
+				<citation_list>
+					<citation key="key-10.9876/S0003695199034166-1">
+						<issn>0027-8424</issn>
+						<journal_title>Proc. Natl. Acad. Sci. U.S.A.</journal_title>
+						<author>West</author>
+						<volume>98</volume>
+						<issue>20</issue>
+						<first_page>11024</first_page>
+						<cYear>2001</cYear>
+					</citation>
+					<citation key="key-10.9876/S0003695199034166-2">
+						<journal_title>Space Sci. Rev.</journal_title>
+						<author>Heber</author>
+						<volume>97</volume>
+						<first_page>309</first_page>
+						<cYear>2001</cYear>
+					</citation>
+					<citation key="key-10.9876/S0003695199034166-3">
+						<doi>10.1029/2002GL014944</doi>
+					</citation>
+					<citation key="key-10.9876/S0003695199034166-4">
+						<journal_title>Dev. Dyn.</journal_title>
+						<author>Tufan</author>
+						<cYear>2002</cYear>
+					</citation>
+					<citation key="key-10.9876/S0003695199034166-5">
+						<journal_title>J. Plankton Res.</journal_title>
+						<author>Bocher</author>
+					</citation>
+					<citation key="key-10.9876/S0003695199034166-6">
+						<issn>0169-6009</issn>
+						<journal_title>Bone. Miner.</journal_title>
+						<author>Proyecto Multic&#x00E9;ntrico de Investigaci&#x00F3;n de Osteoporosis</author>
+						<volume>17</volume>
+						<first_page>133</first_page>
+						<cYear>1992</cYear>
+					</citation>
+					<citation key="key-10.9876/S0003695199034166-7">
+						<volume_title>Neuropharmacological Basis of Reward</volume_title>
+						<author>Carr</author>
+						<first_page>265</first_page>
+						<cYear>1989</cYear>
+					</citation>
+					<citation key="key-10.9876/S0003695199034166-8">
+						<volume_title>The Metabolic and Molecular Bases of Inherited Disease</volume_title>
+						<author>Mahley</author>
+						<edition_number>7</edition_number>
+						<first_page>1953</first_page>
+						<cYear>1995</cYear>
+					</citation>
+					<citation key="key-10.9876/S0003695199034166-9">
+						<series_title>Genome Analysis</series_title>
+						<volume_title>Genetic and Physical Mapping</volume_title>
+						<author>Rinchik</author>
+						<volume>1</volume>
+						<first_page>121</first_page>
+						<cYear>1990</cYear>
+					</citation>
+					<citation key="key-10.9876/S0003695199034166-10">
+						<volume_title>Molecular Cloning: A Laboratory Manual</volume_title>
+						<author>Sambrook</author>
+						<cYear>1989</cYear>
+					</citation>
+					<citation key="key-10.9876/S0003695199034166-11">
+						<volume_title>Immunocytochemistry: Theory and Practice</volume_title>
+						<author>Larsson</author>
+						<first_page>41</first_page>
+						<cYear>1988</cYear>
+						<component_number>2</component_number>
+					</citation>
+					<citation key="key-10.9876/S0003695199034166-12">
+						<volume_title>Proceedings of the XXVth International Conference on Animal Genetics</volume_title>
+						<author>Roenen</author>
+						<first_page>105</first_page>
+						<cYear>1996</cYear>
+					</citation>
+					<citation key="key-10.9876/S0003695199034166-13">
+						<volume_title>Proceedings of the Corn and Sorghum Industry Research Conference</volume_title>
+						<author>Beavis</author>
+						<first_page>250</first_page>
+						<cYear>1994</cYear>
+					</citation>
+					<citation key="key-10.9876/S0003695199034166-14">
+						<unstructured_citation>L. Reynolds, Three dimensional reflection and transmission equations for optical diffusion in blood, MS Thesis. Seattle, Washington: University of Washington (1970).</unstructured_citation>
+					</citation>
+					<citation key="key-10.9876/S0003695199034166-15">
+						<unstructured_citation>T. J. Dresse, U.S. Patent 308, 389 [<i>CA 82</i>, 73022 (1975)].</unstructured_citation>
+					</citation>
+				</citation_list>
+			</journal_article>
+		</journal>
+		<journal>
+			<journal_metadata language="en">
+				<full_title>Applied Physics Letters</full_title>
+				<abbrev_title>Appl. Phys. Lett.</abbrev_title>
+				<issn media_type="print">0003-6951</issn>
+				<coden>applab</coden>
+			</journal_metadata>
+			<journal_issue>
+				<publication_date media_type="print">
+					<year>1999</year>
+				</publication_date>
+				<journal_volume>
+					<volume>74</volume>
+				</journal_volume>
+				<issue>1</issue>
+			</journal_issue>
+			<journal_article publication_type="full_text">
+				<titles>
+					<title/>
+				</titles>
+				<contributors>
+					<person_name sequence="first" contributor_role="author">
+						<given_name>D L</given_name>
+						<surname>Peng</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>K</given_name>
+						<surname>Sumiyama</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>S</given_name>
+						<surname>Sumiyama</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>T</given_name>
+						<surname>Hihara</surname>
+					</person_name>
+					<person_name sequence="additional" contributor_role="author">
+						<given_name>T J</given_name>
+						<surname>Konno</surname>
+					</person_name>
+				</contributors>
+				<publication_date media_type="print">
+					<year>1999</year>
+				</publication_date>
+				<pages>
+					<first_page>76</first_page>
+				</pages>
+				<publisher_item>
+					<identifier id_type="pii">S0003695199019014</identifier>
+				</publisher_item>
+				<doi_data>
+					<doi>10.9876/S0003695199019014</doi>
+					<resource>http://ojps.aip.org:18000/link/?apl/74/1/76/ab</resource>
+				</doi_data>
+				<component_list>
+					<component parent_relation="isPartOf">
+						<description><b>Figure 1:</b> This is the caption of the first figure...</description>
+						<format mime_type="image/jpeg">Web resolution image</format>
+						<doi_data>
+							<doi>10.9876/S0003695199019014/f1</doi>
+							<resource>http://ojps.aip.org:18000/link/?apl/74/1/76/f1</resource>
+						</doi_data>
+					</component>
+					<component parent_relation="isReferencedBy">
+						<description><b>Video 1:</b> This is a description of the video...</description>
+						<format mime_type="video/mpeg"/>
+						<doi_data>
+							<doi>10.9876/S0003695199019014/video1</doi>
+							<resource>http://ojps.aip.org:18000/link/?apl/74/1/76/video1</resource>
+						</doi_data>
+					</component>
+				</component_list>
+			</journal_article>
+		</journal>
+	</body>
+</doi_batch>

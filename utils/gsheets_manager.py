@@ -5,7 +5,8 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 
 from utils.global_settings import G_CREDS_FILE, G_TOKEN_FILE, METS_SERIALS_TEMPLATE_RANGE, \
-    REGISTRY_TEMPLATE_RANGE, METS_SERIALS_DOI_COLUMN_RANGE, REGISTRY_TEMPLATE_COLUMN_RANGE
+    REGISTRY_TEMPLATE_RANGE, METS_SERIALS_DOI_COLUMN_RANGE, METS_SERIALS_ISSUE_DOI_COLUMN_RANGE, \
+    REGISTRY_TEMPLATE_COLUMN_RANGE
 
 def retrieve_doi_mets(sheet_id, retrieve_type='patron'):
     """
@@ -53,6 +54,7 @@ def write_doi_mets(sheet_id, append_vals, retrieve_type='patron'):
     """
     if retrieve_type == 'patron':
         range = METS_SERIALS_DOI_COLUMN_RANGE + str(8 + len(append_vals))
+        issue_doi_range = METS_SERIALS_ISSUE_DOI_COLUMN_RANGE
     elif retrieve_type == 'registry':
         range = REGISTRY_TEMPLATE_COLUMN_RANGE
 
@@ -64,11 +66,17 @@ def write_doi_mets(sheet_id, append_vals, retrieve_type='patron'):
 
     sheet = service.spreadsheets()
 
-    add_values_body = {"values": [append_vals], 'majorDimension':'COLUMNS'}
+    add_values_body = {"values": [append_vals[:-1]], 'majorDimension':'COLUMNS'}
 
     response = sheet.values().append(
         spreadsheetId=sheet_id, range=range, valueInputOption='RAW',
         body=add_values_body).execute()
+
+    add_values_body_issue_dois = {"values": [append_vals[-1]], 'majorDimension': 'COLUMNS'}
+
+    response_2 = sheet.values().append(
+        spreadsheetId=sheet_id, range=issue_doi_range, valueInputOption='RAW',
+        body=add_values_body_issue_dois).execute()
 
     return response
 
