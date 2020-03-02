@@ -7,7 +7,7 @@ class MetsHandler():
         self.mets_type = mets_type
 
 
-    def pull_patron_mets(self, table):
+    def assemble_patron_mets(self, table):
         self.mets_issue_dict = {"journal_metadata lang=\"en\"":
                                     {"full_title": table[2][0],
                                      "issn media_type=\"" + table[2][1] + "\"": table[2][2]
@@ -17,29 +17,29 @@ class MetsHandler():
                                     "journal_volume": {"volume": table[5][1]},
                                     "issue": table[5][2]
                                 }}
+
         self.mets_articles_list = [
             {"journal_article publication_type=\"full_text\"": {
-                "titles": {"title": entry[1]},
+                "titles": {"title": self.entry_normalizer(entry[1])},
                 "contributors": [{"person_name contributor_role=\"author\"": {
-                    "given_name": "",
-                    "surname": ""}}],
-                "publication_date media_type=\"print\"": {"year": entry[3][0:5]},
+                    "given_name": self.entry_normalizer(name_entry.split(',')[1]),
+                    "surname": self.entry_normalizer(name_entry.split(',')[0])}} for name_entry in entry[2].split(';')],
+                "publication_date media_type=\"print\"": {"year": table[5][0]},
                 "pages": {"first_page": ""},
-                "doi_data": {"doi": entry[7], "resource": entry[8]}
+                "doi_data": {"doi": entry[4], "resource": ""}
             }
             }
-            for entry in table[8:]]
+            for entry in table[8:] if len(entry) > 1]
 
     def generate_pseudo_dois(self, reg_sheet_id, number_needed):
         """
         This function checks the current registry of all NYU-minted DOIs and then generates proposed DOIs
         for upload to CrossRef that do not collide with previous DOIs
         :return:
-        1KXyBq47ciMnQD0mTns4Q9OUZC11kISIWA0yh6hjyLBo
         """
 
         ##
-        #   First pull the previously minted DOIs so we don't allow collisions, build a list of allowable chars
+        #   First pull the previously minted DOIs so we don't allow collisions, consult a list of allowable chars
         ##
 
         previous_suffixes = [row[7].replace('https://doi.org/10.33682/','') for row in retrieve_doi_mets(reg_sheet_id, 'registry')]
@@ -71,6 +71,13 @@ class MetsHandler():
     @staticmethod
     def endtag(tag_name):
         return '</' + tag_name.split(' ')[0] + '>\n'
+
+    @staticmethod
+    def entry_normalizer(entry):
+        entry = entry.strip()
+        for replace in [("’","'"), ("“", '"'), ("”", '"'), ("‘", "'")]:
+            entry = entry.replace(replace[0], replace[1])
+        return entry
 
     def build_serials_xml(self):
         """

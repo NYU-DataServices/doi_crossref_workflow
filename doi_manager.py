@@ -23,11 +23,16 @@ if __name__ == "__main__":
             write_doi_mets(sys.argv[3], dois)
 
         elif sys.argv[1] == 'build-xml':
+            print("Retrieving metadata from template sheet...")
             patron_provided_mets = retrieve_doi_mets(sys.argv[3])
             session = MetsHandler(sys.argv[2])
-            session.pull_patron_mets(patron_provided_mets)
+            print("Assembling mets data...")
+            session.assemble_patron_mets(patron_provided_mets)
+            print("Organizing mets data into XML...")
             session_xml_results = session.build_serials_xml()
             if session_xml_results != False:
                 print(session_xml_results)
             else:
                 print("Failed to create XML")
+        else:
+            print("There may be a syntax error in your command entry. Try again.")
