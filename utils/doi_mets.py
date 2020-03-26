@@ -18,7 +18,7 @@ class MetsHandler():
                                     "publication_date": {"year": main_table[5][0]},
                                     "journal_volume": {"volume": main_table[5][1]},
                                     "issue": main_table[5][2],
-                                    "doi_data": {"doi": main_table[5][3], "resource": main_table[5][5]}
+                                    "doi_data": {"doi": self.format_doi(main_table[5][3]), "resource": main_table[5][5]}
                                 }}
 
         self.mets_articles_list = [
@@ -27,7 +27,7 @@ class MetsHandler():
                 "contributors": self.build_contributors(entry[2], author_table),
                 "publication_date": {"year": main_table[5][0]},
                 "pages": {"first_page": entry[3]},
-                "doi_data": {"doi": entry[4], "resource": entry[6]},
+                "doi_data": {"doi": self.format_doi(entry[4]), "resource": entry[6]},
                 "citation_list" : self.build_citations(entry[0], citation_table)
             }
             }
@@ -132,6 +132,10 @@ class MetsHandler():
             entry = entry.replace(replace[0], replace[1])
         return entry
 
+    @staticmethod
+    def format_doi(url_doi):
+        return url_doi.replace('https://doi.org/', '')
+
     def build_serials_xml(self):
         """
         Using the dictionary containing all journal, issue, and article metadata create on instantiation of the class
@@ -148,7 +152,7 @@ class MetsHandler():
             with open('xml_templates/' + self.mets_type + '_template.xml') as f:
                 xml = f.read()
                 batch_uuid = str(uuid.uuid1())
-                timestamp = datetime.today().strftime('%Y%m%d')
+                timestamp = datetime.today().strftime('%Y%m%d%H%M%S')
                 xml = xml.replace('{{ doi_batch_id }}', batch_uuid).replace('{{ timestamp }}', timestamp)
                 f.close()
 
