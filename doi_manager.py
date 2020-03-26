@@ -17,17 +17,22 @@ if __name__ == "__main__":
         """)
     else:
         if sys.argv[1] == 'build-doi':
-            patron_provided_mets = retrieve_doi_mets(sys.argv[3])
+            print("Checking regisry of previous DOIs and building proposed DOIs...")
+            issue_level_mets = retrieve_doi_mets(sys.argv[3])
             session = MetsHandler(sys.argv[2])
-            dois = session.generate_pseudo_dois(MAIN_DOI_REGISTRY_SHEET, len(patron_provided_mets[8:]))
+            dois = session.generate_pseudo_dois(MAIN_DOI_REGISTRY_SHEET, len(issue_level_mets[8:]))
+            print("Writing proposed DOIs to patron metadata sheet...")
             write_doi_mets(sys.argv[3], dois)
+            print("Complete.")
 
         elif sys.argv[1] == 'build-xml':
             print("Retrieving metadata from template sheet...")
-            patron_provided_mets = retrieve_doi_mets(sys.argv[3])
+            issue_level_mets = retrieve_doi_mets(sys.argv[3], 'mets_main')
+            citation_level_mets = retrieve_doi_mets(sys.argv[3], 'mets_citations')
+            author_level_mets = retrieve_doi_mets(sys.argv[3], 'mets_authors')
             session = MetsHandler(sys.argv[2])
             print("Assembling mets data...")
-            session.assemble_patron_mets(patron_provided_mets)
+            session.assemble_patron_mets(issue_level_mets, citation_level_mets, author_level_mets)
             print("Organizing mets data into XML...")
             session_xml_results = session.build_serials_xml()
             if session_xml_results != False:

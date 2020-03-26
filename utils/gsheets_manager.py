@@ -6,9 +6,9 @@ from google.auth.transport.requests import Request
 
 from utils.global_settings import G_CREDS_FILE, G_TOKEN_FILE, METS_SERIALS_TEMPLATE_RANGE, \
     REGISTRY_TEMPLATE_RANGE, METS_SERIALS_DOI_COLUMN_RANGE, METS_SERIALS_ISSUE_DOI_COLUMN_RANGE, \
-    REGISTRY_TEMPLATE_COLUMN_RANGE
+    REGISTRY_TEMPLATE_COLUMN_RANGE, METS_CITATIONS_TEMPLATE_RANGE, METS_AUTHORS_TEMPLATE_RANGE
 
-def retrieve_doi_mets(sheet_id, retrieve_type='patron'):
+def retrieve_doi_mets(sheet_id, retrieve_type='mets_main'):
     """
     This workflow follows from this https://developers.google.com/sheets/api/quickstart/python
     This function pulls the metadata available in the client-facing gsheet that we provide for user to
@@ -18,11 +18,15 @@ def retrieve_doi_mets(sheet_id, retrieve_type='patron'):
     column headers and will be used later to generate dictionary keys (and to match against elements in the XML template)
     :param sheet_id: string representing the id for the sheets containing mets information
     :return: list of lists, each inner list a row fromo gsheet template; first list contains column headers/mets fields
-    >>> read_template_mets('sample_sheet_id', 'patron')
+    >>> read_template_mets('sample_sheet_id', 'mets_main')
     [['dc.title','dc.contributors'],['Sample Title'],['Smith, Jane; Jones, Nancy']]
     """
-    if retrieve_type == 'patron':
+    if retrieve_type == 'mets_main':
         range = METS_SERIALS_TEMPLATE_RANGE
+    elif retrieve_type == 'mets_citations':
+        range = METS_CITATIONS_TEMPLATE_RANGE
+    elif retrieve_type == 'mets_authors':
+        range = METS_AUTHORS_TEMPLATE_RANGE
     elif retrieve_type == 'registry':
         range = REGISTRY_TEMPLATE_RANGE
 
@@ -42,7 +46,7 @@ def retrieve_doi_mets(sheet_id, retrieve_type='patron'):
 
 
 
-def write_doi_mets(sheet_id, append_vals, retrieve_type='patron'):
+def write_doi_mets(sheet_id, append_vals, retrieve_type='mets_main'):
     """
     Function to write values to our GSheets. Currently, it is configured to write to cells only in two circumstances:
     1. To write the proposed DOI URLs to column H in the patron-facing template
@@ -50,9 +54,9 @@ def write_doi_mets(sheet_id, append_vals, retrieve_type='patron'):
     :param sheet_id: string representing the id for the sheets containing mets information
     :param retrieve_type: whether for the patron-facing sheet or the NYU DOI registry
     :return:
-    >>> write_doi_mets('sample_sheet_id', [['val1','val2']] 'patron')
+    >>> write_doi_mets('sample_sheet_id', [['val1','val2']] 'mets_main')
     """
-    if retrieve_type == 'patron':
+    if retrieve_type == 'mets_main':
         range = METS_SERIALS_DOI_COLUMN_RANGE + str(8 + len(append_vals))
         issue_doi_range = METS_SERIALS_ISSUE_DOI_COLUMN_RANGE
     elif retrieve_type == 'registry':
