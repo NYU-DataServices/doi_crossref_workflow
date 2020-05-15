@@ -83,3 +83,8 @@ e.g.
 <pre>python doi_manager.py build-xml serials GSHEET-ID</pre>
 
 6. If successful resulting XML will be produced in a 'crossref_xml_output.xml' file.
+
+To-Dos
+
+If we need to re-do the DOIs creation, we want it to overwrite the current DOIs but preserve the article metadata already there
+(or does it do that already?)

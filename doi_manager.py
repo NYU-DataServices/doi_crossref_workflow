@@ -17,7 +17,7 @@ if __name__ == "__main__":
         """)
     else:
         if sys.argv[1] == 'build-doi':
-            print("Checking regisry of previous DOIs and building proposed DOIs...")
+            print("Checking registry of previous DOIs and building proposed DOIs...")
             issue_level_mets = retrieve_doi_mets(sys.argv[3])
             session = MetsHandler(sys.argv[2])
             dois = session.generate_pseudo_dois(MAIN_DOI_REGISTRY_SHEET, len(issue_level_mets[8:]))

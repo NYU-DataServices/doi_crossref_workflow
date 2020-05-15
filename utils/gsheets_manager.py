@@ -76,7 +76,8 @@ def write_doi_mets(sheet_id, append_vals, retrieve_type='mets_main'):
         spreadsheetId=sheet_id, range=range, valueInputOption='RAW',
         body=add_values_body).execute()
 
-    add_values_body_issue_dois = {"values": [append_vals[-1]], 'majorDimension': 'COLUMNS'}
+    add_values_body_issue_dois = {"values": [[append_vals[-1]]], 'majorDimension': 'COLUMNS'}
+
 
     response_2 = sheet.values().append(
         spreadsheetId=sheet_id, range=issue_doi_range, valueInputOption='RAW',
