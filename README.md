@@ -88,3 +88,5 @@ To-Dos
 
 If we need to re-do the DOIs creation, we want it to overwrite the current DOIs but preserve the article metadata already there
 (or does it do that already?)
+
+Error exception handling for Sheets 

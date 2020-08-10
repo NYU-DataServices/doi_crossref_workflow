@@ -91,7 +91,7 @@ class MetsHandler():
             if check_name in author_info:
                 if author_info[check_name]["affiliation"] != '':
                     contrib["person_name sequence=\"additional\" contributor_role=\"author\""].update({
-                        "affiliation": author_info[check_name]["affiliation"]
+                        "affiliation": self.entry_normalizer(author_info[check_name]["affiliation"])
                     })
                 if author_info[check_name]["orcid"] != '':
                     contrib["person_name sequence=\"additional\" contributor_role=\"author\""].update({
@@ -167,13 +167,13 @@ class MetsHandler():
 
                 for k, v in self.mets_issue_dict[mets_section].items():
 
-                    if isinstance(v, dict):
+                    if isinstance(v, dict) and len(v) > 0:
                         insert_xml += self.starttag(k)
                         insert_xml += ''.join([self.starttag(tag) + content + self.endtag(tag)
                                                for tag, content in v.items()])
                         insert_xml += self.endtag(k)
 
-                    else:
+                    elif len(v) > 0:
                         insert_xml += self.starttag(k) + v + self.endtag(k)
 
                 insert_xml += self.endtag(mets_section)
