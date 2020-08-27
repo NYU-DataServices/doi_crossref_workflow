@@ -24,6 +24,7 @@ class MetsHandler():
         self.mets_articles_list = [
             {"journal_article publication_type=\"full_text\"": {
                 "titles": {"title": self.entry_normalizer(entry[1])},
+                "jats:abstract": {"p":self.entry_normalizer(entry[7])},
                 "contributors": self.build_contributors(entry[2], author_table),
                 "publication_date": {"year": main_table[5][0]},
                 "pages": {"first_page": entry[3]},
