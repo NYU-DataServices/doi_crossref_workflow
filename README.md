@@ -89,4 +89,8 @@ To-Dos
 If we need to re-do the DOIs creation, we want it to overwrite the current DOIs but preserve the article metadata already there
 (or does it do that already?)
 
-Error exception handling for Sheets 
+Error exception handling for Sheets/Validation step for GSheet for each of the two functions
+
+Ability to custom name the output XML
+
+Ability to include certain fields (like an abstract, page numbers) or not (would require "template" metadata object with a dictionary structure that reflects the fields wanted, plus XML templates that work for that type)

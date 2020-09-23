@@ -8,8 +8,9 @@ from google.auth.transport.requests import Request
 # We have some options for setting scopes based on the request; for now set to read/write as we should be able to control
 # access of the workflow to the master CrossRef DOI registry by setting the appropriate NetID's Google permissions to RO
 
-#SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
-SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+# SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
+SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
+
 
 def refresh_credentials():
     # The file token.pickle stores the user's access and refresh tokens, and is
@@ -26,12 +27,13 @@ def refresh_credentials():
             creds.refresh(Request())
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
-                '../credentials.json', SCOPES)
+                "../credentials.json", SCOPES
+            )
             creds = flow.run_local_server(port=0)
 
         # Save the credentials for the next run
 
-        with open('../doi_workflow_token.pickle', 'wb') as token:
+        with open("../doi_workflow_token.pickle", "wb") as token:
             pickle.dump(creds, token)
 
 

@@ -4,11 +4,20 @@ from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 
-from utils.global_settings import G_CREDS_FILE, G_TOKEN_FILE, METS_SERIALS_TEMPLATE_RANGE, \
-    REGISTRY_TEMPLATE_RANGE, METS_SERIALS_DOI_COLUMN_RANGE, METS_SERIALS_ISSUE_DOI_COLUMN_RANGE, \
-    REGISTRY_TEMPLATE_COLUMN_RANGE, METS_CITATIONS_TEMPLATE_RANGE, METS_AUTHORS_TEMPLATE_RANGE
+from utils.global_settings import (
+    G_CREDS_FILE,
+    G_TOKEN_FILE,
+    METS_SERIALS_TEMPLATE_RANGE,
+    REGISTRY_TEMPLATE_RANGE,
+    METS_SERIALS_DOI_COLUMN_RANGE,
+    METS_SERIALS_ISSUE_DOI_COLUMN_RANGE,
+    REGISTRY_TEMPLATE_COLUMN_RANGE,
+    METS_CITATIONS_TEMPLATE_RANGE,
+    METS_AUTHORS_TEMPLATE_RANGE,
+)
 
-def retrieve_doi_mets(sheet_id, retrieve_type='mets_main'):
+
+def retrieve_doi_mets(sheet_id, retrieve_type="mets_main"):
     """
     This workflow follows from this https://developers.google.com/sheets/api/quickstart/python
     This function pulls the metadata available in the client-facing gsheet that we provide for user to
@@ -21,32 +30,30 @@ def retrieve_doi_mets(sheet_id, retrieve_type='mets_main'):
     >>> read_template_mets('sample_sheet_id', 'mets_main')
     [['dc.title','dc.contributors'],['Sample Title'],['Smith, Jane; Jones, Nancy']]
     """
-    if retrieve_type == 'mets_main':
+    if retrieve_type == "mets_main":
         range = METS_SERIALS_TEMPLATE_RANGE
-    elif retrieve_type == 'mets_citations':
+    elif retrieve_type == "mets_citations":
         range = METS_CITATIONS_TEMPLATE_RANGE
-    elif retrieve_type == 'mets_authors':
+    elif retrieve_type == "mets_authors":
         range = METS_AUTHORS_TEMPLATE_RANGE
-    elif retrieve_type == 'registry':
+    elif retrieve_type == "registry":
         range = REGISTRY_TEMPLATE_RANGE
 
     if os.path.exists(G_TOKEN_FILE):
-        with open(G_TOKEN_FILE, 'rb') as token:
+        with open(G_TOKEN_FILE, "rb") as token:
             creds = pickle.load(token)
 
-    service = build('sheets', 'v4', credentials=creds)
+    service = build("sheets", "v4", credentials=creds)
 
     # Call the Sheets API
     sheet = service.spreadsheets()
-    result = sheet.values().get(spreadsheetId=sheet_id,
-                                range=range).execute()
-    values = result.get('values', [])
+    result = sheet.values().get(spreadsheetId=sheet_id, range=range).execute()
+    values = result.get("values", [])
 
     return values
 
 
-
-def write_doi_mets(sheet_id, append_vals, retrieve_type='mets_main'):
+def write_doi_mets(sheet_id, append_vals, retrieve_type="mets_main"):
     """
     Function to write values to our GSheets. Currently, it is configured to write to cells only in two circumstances:
     1. To write the proposed DOI URLs to column H in the patron-facing template
@@ -56,38 +63,50 @@ def write_doi_mets(sheet_id, append_vals, retrieve_type='mets_main'):
     :return:
     >>> write_doi_mets('sample_sheet_id', [['val1','val2']] 'mets_main')
     """
-    if retrieve_type == 'mets_main':
+    if retrieve_type == "mets_main":
         range = METS_SERIALS_DOI_COLUMN_RANGE + str(8 + len(append_vals))
         issue_doi_range = METS_SERIALS_ISSUE_DOI_COLUMN_RANGE
-    elif retrieve_type == 'registry':
+    elif retrieve_type == "registry":
         range = REGISTRY_TEMPLATE_COLUMN_RANGE
 
     if os.path.exists(G_TOKEN_FILE):
-        with open(G_TOKEN_FILE, 'rb') as token:
+        with open(G_TOKEN_FILE, "rb") as token:
             creds = pickle.load(token)
 
-    service = build('sheets', 'v4', credentials=creds)
+    service = build("sheets", "v4", credentials=creds)
 
     sheet = service.spreadsheets()
 
-    add_values_body = {"values": [append_vals[:-1]], 'majorDimension':'COLUMNS'}
+    add_values_body = {"values": [append_vals[:-1]], "majorDimension": "COLUMNS"}
 
-    response = sheet.values().append(
-        spreadsheetId=sheet_id, range=range, valueInputOption='RAW',
-        body=add_values_body).execute()
+    response = (
+        sheet.values()
+        .append(
+            spreadsheetId=sheet_id,
+            range=range,
+            valueInputOption="RAW",
+            body=add_values_body,
+        )
+        .execute()
+    )
 
-    add_values_body_issue_dois = {"values": [[append_vals[-1]]], 'majorDimension': 'COLUMNS'}
+    add_values_body_issue_dois = {
+        "values": [[append_vals[-1]]],
+        "majorDimension": "COLUMNS",
+    }
 
-
-    response_2 = sheet.values().append(
-        spreadsheetId=sheet_id, range=issue_doi_range, valueInputOption='RAW',
-        body=add_values_body_issue_dois).execute()
+    response_2 = (
+        sheet.values()
+        .append(
+            spreadsheetId=sheet_id,
+            range=issue_doi_range,
+            valueInputOption="RAW",
+            body=add_values_body_issue_dois,
+        )
+        .execute()
+    )
 
     return response
-
-
-
-
 
 
 ### MORE SAMPLE CODE BELOW
@@ -144,6 +163,3 @@ def update_registrations(rows, gsheet_id):
 
     return (response1, response2)
 '''
-
-
-
