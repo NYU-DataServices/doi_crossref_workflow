@@ -84,6 +84,10 @@ e.g.
 
 6. If successful resulting XML will be produced in a 'crossref_xml_output.xml' file.
 
+7. For cases where we just want to mint proposed DOIs to fill in gaps in legacy data, this option generates non-colliding DOIs based on our registry sheet and prints them out to terminal. The last parameter is the number of DOIs needed:
+
+<pre>python doi_manager.py generate-pseudo-doi 5
+
 To-Dos
 
 If we need to re-do the DOIs creation, we want it to overwrite the current DOIs but preserve the article metadata already there
