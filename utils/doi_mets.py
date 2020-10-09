@@ -230,7 +230,7 @@ class MetsHandler:
     def format_doi(url_doi):
         return url_doi.replace("https://doi.org/", "")
 
-    def build_serials_xml(self):
+    def build_serials_xml(self, custom_filename):
         """
         Using the dictionary containing all journal, issue, and article metadata create on instantiation of the class
         and subsequently populated by parsing the table of metadata supplied by user, this method when called pulls in
@@ -339,14 +339,17 @@ class MetsHandler:
                     insert_xml += self.endtag(article_parent_met)
 
             xml = xml.replace("{{ issue_body }}", insert_xml)
-            filename = (
-                self.mets_issue_dict['journal_metadata language="en"']["full_title"]
-                .lower()
-                .replace(" ", "")
-                + "_"
-                + self.mets_issue_dict["journal_issue"]["publication_date"]["year"]
-                + "_crossref.xml"
-            )
+            if custom_filename:
+                filename = custom_filename + '.xml'
+            else:
+                filename = (
+                    self.mets_issue_dict['journal_metadata language="en"']["full_title"]
+                    .lower()
+                    .replace(" ", "")
+                    + "_"
+                    + self.mets_issue_dict["journal_issue"]["publication_date"]["year"]
+                    + "_crossref.xml"
+                )
             with open(filename, "w") as f:
                 f.write(xml)
                 f.close

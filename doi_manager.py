@@ -43,13 +43,17 @@ if __name__ == "__main__":
             issue_level_mets = retrieve_doi_mets(sys.argv[3], "mets_main")
             citation_level_mets = retrieve_doi_mets(sys.argv[3], "mets_citations")
             author_level_mets = retrieve_doi_mets(sys.argv[3], "mets_authors")
+            try:
+                custom_filename = sys.argv[4]
+            except:
+                custom_filename = False
             session = MetsHandler(sys.argv[2])
             print("Assembling mets data...")
             session.assemble_patron_mets(
                 issue_level_mets, citation_level_mets, author_level_mets
             )
             print("Organizing mets data into XML...")
-            session_xml_results = session.build_serials_xml()
+            session_xml_results = session.build_serials_xml(custom_filename)
             if session_xml_results != False:
                 print(session_xml_results)
             else:
