@@ -82,6 +82,10 @@ e.g.
 
 <pre>python doi_manager.py build-xml serials GSHEET-ID</pre>
 
+OPTION: A default filename for the XML output based on the serial title will be created
+
+If a custom file name is required, place one as the parameter after the GSHEET, omitting the .xml extension part of the name
+
 6. If successful resulting XML will be produced in a 'crossref_xml_output.xml' file.
 
 7. For cases where we just want to mint proposed DOIs to fill in gaps in legacy data, this option generates non-colliding DOIs based on our registry sheet and prints them out to terminal. The last parameter is the number of DOIs needed:
