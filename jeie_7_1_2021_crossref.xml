@@ -1,0 +1,981 @@
+<doi_batch xmlns="http://www.crossref.org/schema/4.4.2" xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.4.2" xsi:schemaLocation="http://www.crossref.org/schema/4.4.2 http://www.crossref.org/schemas/crossref4.4.2.xsd">
+<head>
+<doi_batch_id>115385c0-d051-11eb-9d6b-187eb9055087</doi_batch_id>
+<timestamp>20210618122016</timestamp>
+<depositor>
+<depositor_name>Jonathan Greenberg</depositor_name>
+<email_address>jonathan.greenberg@nyu.edu</email_address>
+</depositor>
+<registrant>New York University</registrant>
+</head>
+<body>
+<journal>
+<journal_metadata language="en"><full_title>Journal on Education in Emergencies</full_title>
+<issn media_type="electronic">2518-6833</issn>
+</journal_metadata>
+<journal_issue><publication_date>
+<month>6</month>
+<day>23</day><year>2021</year>
+</publication_date>
+<journal_volume><volume>7</volume>
+</journal_volume>
+<issue>1</issue>
+<doi_data><doi>10.33682/zhd4-5xt7</doi>
+<resource>https://archive.nyu.edu/handle/2451/62213</resource>
+</doi_data>
+</journal_issue>
+<journal_article publication_type="full_text"><titles><title>Editorial Note: JEiE Volume 7, Issue 1</title>
+</titles>
+<contributors><person_name sequence="additional" contributor_role="author"><given_name>Sweta</given_name>
+<surname>Shah</surname>
+<affiliation>The LEGO Foundation</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Joan</given_name>
+<surname>Lombardi</surname>
+<affiliation>Harvard University</affiliation>
+</person_name>
+</contributors>
+<publication_date><year>2021</year>
+</publication_date>
+<pages><first_page>5</first_page>
+</pages>
+<doi_data><doi>10.33682/m5tn-wvc9</doi>
+<resource>https://archive.nyu.edu/handle/2451/62219</resource>
+</doi_data>
+<citation_list><citation key="ref=1"><unstructured_citation>UNHCR (United Nations High Commissioner for Refugees). 2018. Global Trends: Forced Displacement in 2018. https://www.unhcr.org/5d08d7ee7.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=2"><unstructured_citation>UNICEF (United Nations Children's Emergency Fund). 2019. 29 Million Babies Born into Conflict in 2018: UNICEF Calls for Increased Support for Parents Forced to Raise Their Babies and Young Children in Conflict-Affected Areas. https://www.unicef.org/press-releases/29-million-babies-born-conflict-2018.</unstructured_citation>
+</citation>
+<citation key="ref=3"><unstructured_citation>WHO (World Health Organization), UNICEF, and World Bank. 2018. The Nurturing Care Framework for Early Childhood Development: A Framework for Helping Children Survive and Thrive to Transform Health and Human Potential. Geneva: World Health Organization. https://nurturing-care.org/ncf-for-ecd.</unstructured_citation>
+</citation>
+</citation_list>
+</journal_article>
+<journal_article publication_type="full_text"><titles><title>Effects of Two Early Childhood Interventions on the Developmental Outcomes of Children in Post-
+Earthquake Nepal</title>
+</titles>
+<contributors><person_name sequence="additional" contributor_role="author"><given_name>Jonathan</given_name>
+<surname>Seiden</surname>
+<affiliation>Harvard Graduate School of Education</affiliation>
+<ORCID>https://orcid.org/0000-0002-0318-8016</ORCID>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Valeria</given_name>
+<surname>Kunz</surname>
+<affiliation>Save the Children Switzerland</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Sara</given_name>
+<surname>Dang</surname>
+<affiliation>Save the Children</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Matrika</given_name>
+<surname>Sharma</surname>
+<affiliation>Save the Children Nepal</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Sagar</given_name>
+<surname>Gyawali</surname>
+<affiliation>Pragmatic Research &amp; Innovations Pvt. Ltd.</affiliation>
+<ORCID>https://orcid.org/0000-0002-9547-6612</ORCID>
+</person_name>
+</contributors>
+<publication_date><year>2021</year>
+</publication_date>
+<pages><first_page>14</first_page>
+</pages>
+<doi_data><doi>10.33682/te08-ce5p</doi>
+<resource>https://archive.nyu.edu/handle/2451/62220</resource>
+</doi_data>
+<citation_list><citation key="ref=1"><unstructured_citation>Abimpaye, Monique, Caroline Dusabe, Jean Providence Nzabonimpa, Richard Ashford, and Lauren Pisani. 2019. "Improving Parenting Practices and Development for Young Children in Rwanda: Results from a Randomized Control Trial." International Journal of Behavioral Development 44 (3): 205-15. https://doi.org/10.1177/0165025419861173.</unstructured_citation>
+</citation>
+<citation key="ref=2"><unstructured_citation>Aboud, Frances E., Daisy R. Singla, Md Imam Nahil, and Ivelina Borisova. 2013. "Effectiveness of a Parenting Program in Bangladesh to Address Early Childhood Health, Growth and Development." Social Science &amp;amp; Medicine 97 (November): 250–58. https://doi.org/10.1016/j.socscimed.2013.06.020.</unstructured_citation>
+</citation>
+<citation key="ref=3"><unstructured_citation>Andrew, Alison, Orazio Attanasio, Emla Fitzsimons, Sally Grantham-McGregor, Costas Meghir, and Marta Rubio-Codina. 2018. "Impacts 2 Years after a Scalable Early Childhood Development Intervention to Increase Psychosocial Stimulation in the Home: A Follow-up of a Cluster Randomised Controlled Trial in Colombia." PLOS Medicine 15 (4): e1002556. https://doi.org/10.1371/journal.pmed.1002556.</unstructured_citation>
+</citation>
+<citation key="ref=4"><unstructured_citation>Baker-Henningham, Helen, and Florencia López Bóo. 2010. Early Childhood Stimulation Interventions in Developing Countries: A Comprehensive Literature Review. Discussion Paper No. 5282. Bonn, Germany: Institute for the Study of Labor (IZA). http://ftp.iza.org/dp5282.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=5"><unstructured_citation>Berger, Rony, and Marc Gelkopf. 2009. "School-Based Intervention for the Treatment of Tsunami-Related Distress in Children: A Quasi-Randomized Controlled Trial." Psychotherapy and Psychosomatics 78 (6): 364–71. https://doi.org/10.1159/000235976.</unstructured_citation>
+</citation>
+<citation key="ref=6"><unstructured_citation>Bonanno, George A. 2004. "Loss, Trauma, and Human Resilience: Have We Underestimated the Human Capacity to Thrive After Extremely Aversive Events?" American Psychologist 59 (1): 20–28. https://doi.org/10.1037/0003-066X.59.1.20.</unstructured_citation>
+</citation>
+<citation key="ref=7"><unstructured_citation>Bora, Punamdhita, Hanamanth Bajantri, Archana Raj, Prosenjit Roy, and Jonathan Seiden. 2018. Partnering for Early Childhood in India: Impact Evaluation Report. Bangalore, India: Save the Children. https://resourcecentre.savethechildren.net/library/partnering-early-childhood-education-india-impact-evaluation-endline-report.</unstructured_citation>
+</citation>
+<citation key="ref=8"><unstructured_citation>Borisova, Ivelina, Lauren Pisani, Amy Jo Dowd, and Hsiao-Chen Lin. 2017. "Effective Interventions to Strengthen Early Language and Literacy Skills in Low-Income Countries: Comparison of a Family-Focused Approach and a Pre-Primary Programme in Ethiopia." Early Child Development and Care 187 (3–4): 655–71. https://doi.org/10.1080/03004430.2016.1255607.</unstructured_citation>
+</citation>
+<citation key="ref=9"><unstructured_citation>DiNicola, Vincenzo F. 1996. "Ethnocultural Aspects of PTSD and Related Disorders among Children and Adolescents." In "Ethnocultural Aspects of Posttraumatic Stress Disorder: Issues, Research, and Clinical Applications," edited by Anthony J. Marsella, Matthew J. Friedman, Ellen T. Gerrity, and Raymond M. Scurfield, American Psychological Association: 389–414. https://doi.org/10.1037/10555-015.</unstructured_citation>
+</citation>
+<citation key="ref=10"><unstructured_citation>Dowd, Amy Jo, Ivelina Borisova, Ali Amente, and Alene Yenew. 2016. "Realizing Capabilities in Ethiopia: Maximizing Early Childhood Investment for Impact and Equity." Journal of Human Development and Capabilities 17 (4): 477–93. https://doi.org/10.1080/19452829.2016.1225702.</unstructured_citation>
+</citation>
+<citation key="ref=11"><unstructured_citation>Gertler, Paul, James Heckman, Rodrigo Pinto, Arianna Zanolini, Christel Vermeersch, Susan Walker, Susan M. Chang, and Sally Grantham-McGregor. 2014. "Labor Market Returns to an Early Childhood Stimulation Intervention in Jamaica." Science 344 (6187): 998–1001. https://doi.org/10.1126/science.1251178.</unstructured_citation>
+</citation>
+<citation key="ref=12"><unstructured_citation>Government of Peru. 2016. Resultados de la evaluación de impacto del Servicio de Acompañamiento a Familias del Programa Nacional Cuna Más. Peru. https://www.mef.gob.pe/contenidos/presu_publ/ppr/eval_indep/informe_resultados_cuna_mas.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=13"><unstructured_citation>Hestyanti, Yohana Ratrin. 2007. "Children Survivors of the 2004 Tsunami in Aceh, Indonesia: A Study of Resiliency." Annals of the New York Academy of Sciences 1094 (1): 303–7. https://doi.org/10.1196/annals.1376.039.</unstructured_citation>
+</citation>
+<citation key="ref=14"><unstructured_citation>ES WWC (Institute for Education Sciences What Works Clearinghouse). 2014. Assessing Attrition Bias: Addendum. Washington, DC: IES WWC. https://ies.ed.gov/ncee/wwc/Docs/ReferenceResources/wwc_attrition_v3.0.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=15"><unstructured_citation>Jeong, Joshua, Dana Charles McCoy, Aisha K. Yousafzai, Carmel Salhi, and Günther Fink. 2016. "Paternal Stimulation and Early Child Development in Low- and Middle-Income Countries." PEDIATRICS 138 (4). https://doi.org/10.1542/peds.2016-1357.</unstructured_citation>
+</citation>
+<citation key="ref=16"><unstructured_citation>Kandel, Nirmal, and Jaya Lamichhane. 2019. "Female Health Volunteers of Nepal: The Backbone of Health Care." The Lancet 393 (10171): e19–20. https://doi.org/10.1016/S0140-6736(19)30207-7.</unstructured_citation>
+</citation>
+<citation key="ref=17"><unstructured_citation>Lieberman, Alicia F, and Patricia Van Horn. 2011. "Coping with Danger: The Stress-Trauma Continuum." In Psychotherapy with Infants and Young Children: Repairing the Effects of Stress and Trauma on Early Attachment, edited by Alicia F Lieberman and Patricia Van Horn, 35–64. New York: Guilford Press.</unstructured_citation>
+</citation>
+<citation key="ref=18"><unstructured_citation>Lohani, Jeevan R., and Diwakar Basnet. 2018a. ENDLINE REPORT: Caregiver Reported Early Development Index (CREDI) to Assess Child Development (0-3 Years). Kathmandu, Nepal: RIDA International.</unstructured_citation>
+</citation>
+<citation key="ref=19"><unstructured_citation>———. 2018b. ENDLINE STUDY: International Development and Early Learning Assessment (IDELA). Kathmandu, Nepal: RIDA International. https://idela-network.org/resource/save-the-children-nepal-improves-student-outcomes-in-ecd-centers/.</unstructured_citation>
+</citation>
+<citation key="ref=20"><unstructured_citation>Luthar, Suniya S., Dante Cicchetti, and Bronwyn Becker. 2003. "The Construct of Resilience: A Critical Evaluation and Guidelines for Future Work." Child Development 71 (3): 543–62. https://doi.org/10.1111/1467-8624.00164.</unstructured_citation>
+</citation>
+<citation key="ref=21"><unstructured_citation>McCoy, Dana Charles, Jonathan Seiden, Marcus Waldman, and Günther Fink. 2021. "Measuring Early Childhood Development: Considerations and Evidence Regarding the Caregiver Reported Early Development Instruments." Annals of the New York Academy of Sciences, 1482 (1): 3–10. https://doi.org/10.1111/nyas.14598.</unstructured_citation>
+</citation>
+<citation key="ref=22"><unstructured_citation>McCoy, Dana Charles, Marcus Waldman, and Günther Fink. 2018. "Measuring Early Childhood Development at a Global Scale: Evidence from the Caregiver-Reported Early Development Instruments." Early Childhood Research Quarterly 45: 58–68. https://doi.org/10.1016/j.ecresq.2018.05.002.</unstructured_citation>
+</citation>
+<citation key="ref=23"><unstructured_citation>Ministry of Education, Department of Education. 2016. Position Paper (March, 2016) Child Centred Disaster Risk Reduction (CC-DRR) Consortium- DIPECHO VIII Promoting and Strengthening School Safety. Sanothimi, Bhaktapur, Nepal: Government of Nepal. https://nepal.savethechildren.net/sites/nepal.savethechildren.net/files/library/Position%20Paper%28Eng%29.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=24"><unstructured_citation>Ministry of Education, Department of Education, Monitoring &amp;amp; Management Section. 2016. Status Report - 2015/016. Sanothimi, Bhaktapur, Nepal: Government of Nepal. https://www.doe.gov.np/assets/uploads/files/cca724d2af543017ab39a85e0b20abdf.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=25"><unstructured_citation>Moving Minds Alliance. 2018. "ECD and Early Learning for Children in Crisis and Conflict." Background paper for 2019 "GEM Report". https://movingmindsalliance.org/wp-content/uploads/2019/03/ecd-and-early-learning-for-children-in-crisis-and-conflict.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=26"><unstructured_citation>Murphy, Katie Maeve, Hirokazu Yoshikawa, and Alice J. Wuermli. 2018. "Implementation Research for Early Childhood Development Programming in Humanitarian Contexts." Annals of the New York Academy of Sciences 1419 (1): 90–101. https://doi.org/10.1111/nyas.13691.</unstructured_citation>
+</citation>
+<citation key="ref=27"><unstructured_citation>National Scientific Council on the Developing Child. 2005. Excessive Stress Disrupts the Architecture of the Developing Brain Working Paper No. 3. Updated Edition. https://developingchild.harvard.edu/resources/wp3/.</unstructured_citation>
+</citation>
+<citation key="ref=28"><unstructured_citation>———. 2015. Supportive Relationships and Active Skill-Building Strengthen the Foundations of Resilience. Working Paper No. 13. https://developingchild.harvard.edu/resources/supportive-relationships-and-active-skill-building-strengthen-the-foundations-of-resilience/.</unstructured_citation>
+</citation>
+<citation key="ref=29"><unstructured_citation>Nepal Education Cluster. 2015. Sindhupalchok School Structural Assessment Findings. Sindupalchok, Nepal: OCHA. https://reliefweb.int/report/nepal/nepal-sindhupalchok-school-structural-assessment-findings-july-2015.</unstructured_citation>
+</citation>
+<citation key="ref=30"><unstructured_citation>Nikapota, Anula. 2006. "After the Tsunami: A Story from Sri Lanka." International Review of Psychiatry 18 (3): 275–79. https://doi.org/10.1080/09540260600658262.</unstructured_citation>
+</citation>
+<citation key="ref=31"><unstructured_citation>Phiri, Peter, Jean Nkhonjera, Franis Mabeti, Kizito Kamiza, and Jonathan Seiden. 2016. Malawi ELM &amp;amp; HEART Endline Analysis. Lilongwe, Malawi: Save the Children. https://resourcecentre.savethechildren.net/library/malawi-elm-heart-endline-analysis.</unstructured_citation>
+</citation>
+<citation key="ref=32"><unstructured_citation>Pisani, Lauren, and Ali Amente. 2015. Ethiopia 2015 ELM Results. Addis Ababa, Ethiopia: Save the Children. https://resourcecentre.savethechildren.net/node/9545/pdf/2015_elmi_eth_endline_brief_final_0.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=33"><unstructured_citation>Pisani, Lauren, Ivelina Borisova, and Amy Jo Dowd. 2018. "Developing and Validating the International Development and Early Learning Assessment (IDELA)." International Journal of Educational Research 91: 1–15. https://doi.org/10.1016/j.ijer.2018.06.007.</unstructured_citation>
+</citation>
+<citation key="ref=34"><unstructured_citation>Pisani, Lauren, Romilla Karnati, and Sara Poehlman. 2017. BUILDING BRAINS: Early Stimulation for Children from Birth to Three. Washington, DC: Save the Children. https://resourcecentre.savethechildren.net/node/13453/pdf/building_brains_brief.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=35"><unstructured_citation>Plan International. 2013. Investing in the Youngest: Early Childhood Care and Development in Emergencies. Surrey, United Kingdom: Plan Limited. https://inee.org/resources/investing-youngest-early-childhood-care-and-development-emergencies.</unstructured_citation>
+</citation>
+<citation key="ref=36"><unstructured_citation>Plan International, Save the Children, UNICEF, World Vision, Government of Nepal, Central Child Welfare Board, and Government of Nepal, Ministry of Federal Affairs and Local Development. 2016. "One Year On, Children Express New Fears Over Insecurity And Long Term Trauma Following Devastating Nepal Earthquakes," Press Release, April 24, 2016. https://reliefweb.int/report/nepal/one-year-children-express-new-fears-over-insecurity-and-long-term-trauma-following.</unstructured_citation>
+</citation>
+<citation key="ref=37"><unstructured_citation>Save the Children. n.d. "Healing and Education Through the Arts (HEART)."  Accessed February 13, 2021. https://www.savethechildren.org/us/what-we-do/protection/healing-and-education-through-the-arts.</unstructured_citation>
+</citation>
+<citation key="ref=38"><unstructured_citation>Save the Children International. n.d. "Help Children in Nepal." Accessed April 17, 2021. https://www.savethechildren.org/us/where-we-work/nepal.</unstructured_citation>
+</citation>
+<citation key="ref=39"><unstructured_citation>Seiden, Jonathan. 2018. "Adversity as a Dimension of Equity: Pitfalls and Practice." Prestation at 2018 Comparative International Education Society Conference, Mexico City, Mexico.</unstructured_citation>
+</citation>
+<citation key="ref=40"><unstructured_citation>Seiden, Jonathan, Amy Jo Dowd, and Nar Chetri. 2019. Care for Child Development Plus for 0-3 Children: Impact Evaluation Results. Bhutan: Save the Children.</unstructured_citation>
+</citation>
+<citation key="ref=41"><unstructured_citation>Seiden, Jonathan, Holly-Jane Howell, Whimcy Sagpang, and Georgia Ansell. 2018. Philippines First Read Midline Report. London: Save the Children.</unstructured_citation>
+</citation>
+<citation key="ref=42"><unstructured_citation>Seiden, Jonathan, and Romilla Karnati. 2019. "Effects of a Center, Teacher, and Community Focused Intervention in Rural Bangalore Preschools." San Francisco, CA: Comparative International Education Society.</unstructured_citation>
+</citation>
+<citation key="ref=43"><unstructured_citation>Sindupalchowk District Coordination Committee Office. 2018. "District Coordination Committees Office." Brief Introduction. November 28, 2018. https://dccsindhupalchowk.gov.np/.</unstructured_citation>
+</citation>
+<citation key="ref=44"><unstructured_citation>Snyder, Charles R., Cheri Harris, John R. Anderson, Sharon A. Holleran, Lori M. Irving, and Sandra X Sigmon, Lauren Yoshinobu, June Gibb, Charley Langelle, and Pat Harney. 1991. "The Will and the Ways: Development and Validation of an Individual-Differences Measure of Hope." Journal of Personality and Social Psychology 60 (4): 570–85. https://doi.org/10.1037/0022-3514.60.4.570</unstructured_citation>
+</citation>
+<citation key="ref=45"><unstructured_citation>Terranova, Andrew M., Paul Boxer, and Amanda Sheffield Morris. 2009. "Factors Influencing the Course of Posttraumatic Stress Following a Natural Disaster: Children's Reactions to Hurricane Katrina." Journal of Applied Developmental Psychology 30 (3): 344–55. https://doi.org/10.1016/j.appdev.2008.12.017.</unstructured_citation>
+</citation>
+<citation key="ref=46"><unstructured_citation>UN Office for the Coordination of Humanitarian Affairs. 2015. "Nepal Earthquake District Profile - Sindupalchowk." . http://reliefweb.int/report/nepal/nepal-earthquake-district-profile-sindhupalchok-08052015.</unstructured_citation>
+</citation>
+<citation key="ref=47"><unstructured_citation>UNICEF. 2014. Early Childhood Development in Emergencies: Integrated Programme. New York, NY: UNICEF. https://sites.unicef.org/earlychildhood/files/Programme_Guide_ECDiE.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=48"><unstructured_citation>Vernberg, Eric M., Annette M. La Greca, Wendy K. Silverman, and Mitchell J. Prinstein. 1996. "Prediction of Posttraumatic Stress Symptoms in Children after Hurricane Andrew." Journal of Abnormal Psychology 105 (2): 237–48. https://doi.org/10.1037/0021-843X.105.2.237.</unstructured_citation>
+</citation>
+<citation key="ref=49"><unstructured_citation>Vijayakumar, Lakshmi, G.K. Kannan, and S.J. Daniel. 2006. "Mental Health Status in Children Exposed to Tsunami." International Review of Psychiatry 18 (6): 507–13. https://doi.org/10.1080/09540260601037581.</unstructured_citation>
+</citation>
+<citation key="ref=50"><unstructured_citation>Waldman, Marcus, Dana Charles McCoy, Jonathan Seiden, Jorge Cuartas, CREDI Field Team, and Günther Fink. 2021. "Validation of Motor, Cognitive, Language, and Socio-Emotional Subscales Using the Caregiver Reported Early Development Instruments: An Application of Multidimensional Item Factor Analysis." International Journal of Behavioral Development: 1–10. https://doi.org/10.1177/01650254211005560.</unstructured_citation>
+</citation>
+<citation key="ref=51"><unstructured_citation>Wolmer, Leo, Nathaniel Laor, Ceyda Dedeoglu, Joanna Siev, and Yanki Yazgan. 2005. "Teacher-Mediated Intervention after Disaster: A Controlled Three-Year Follow-up of Children's Functioning." Journal of Child Psychology and Psychiatry 46 (11): 1161–68. https://doi.org/10.1111/j.1469-7610.2005.00416.x.</unstructured_citation>
+</citation>
+<citation key="ref=52"><unstructured_citation>World Health Organization. 2020. Nurturing Care for Children Living in Humanitarian Settings. Geneva, Switzerland: World Health Organization. https://nurturing-care.org/wp-content/uploads/2021/01/NC_Thematic_Brief_Humanitarian_Settings_WEB.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=53"><unstructured_citation>World Health Organization, World Bank Group, and UNICEF. 2018. "Nurturing Care Framework Toolkit." https://nurturing-care.org/nurturing-care-framework-toolkit.</unstructured_citation>
+</citation>
+</citation_list>
+</journal_article>
+<journal_article publication_type="full_text"><titles><title>Early Childhood Development in the Aftermath of the 2016 Wildfires in Alberta, Canada</title>
+</titles>
+<contributors><person_name sequence="additional" contributor_role="author"><given_name>Julie L.</given_name>
+<surname>Drolet</surname>
+<affiliation>University of Calgary</affiliation>
+<ORCID>https://orcid.org/0000-0002-1520-3439</ORCID>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Caroline</given_name>
+<surname>McDonald-Harker</surname>
+<affiliation>Mount Royal University</affiliation>
+<ORCID>https://orcid.org/0000-0002-6481-448X</ORCID>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Nasreen</given_name>
+<surname>Lalani</surname>
+<affiliation>Purdue University</affiliation>
+<ORCID>https://orcid.org/0000-0002-7643-8266</ORCID>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Sarah</given_name>
+<surname>McGreer</surname>
+<affiliation>University of Calgary</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Matthew R. G.</given_name>
+<surname>Brown</surname>
+<affiliation>University of Alberta</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Peter H.</given_name>
+<surname>Silverstone</surname>
+<affiliation>University of Alberta</affiliation>
+<ORCID>https://orcid.org/0000-0001-5176-7074</ORCID>
+</person_name>
+</contributors>
+<publication_date><year>2021</year>
+</publication_date>
+<pages><first_page>16</first_page>
+</pages>
+<doi_data><doi>10.33682/u3ar-wwzm</doi>
+<resource>https://archive.nyu.edu/handle/2451/62221</resource>
+</doi_data>
+<citation_list><citation key="ref=1"><unstructured_citation>AECEA (Association of Early Childhood Educators of Alberta). 2020a. Getting It Right: Recommendations for Improving Alberta's Child Care Licensing Legislation. Edmonton: AECEA. https://aecea.ca/sites/default/files/FINAL%20AECEA%20Position%20Paper%20on%20Legislative%20Change_0.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=2"><unstructured_citation>AECEA (Association of Early Childhood Educators of Alberta). 2020b. "Alberta's Child Care Funding Remedy Lacks Investments to Stabilize and Sustain the Sector as Province Begins Reopening from Lockdown." Edmonton: AECEA. https://aecea.ca/sites/default/files/200507%20Reopening%20press%20release_0.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=3"><unstructured_citation>Baxter, Joanne. 2019. "A Description of Post-Secondary Early Learning and Child Care Programs in Alberta with Strategies to Advance the Educational Preparation of Early Childhood Educators." Edmonton: Muttart Foundation. https://www.muttart.org/wp-content/uploads/2019/08/MTF-2019-Strategiesto-Advance-Educational-Preparation.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=4"><unstructured_citation>AECEA (Association of Early Childhood Educators of Alberta). 2020a. Getting It Right: Recommendations for Improving Alberta's Child Care Licensing Legislation. Edmonton: AECEA. https://aecea.ca/sites/default/files/FINAL%20AECEA%20Position%20Paper%20on%20Legislative%20Change_0.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=5"><unstructured_citation>AECEA (Association of Early Childhood Educators of Alberta). 2020b. "Alberta's Child Care Funding Remedy Lacks Investments to Stabilize and Sustain the Sector as Province Begins Reopening from Lockdown." Edmonton: AECEA. https://aecea.ca/sites/default/files/200507%20Reopening%20press%20release_0.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=6"><unstructured_citation>Baxter, Joanne. 2019. "A Description of Post-Secondary Early Learning and Child Care Programs in Alberta with Strategies to Advance the EducationalPreparation of Early Childhood Educators." Edmonton: Muttart Foundation. https://www.muttart.org/wp-content/uploads/2019/08/MTF-2019-Strategiesto-Advance-Educational-Preparation.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=7"><unstructured_citation>Bouchane, Kolleen. 2018. Early Childhood Development and Early Learning for Children in Crisis and Conflict. Paper commissioned for the 2019 Global Education Monitoring Report. Paris: UNESCO. https://nurturing-care.org/wp-content/uploads/2018/12/UNESCO.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=8"><unstructured_citation>Bourgois, Philippe, Seth M. Holmes, Kim Se, and James Quesada. 2017. "Structural Vulnerability: Operationalizing the Concept to Address Health Disparities in Clinical Care." Academic Medicine 92 (3): 299-307. https://doi.org/10.1097/ACM.0000000000001294.</unstructured_citation>
+</citation>
+<citation key="ref=9"><unstructured_citation>Brown, Matthew R. G., Vincent Agyapong, Andrew J. Greenshaw, Ivor Cribben, Pamela Brett-MacLean, Julie Drolet, Caroline McDonald-Harker et al. 2019. "Significant PTSD and Other Mental Health Effects Present 18 Months after the Fort McMurray Wildfire: Findings from 3,070 Grade 7-12 Students." Frontiers in Psychiatry, August 30, 2019. https://www.frontiersin.org/articles/10.3389/fpsyt.2019.00623/full.</unstructured_citation>
+</citation>
+<citation key="ref=10"><unstructured_citation>Burde, Dana, Heddy Lahmann, and Nathan Thompson. 2019. "Education in Emergencies: 'What Works' Revisited." Education and Conflict Review 2: 81-88. https://discovery.ucl.ac.uk/id/eprint/10081593/1/Burde_Article_14_Burde.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=11"><unstructured_citation>Cake, Susan, Emma Jackson, Eric Pineault, and Ian Hussey. 2018. Boom, Bust, and Consolidation: Corporate Restructuring in the Alberta Oil Sands. Edmonton: Parkland Institute. https://www.parklandinstitute.ca/boom_bust_and_consolidation.</unstructured_citation>
+</citation>
+<citation key="ref=12"><unstructured_citation>Childcare Resource and Research Unit. 2020. Emergency Child Care for Essential Workers. Toronto: Childcare Canada. https://childcarecanada.org/resources/issue-files/child-care-and-covid-19-canada/emergency-child-care-essentialworkers.</unstructured_citation>
+</citation>
+<citation key="ref=13"><unstructured_citation>Cryderman, Kelly. 2016. "Fort McMurray Wildfires to Cost Insurers $3.6-billion." The Globe and Mail, July 7, 2016. https://www.theglobeandmail.com/report-onbusiness/fort-mcmurray-wildfire-damage-to-cost-36-billion-insurance-bureau/article30788517/.</unstructured_citation>
+</citation>
+<citation key="ref=14"><unstructured_citation>Deering, Catherine Gray. 2000. "A Cognitive Developmental Approach to Understanding How Children Cope with Disasters." Journal of Child andAdolescent Psychiatric Nursing 13 (1): 7-16. https://doi.org/10.1111/j.1744-6171.2000.tb00070.x.</unstructured_citation>
+</citation>
+<citation key="ref=15"><unstructured_citation>DiCarlo, Cynthia F., Diane C. Burts, Teresa K. Buchanan, Carol Aghayan, and Joan Benedict. 2007. "'Making Lemonade from Lemons': Early Childhood Teacher Educators' Programmatic Responses to Hurricanes Katrina and Rita." Journal of Early Childhood Teacher Education 28 (1): 61-68. https://doi.org/10.1080/10901020701224104.</unstructured_citation>
+</citation>
+<citation key="ref=16"><unstructured_citation>Dorow, Sara, Marcella S. Cassiano, and Chad Doerksen. 2015. Live-In Caregivers in Fort McMurray: A Socioeconomic Footprint. Edmonton: On the Move Partnership. https://www.onthemovepartnership.ca/wp-content/uploads/2015/01/Live-in-Caregivers-in-Fort-McMurray-Report-Overview-Dorow-et-al-Jan-2015.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=17"><unstructured_citation>Drolet, Julie, and Amy E. Fulton. 2018. "Integrating Wellness and Self-Care in the Curriculum and Workplace: Perspectives of Community Influencers Engaged in Post-Flood Recovery in Alberta, Canada." The International Journal of Learning: Annual Review 25 (1): 1-11. https://doi.org/10.18848/1447-9494/CGP/v25i01/29-38.</unstructured_citation>
+</citation>
+<citation key="ref=18"><unstructured_citation>Fernandez, Glenn, and Iftekhar Ahmed. 2019."'Build Back Better' Approach to Disaster Recovery: Research Trends since 2006." Progress in Disaster Science 1: 100-21. https://doi.org/10.1016/j.pdisas.2019.100003.</unstructured_citation>
+</citation>
+<citation key="ref=19"><unstructured_citation>Freedy, John R., Heidi S. Resnick, and Dean G. Kilpatrick. 1992. "Conceptual Framework for Evaluating Disaster Impact: Implications for Clinical</unstructured_citation>
+</citation>
+<citation key="ref=20"><unstructured_citation>Intervention." In Responding to Disaster: A Guide for Mental Health Professionals, edited by Linda S. Austin, 3-23. Washington, DC: American Psychiatric Press.</unstructured_citation>
+</citation>
+<citation key="ref=21"><unstructured_citation>Freedy, John R., Michael E. Saladin, Dean G. Kilpatrick, Heidi S. Resnick, and Benjamin E. Saunders. 1994. "Understanding Acute Psychological Distress Following Natural Disaster." Journal of Traumatic Stress 7 (2): 257-73. https://doi.org/10.1007/BF02102947.</unstructured_citation>
+</citation>
+<citation key="ref=22"><unstructured_citation>Friendly, Martha. 2016. Muttart Foundation: Childcare Resource and Research Unit. https://www.muttart.org/wp-content/uploads/2017/02/Engaging-Alberta-Municipal-Level-Governments-122016.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=23"><unstructured_citation>Fulton, Amy E., and Julie Drolet. 2018. "Responding to Disaster-Related Loss and Grief: Recovering from the 2013 Flood in Southern Alberta, Canada." Journal of Loss and Trauma 23 (2): 140-58. https://doi.org/10.1080/15325024.2018.1423873.</unstructured_citation>
+</citation>
+<citation key="ref=24"><unstructured_citation>Fulton, Amy E., Julie Drolet, Nasreen Lalani, and Erin Smith. 2020. "Prioritizing Psychosocial Services for Children, Youth and Families Postdisaster." Disaster Prevention and Management 29 (4): 591-607. https://doi.org/10.1108/DPM-09-2019-0310.</unstructured_citation>
+</citation>
+<citation key="ref=25"><unstructured_citation>Global Facility for Disaster Reduction and Recovery. n.d. "Building Back Better in Post-Disaster Recovery Global Facility for Disaster Reduction and Recovery." Washington DC: World Bank. https://www.recoveryplatform.org/assets/tools_guidelines/GFDRR/Disaster%20Recovery%20Guidance%20Series-%20Building%20Back%20Better%20in%20Post-Disaster%20Recovery.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=26"><unstructured_citation>Gomez, Celia J., and Hirokazu Yoshikawa. 2017. "Earthquake Effects: Estimating the Relationship between Exposure to the 2010 Chilean Earthquake and Preschool Children's Early Cognitive and Executive Function Skills." Early Childhood Research Quarterly 38: 127-36. https://doi.org/10.1016/j.ecresq.2016.08.004.</unstructured_citation>
+</citation>
+<citation key="ref=27"><unstructured_citation>Government of Alberta. 2016a. Wildfire Update 1. Edmonton: Government of Alberta. https://www.alberta.ca/release.cfm?xID=41701E7ECBE35-AD48-5793-1642C499FF0DE4CF.</unstructured_citation>
+</citation>
+<citation key="ref=28"><unstructured_citation>Government of Alberta. 2016b. Final Update 39: 2016 Wildfires. Edmonton: Government of Alberta. http://www.alberta.ca/release.cfm?xID=41701E7ECBE35-AD48-5793-1642C499FF0DE4CF.</unstructured_citation>
+</citation>
+<citation key="ref=29"><unstructured_citation>Government of Canada. 2020. Preventing COVID-19 in the Workplace: Employers, Employees and Essential Service Workers. Ottawa: Government of Canada. https://www.canada.ca/en/public-health/services/publications/diseasesconditions/preventing-covid-19-workplace-employers-employees-essentialservice-workers.html.</unstructured_citation>
+</citation>
+<citation key="ref=30"><unstructured_citation>Johnson, Lisa. 2020. "Fragile Child Care Sector in Alberta Hit Hard by COVID-19: National Survey." Edmonton Journal. https://edmontonjournal.com/news/politics/fragile-child-care-sector-in-alberta-hit-hard-by-covid-19-nationalsurvey.</unstructured_citation>
+</citation>
+<citation key="ref=31"><unstructured_citation>KPMG. 2017. Regional Municipality of Wood Buffalo: Lessons Learned and Recommendations from the 2016 Horse River Wildfire. Final Report. Amstelveen, Netherlands: KPMG International. https://www.rmwb.ca/en/community-services-and-social-support/resources/Documents Wildfire_Lessons_Learned.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=32"><unstructured_citation>Kulig, Judith, Kathy GermAnn, Naomi Parker, Valerie Salt, Doug Walker, and Cathie Scott. 2017. Psychosocial Response and Recover Evaluation of the RMWB Wildfire 2016. Final Report. Edmonton: PolicyWise for Children and Families. https://open.alberta.ca/dataset/cc0320fd-c107-48b5-a882-b62c4f9524ee/resource/3e7e2ac7-b038-49ac-925a-c74ef7d46f99/download/2017-08aug-29-rmwb-pss-final-report.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=33"><unstructured_citation>Langley, Audra Kae. 2000. "Coping Efforts and Efficacy, Acculturation, and Post-Traumatic symptomatology in Adolescents Following Wildfire: A Latent Variable Path Analysis." PhD diss., Virginia Tech. http://hdl.handle.net/10919/26473.</unstructured_citation>
+</citation>
+<citation key="ref=34"><unstructured_citation>Marshall, Grant N., Terry L. Schell, Marc N. Elliott, Nadine R. Rayburn, and Lisa H. Jaycox. 2007. "Psychiatric Disorders among Adults Seeking Emergency Disaster Assistance after a Wildland-Urban Interface Fire." Psychiatric Services 58 (4): 509-14. https://doi.org/10.1176/appi.ps.58.4.509.</unstructured_citation>
+</citation>
+<citation key="ref=35"><unstructured_citation>Masten, Ann S., and Joy D. Osofsky. 2010. "Disasters and Their Impact on Child Development: Introduction to the Special Section." Child Development 81 (4): 1029-39. https://doi.org/10.1111/j.1467-8624.2010.01452.x.</unstructured_citation>
+</citation>
+<citation key="ref=36"><unstructured_citation>Muttart Foundation and Canadian Child Care Federation. 2020. Early Learning and Child Care in Alberta: Results from a National Survey During the COVID-19 Pandemic. Edmonton: Muttart Foundation. https://www.muttart.org/wp-content/uploads/2020/07/The-Pandemic-and-Early-Learning-and-Child-Care-in-Alberta-Final-July-20-1.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=37"><unstructured_citation>Office of Child Care. 2017. How States and Territories Can Plan for Recovery. Fairfax, VA: Office of Child Care. https://childcareta.acf.hhs.gov/sites/default/files/public/emergency_preparedness_response_and_recovery_planning_to_recover_0.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=38"><unstructured_citation>Office of Child Care, Administration for Children &amp;amp; Families. 2012. Child Care Resources for Disasters and Emergencies. Washington, DC: Office of Child Care, Administration for Children &amp;amp; Families. https://www.acf.hhs.gov/occ/resource/child-care-resources-for-disasters-and-emergencies.</unstructured_citation>
+</citation>
+<citation key="ref=39"><unstructured_citation>Oxfam. 2020. 5 Natural Disasters That Beg for Climate Action. https://www.oxfam.org/en/5-natural-disasters-beg-climate-action.</unstructured_citation>
+</citation>
+<citation key="ref=40"><unstructured_citation>Paveglio, Travis, B., Chad Kooistra, Troy Hall, and Michael Pickering. 2016. "Understanding the Effect of Large Wildfires on Residents' Well-Being: What Factors Influence Wildfire Impact?" Forest Science 62 (1): 59-69. https://doi.org/10.5849/forsci.15-021.</unstructured_citation>
+</citation>
+<citation key="ref=41"><unstructured_citation>Peek, Lori. 2008. "Children and Disasters: Understanding Vulnerability, Developing Capacities, and Promoting Resilience. An Introduction." Children Youth and Environments 18 (1): 1-29. https://www.jstor.org/stable/10.7721/chilyoutenvi.18.1.0001.</unstructured_citation>
+</citation>
+<citation key="ref=42"><unstructured_citation>Press, Jordan, and Teresa Wright. 2020. "Feds Quietly Probe Expanded Role for Child Care in Post-Pandemic Recovery." The Canadian Press, May 18, 2020. https://www.ottawamatters.com/local-news/feds-quietly-probe-expandedrole-for-child-care-in-post-pandemic-recovery-2359034.</unstructured_citation>
+</citation>
+<citation key="ref=43"><unstructured_citation>Proulx, Kerrie, and Frances Aboud. 2019. "Disaster Risk Reduction in Early Childhood Education: Effects on Preschool Quality and Child Outcomes." International Journal of Educational Development 66: 1-7. https://doi.org/10.1016/j.ijedudev.2019.01.007.</unstructured_citation>
+</citation>
+<citation key="ref=44"><unstructured_citation>Public Safety Canada. 2019. Emergency Management Strategy for Canada: Toward a Resilient 2030. Ottawa: Public Safety Canada. https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/mrgncy-mngmnt-strtgy/index-en.aspx.</unstructured_citation>
+</citation>
+<citation key="ref=45"><unstructured_citation>Save the Children. 2017. Windows into Early Learning and Development. London: Save the Children International. https://idela-network.org/wp-content/uploads/2017/05/IDELA-REPORT-FINAL-4WEB-Cross-Country.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=46"><unstructured_citation>Shores, Elizabeth F., Cathy Grace, Erin Barbaro, Michelle Flenner, and Michael C. Barbaro. 2009. "Reducing Risks for Young Children: Indicators Research Can Guide Disaster Preparedness of the Early Childhood Sector." Child Indicators Research 2 (3): 293-301. https://doi.org/10.1007/s12187-009-9033-y.</unstructured_citation>
+</citation>
+<citation key="ref=47"><unstructured_citation>Smith, Linda, Paula Davis, and Sheleen Dumas. 2010. Protecting Children in Child Care During Emergencies. Arlington, VA: National Association of Child Care Resources and Save the Children. http://www.ccc-nj.org/pdfPROTECTING%20CHILDREN%20IN%20CHILD%20CARE%20DURING%20EMERGENCIES.pdf</unstructured_citation>
+</citation>
+<citation key="ref=48"><unstructured_citation>Thurton, David. 2017. "Fort McMurray Faces Serious Shortage of Child-Care Workers." CBC News. January 12, 2017. https://www.cbc.ca/news/canada/edmonton/fort-mcmurray-early-child-care-worker-shortagewildfire-1.3932745.</unstructured_citation>
+</citation>
+<citation key="ref=49"><unstructured_citation>Thurton, David. 2019. "Fort McMurray Population Down Nearly 11 Percent Since Wildfire, Census Shows." CBC News. January 15, 2019. https://www.cbc.ca/news/canada/edmonton/fort-mcmurray-census-population-1.4978907.</unstructured_citation>
+</citation>
+<citation key="ref=50"><unstructured_citation>Tough, Suzanne, Shivani Rikhy, Karen Benzies, Monica Vekved, Heather Kehler, and David W. Johnston. 2013. "Public Perceptions of Child Care in Alberta, Canada: Evidence for Policies and Practice from a Cross-Sectional Survey." Journal Early Education and Development 24 (4): 536-53. https://doi.org/10.1080/10409289.2012.689713.</unstructured_citation>
+</citation>
+<citation key="ref=51"><unstructured_citation>United Nations. 2015. Sendai Framework for Disaster Risk Reduction 2015-2030. Geneva: UN Office for Disaster Risk Reduction. https://sustainabledevelopment.un.org/content/documents/2157sendaiframeworkfordrren.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=52"><unstructured_citation>YMCA. 2020. YMCA Child Care. Fort McMurray, Alberta: YMCA of Northern Alberta. https://northernalberta.ymca.ca/Regions/Wood-Buffalo/Fort-McMurray/YMCA-Eagle-Ridge-Child-Care.</unstructured_citation>
+</citation>
+<citation key="ref=53"><unstructured_citation>Zero to Six Collaborative Group, National Child Traumatic Stress Network. (2010). Early Childhood Trauma. Durham, NC: National Center for Child Traumatic Stress. https://www.nctsn.org/resources/early-childhood-trauma.</unstructured_citation>
+</citation>
+</citation_list>
+</journal_article>
+<journal_article publication_type="full_text"><titles><title>Home Visiting in the Middle East: Reflections on the Implementation of Reach Up and Learn</title>
+</titles>
+<contributors><person_name sequence="additional" contributor_role="author"><given_name>Katelin Swing</given_name>
+<surname>Wilton</surname>
+<affiliation>International Rescue Committee</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Aimée</given_name>
+<surname>Vachon</surname>
+<affiliation>Cox's Bazar, Plan International</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Katie Maeve</given_name>
+<surname>Murphy</surname>
+<affiliation>University of Pennsylvania</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Ayat</given_name>
+<surname>Al Aqra</surname>
+<affiliation>Ahlan Simsim</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Abdullah</given_name>
+<surname>Ensour</surname>
+<affiliation>International Rescue Committee Jordan</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Iman</given_name>
+<surname>Ibrahim</surname>
+<affiliation>International Rescue Committee</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Kayla</given_name>
+<surname>Hoyer</surname>
+<affiliation>International Rescue Committee</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Christine</given_name>
+<surname>Powell</surname>
+<affiliation>Caribbean Institute for Health Research</affiliation>
+</person_name>
+</contributors>
+<publication_date><year>2021</year>
+</publication_date>
+<pages><first_page>42</first_page>
+</pages>
+<doi_data><doi>10.33682/pzjw-p1nc</doi>
+<resource>https://archive.nyu.edu/handle/2451/62222</resource>
+</doi_data>
+<citation_list><citation key="ref=1"><unstructured_citation>Felitti, Vincent J., Robert F. Anda, Dale Nordenberg, David F. Williamson, Alison M. Spitz, Valerie Edwards, Mary P. Koss, and James S. Marks. 2019. "Relationship of Childhood Abuse and Household Dysfunction to Many of the Leading Causes of Death in Adults: The Adverse Childhood Experiences (ACE) Study." American Journal of Preventive Medicine 14 (4): 245-58. https://doi.org/10.1016/S0749-3797(98)00017-8.</unstructured_citation>
+</citation>
+<citation key="ref=2"><unstructured_citation>Fink, Günther, Dana C. McCoy, Hala I. Hatamleh, Helena Pylvainen, Alexandra Chen, and Ghazi Al-Assaf. 2017. "Economic Implications of Investing in Early Childhood Care &amp;amp; Education in Jordan." Working Paper No. 1. Amman, Jordan: Queen Rania Foundation.</unstructured_citation>
+</citation>
+<citation key="ref=3"><unstructured_citation>Gertler, Paul, James Heckman, Rodrigo Pinto, Arianna Zanolini, Christel Vermeersch, Susan Walker, Susan M. Chang, and Sally Grantham-</unstructured_citation>
+</citation>
+<citation key="ref=4"><unstructured_citation>McGregor. 2014. "Labor Market Returns to an Early Childhood Stimulation Intervention in Jamaica." Science 344 (6187): 998-1001. https://doi.org/10.1126/science.1251178.</unstructured_citation>
+</citation>
+<citation key="ref=5"><unstructured_citation>Grantham-McGregor, Sally M., Christine A. Powell, Susan P. Walker, and John H. Himes. 1991. "Nutritional Supplementation, Psychosocial Stimulation, and Mental Development of Stunted Children: The Jamaican Study."The Lancet (8758): 1-5. https://doi.org/10.1016/0140-6736(91)90001-6.</unstructured_citation>
+</citation>
+<citation key="ref=6"><unstructured_citation>Murphy, Katie Maeve, Hirokazu Yoshikawa, and Alice J. Wuermli. 2018. "Implementation Research for Early Childhood Development Programming in Humanitarian contexts." Annals of the New York Academy of Sciences 1419 (1): 90-101. https://doi.org/10.1111/nyas.13691.</unstructured_citation>
+</citation>
+<citation key="ref=7"><unstructured_citation>Powell, Christine, and Sally Grantham-McGregor. 1989. "Home Visiting of Varying Frequency and Child Development."Pediatrics (1): 157-64.</unstructured_citation>
+</citation>
+<citation key="ref=8"><unstructured_citation>Puffer, Eve S., Eric P. Green, Rhea M. Chase, Amanda L. Sim, John Zayzay, Elsa Friis, Eduardo Garcia Rolland, and Laura Boone. 2015. "Parents Make theDifference: A Randomized-Controlled Trial of a Parenting Intervention in Liberia."Global Mental Health https://doi.org/10.1017/gmh.2015.12.</unstructured_citation>
+</citation>
+<citation key="ref=9"><unstructured_citation>Richter, Laura M., Bernadette Daelmans, Joan Lombardi, Jody Heymann, Florencia Lopez Boo, Jere R. Behrman, Chunling Lu et al. 2017. "Investing in the Foundation of Sustainable Development: Pathways to Scale Up for Early Childhood Development." The Lancet 389 (10064): 103-18. https://doi.org/10.1016/S0140-6736(16)31698-1.</unstructured_citation>
+</citation>
+<citation key="ref=10"><unstructured_citation>Shonkoff, Jack P., Andrew S. Garner, Benjamin S. Siegel, Mary I. Dobbins, Marian F. Earls, Laura McGuinn, John Pascoe et al. 2012. "The Lifelong Effects of Early Childhood Adversity and Toxic Stress." Pediatrics 129 (1): e232-46. https://doi.org/10.1542/peds.2011-2663.</unstructured_citation>
+</citation>
+<citation key="ref=11"><unstructured_citation>UNESCO (UN Educational, Scientific, and Cultural Organization). 2018. Global Education Monitoring Report 2019: Migration, Displacement, and Education—Building Bridges, not Walls. Paris: UNESCO https://doi.org/10.18356/63d08c20-en.</unstructured_citation>
+</citation>
+<citation key="ref=12"><unstructured_citation>UNHCR (UN High Commissioner for Refugees). 2019. "Operations Data Portal: Syria Regional Refugee Response." Online Data Resource.</unstructured_citation>
+</citation>
+<citation key="ref=13"><unstructured_citation>UNICEF (UN Children's Fund). 2019, September 19. "29 Million Babies Born into Conflict in 2018." Press Release. https://www.unicef.org/press-releases/29-million-babies-born-conflict-2018.</unstructured_citation>
+</citation>
+<citation key="ref=14"><unstructured_citation>Walker, Susan P., Susan. M. Chang, Marcos Vera-Hern.ndez, and Sally Grantham-McGregor. 2011. "Early Childhood Stimulation Benefits Adult Competence and Reduces Violent Behavior." Pediatrics 127 (5): 849-57. https://doi.org/10.1542/peds.2010-2231.</unstructured_citation>
+</citation>
+<citation key="ref=15"><unstructured_citation>WHO (World Health Organization). 2018. Nurturing Care for Early Childhood Development: A Framework for Helping Children Survive and Thrive to Transform Health and Human Potential. Geneva: WHO.</unstructured_citation>
+</citation>
+</citation_list>
+</journal_article>
+<journal_article publication_type="full_text"><titles><title>Building Resilience and Mitigating the Impact of Toxic Stress in Young Children: A Model for
+Transforming Parenting and Male Caregiving in El Salvador</title>
+</titles>
+<contributors><person_name sequence="additional" contributor_role="author"><given_name>Fabiola</given_name>
+<surname>A. Lara</surname>
+<affiliation>Save the Children</affiliation>
+<ORCID>https://orcid.org/0000-0002-8181-5505</ORCID>
+</person_name>
+</contributors>
+<publication_date><year>2021</year>
+</publication_date>
+<pages><first_page>58</first_page>
+</pages>
+<doi_data><doi>10.33682/29xd-8cq5</doi>
+<resource>https://archive.nyu.edu/handle/2451/62224</resource>
+</doi_data>
+<citation_list><citation key="ref=1"><unstructured_citation>Allport, Brandon S., Sara Johnson, Anushka Aqil, Alain B. Labrique, Timothy Nelson, Angela Kc, Yoroghos Carabas, and Arik V. Marcell. 2018. "Promoting Father Involvement for Child and Family Health." Academic Pediatrics 18 (7): 746-53 https://doi.org/10.1016/j.acap.2018.03.011.</unstructured_citation>
+</citation>
+<citation key="ref=2"><unstructured_citation>Barker, Gary, and Fabio Verani, eds. 2003. Men's Participation as Fathers in the Latin American and Caribbean Region: A Critical Literature Review with Policy Considerations. Washington, DC: World Bank.</unstructured_citation>
+</citation>
+<citation key="ref=3"><unstructured_citation>Charles, Pajarita, Deborah Gorman-Smith, Michael Schoeny, Laura Sudec, Patrick Tolan, and David Henry. 2018. "Fathers' Criminal Behavior and Involvement with Children: The Moderating Role of Family Relationships." Journal of the Society for Social Work and Research 9 (1): 131-57.</unstructured_citation>
+</citation>
+<citation key="ref=4"><unstructured_citation>Franke, Hillary A. 2014. "Toxic Stress: Effects, Prevention and Treatment." Children 1 (3): 390-402. https://doi.org/10.3390/children1030390.</unstructured_citation>
+</citation>
+<citation key="ref=5"><unstructured_citation>Geoghegan, Tracy. 2019. Changing Lives in Our Lifetime: Global Childhood Report. Fairfield, CT, and London: Save the Children.</unstructured_citation>
+</citation>
+<citation key="ref=6"><unstructured_citation>Ginsburg, Kenneth R., and Martha M. Jablow. 2015. Building Resilience in Children and Teens: Giving Kids Roots and Wings (3rd ed.). Elk Grove Village, IL: American Academy of Pediatrics. Gobierno de El Salvador. 2007. Censo de Poblacion y de Vivienda. San Salvador: Ministerio de Economia y Direccion General de Estadistica y Censos. http://www.censos.gob.sv/censo/Default.aspx.</unstructured_citation>
+</citation>
+<citation key="ref=7"><unstructured_citation>Guerra, Nancy G., Carly Dierkhisiing, Holly Foster, and Jeanne Brooks-Gunn. 2012. "The Impact of Violence on Children: The Current State of Research." Early Childhood Matters (119): 8-9.</unstructured_citation>
+</citation>
+<citation key="ref=8"><unstructured_citation>Human Rights Watch. 2019. El Salvador: Events of 2018. https://www.hrw.org/world-report/2019/country-chapters/el-salvador.</unstructured_citation>
+</citation>
+<citation key="ref=9"><unstructured_citation>Menjivar, Cecilia. 2014. The Status of Women in Domestic Relationships in El Salvador. Phoenix: Arizona State University.</unstructured_citation>
+</citation>
+<citation key="ref=10"><unstructured_citation>Murphey, David, and Jessica D. Bartlett. 2019. Childhood Adversity Screenings Are Just One Part of an Effective Policy Response to Childhood Trauma. Bethesda, MD: Child Trends International. https://www.childtrends.org/publications/childhood-adversity-screenings-are-just-one-part-of-an-effective-policyresponse-to-childhood-trauma.</unstructured_citation>
+</citation>
+<citation key="ref=11"><unstructured_citation>National Scientific Council on the Developing Child. 2015. Supportive Relationships and Active Skill-Building Strengthen the Foundations of Resilience. Working Paper No. 13. Cambridge, MA: National Scientific Council on the Developing Child. www.developingchild.harvard.edu.</unstructured_citation>
+</citation>
+<citation key="ref=12"><unstructured_citation>OHCHR (United Nations Office of High Commissioner for Human Rights). 2018. Committee on the Rights of the Child Reviews Report of El Salvador. Geneva: OHCHR. https://www.ohchr.org/EN/NewsEvents/Pages/DisplayNews. aspx?NewsID=23594&amp;amp;LangID=E.</unstructured_citation>
+</citation>
+<citation key="ref=13"><unstructured_citation>Pruett, Kyle D. 2000. Fatherneed: Why Father Care Is as Essential as Mother Care for Your Child. New York: Free Press.</unstructured_citation>
+</citation>
+<citation key="ref=14"><unstructured_citation>Ruiz, Damaris, and Belen Sobrino. 2018. Breaking the Mould: Changing Belief Systems and Gender Norms to Eliminate Violence against Women [PDF file].</unstructured_citation>
+</citation>
+<citation key="ref=15"><unstructured_citation>Oxford: Oxfam International. https://oxfamilibrary.openrepository.com/.</unstructured_citation>
+</citation>
+<citation key="ref=16"><unstructured_citation>Save the Children. 2017. Baseline Report: Mitigating the Impact of Violence on Young Children in El Salvador. Washington, DC: Save the Children US. Save the Children. 2019. Endline Report: Mitigating the Impact of Violence on Young Children in El Salvador. Washington, DC: Save the Children US.</unstructured_citation>
+</citation>
+<citation key="ref=17"><unstructured_citation>Shonkoff, Jack P., and Deborah A. Phillips. 2000. From Neurons to Neighborhoods: The Science of Early Childhood Development. Washington, DC: National Academies Press.</unstructured_citation>
+</citation>
+<citation key="ref=18"><unstructured_citation>Shonkoff, Jack P., and Andrew S. Garner. 2012. The Lifelong Effects of Early Childhood Adversity and Toxic Stress: A Technical Report. Itasca, IL: American Academy of Pediatrics.</unstructured_citation>
+</citation>
+<citation key="ref=19"><unstructured_citation>Woods-Jaeger, Briana A., Bridget Cho, Chris C. Sexton, Lauren Slagel, and Kathy Goggin. 2018. "Promoting Resilience: Breaking the Intergenerational Cycle of Adverse Childhood Experiences." Health Education &amp;amp; Behavior 45 (5): 772-80. https://doi.org/10.1177/1090198117752785.</unstructured_citation>
+</citation>
+<citation key="ref=20"><unstructured_citation>UNODC (United Nations Office on Drugs and Crime). 2019. Global Study on Homicide: Killing of Children and Young Adults [PDF file]. Vienna: United Nations Office on Drugs and Crime. https://www.unodc.org/documents/dataand-analysis/gsh/Booklet_6new.pdf.</unstructured_citation>
+</citation>
+</citation_list>
+</journal_article>
+<journal_article publication_type="full_text"><titles><title>Implementing a Humanitarian Needs Assessment Framework for Early Childhood Development:
+Informing Intervention Design for Displaced Rohingya Communities in Bangladesh</title>
+</titles>
+<contributors><person_name sequence="additional" contributor_role="author"><given_name>Kim</given_name>
+<surname>Foulds</surname>
+<affiliation>Content Research &amp; Evaluation at Sesame Workshop</affiliation>
+<ORCID>https://orcid.org/0000-0003-1782-9926</ORCID>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Naureen</given_name>
+<surname>Khan</surname>
+<affiliation>Millennium University</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Sneha</given_name>
+<surname>Subramanian</surname>
+<affiliation>Innovations for Poverty Action Bangladesh</affiliation>
+<ORCID>https://orcid.org/0000-0002-1270-3243</ORCID>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Ashraful</given_name>
+<surname>Haque</surname>
+<affiliation>North South University</affiliation>
+<ORCID>https://orcid.org/0000-0002-0764-359X</ORCID>
+</person_name>
+</contributors>
+<publication_date><year>2021</year>
+</publication_date>
+<pages><first_page>74</first_page>
+</pages>
+<doi_data><doi>10.33682/1uqv-kn0f</doi>
+<resource>https://archive.nyu.edu/handle/2451/62225</resource>
+</doi_data>
+<citation_list><citation key="ref=1"><unstructured_citation>Abu El-Haj, Thea Renda, Garene Kaloustian, Sally Wesley Bonet, and Samira Chatila. 2018. "Fifi the Punishing Cat and Other Civic Lessons from a Lebanese Public Kindergarten School." Journal on Education in Emergencies 4 (1): 13-44 https://doi.org/10.17609/xnpr-ce74.</unstructured_citation>
+</citation>
+<citation key="ref=2"><unstructured_citation>Albert, Eleanor, and Lindsay Maizland. 2020. The Rohingya Crisis. New York: Council on Foreign Relations.</unstructured_citation>
+</citation>
+<citation key="ref=3"><unstructured_citation>Asrar, Shakeeb. 2017. Rohingya Crisis Explained in Maps. Al Jazeera, October 28. Benavot, Aaron, and Cecilia Braslavsky. 2007. School Knowledge in Comparative and Historical Perspective: Changing Curricula in Primary and Secondary Education. Dordrecht: Springer. https://doi.org/10.1007/978-1-4020-5736-6.</unstructured_citation>
+</citation>
+<citation key="ref=4"><unstructured_citation>Bouchane, Kolleen, Hiro Yoshikawa, Katie Maeve Murphy, and Joan Lombardi. 2018. Early Childhood Development and Early Learning for Children in Crisis and Conflict. Background paper for the 2019 "Global Education Monitoring Report." Paris: UNESCO https://unesdoc.unesco.org/ark:/48223/pf0000266072.</unstructured_citation>
+</citation>
+<citation key="ref=5"><unstructured_citation>Britto, Pia, Stephen Lyes, Kerri Proulx, Aisha Yousafzai, Stephen Matthews et al. 2016. "Nurturing Care: Promoting Early Childhood Development." The Lancet 389 (10064): 91-102 https://doi.org/10.1016/s0140-6736(16)31390-3.</unstructured_citation>
+</citation>
+<citation key="ref=6"><unstructured_citation>Brooker, Liz, and Martin Woodhead. 2013. The Right to Play (Early Childhood in Focus). Milton Keynes, UK: The Open University. http://oro.open.ac.uk/38679/.</unstructured_citation>
+</citation>
+<citation key="ref=7"><unstructured_citation>Dionne, Kim Yi. 2012. "Local Demand for a Global Intervention: Policy Priorities in the Time of AIDS." World Development 40 (12): 2468-77. Education Cluster. 2018 https://doi.org/10.1016/j.worlddev.2012.05.016.</unstructured_citation>
+</citation>
+<citation key="ref=8"><unstructured_citation>Joint Education Needs Assessment: Rohingya Refugee in Cox's Bazar. Cox's Bazar, Bangladesh: UNICEF, Save the Children, and Education Cluster https://reliefweb.int/report/bangladesh/joint-education-needs-assessment-rohingyarefugee-cox-s-bazar-june-2018.</unstructured_citation>
+</citation>
+<citation key="ref=9"><unstructured_citation>Foulds, Kim. 2013. "The Continua of Identities in Postcolonial Curricula: Kenyan Students' Perceptions of Gender in School Textbooks." International Journal of Educational Development 33 (2): 163-72 https://doi.org/10.1016/j.ijedudev.2012.03.005.</unstructured_citation>
+</citation>
+<citation key="ref=10"><unstructured_citation>Foulds, Kim. 2016. "The Somali Question: Protracted Conflict, National Narratives, and Curricular Politics in Kenya." In History Can Bite: History Education in Divided and Post-War Societies, edited by Denise Bentrovato, Karina Korostelina and Martina Schulze, 45-60. G.ttingen: V&amp;amp;R Unipress https://doi.org/10.14220/9783737006088.45.</unstructured_citation>
+</citation>
+<citation key="ref=11"><unstructured_citation>Foulds, Kim, and Abby Bucuvalas. 2019. "Playing Every Day on Sesame Street: Global Learnings from a Play-Based Pilot Intervention in India, Mexico, and South Africa." American Journal of Play 12 (1): 17-36. https://files.eric.ed.gov/fulltext/EJ1238557.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=12"><unstructured_citation>Gertler, Paul, James Heckman, Rodrigo Pinto, Arianna Zanolini, Christel Vermeersch, Susan Walker, Susan M. Chang, and Sally Grantham-McGregor. 2013. Labor Market Returns to Early Childhood Stimulation: A 20-Year Followup to an Experimental Intervention in Jamaica. NBER Working Paper 19185. Cambridge: NBER https://doi.org/10.3386/w19185.</unstructured_citation>
+</citation>
+<citation key="ref=13"><unstructured_citation>International Organization for Migration. 2018. Assessment of Mental Health and Psychosocial Needs of Displaced Refugees Roginghya in Cox's Bazar. Cox's Bazar, Bangladesh: International Organization of Migration.</unstructured_citation>
+</citation>
+<citation key="ref=14"><unstructured_citation>IPA (Innovations for Poverty Action). 2018. Current Level of Knowledge, Attitudes,Practices, and Behaviours (KAPB) of the Rohingya Refugees and Host Community in Cox's Bazar: A Report on Findings from the Baseline Survey. Dhaka: IPA. https://reliefweb.int/report/bangladesh/current-level-knowledgeattitudes-practices-and-behaviours-kapb-rohingya-refugees.</unstructured_citation>
+</citation>
+<citation key="ref=15"><unstructured_citation>IPA (Innovations for Poverty Action). 2019. Humanitarian Needs Assessment of Rohingya Camps &amp;amp; Host Communities. Report prepared for Sesame Workshop. Dhaka: IPA.</unstructured_citation>
+</citation>
+<citation key="ref=16"><unstructured_citation>Jeffrey, Patricia, and Robert Jeffrey. 1998. "Silver Bullet or Passing Fancy? Girls' Schooling and Population Policy." In Feminist Visions of Development: Gender Analysis and Policy, edited by Cecile Pearson and Ruth Jackson, 239-58.</unstructured_citation>
+</citation>
+<citation key="ref=17"><unstructured_citation>London: Routledge https://doi.org/10.4324/9780203980460-17. Kelly-Vance, Lisa, and Brigette Oliver Ryalls. 2008. "Best Practices in Play</unstructured_citation>
+</citation>
+<citation key="ref=18"><unstructured_citation>Assessment and Intervention." In Best Practices in School Psychology V, edited by Alex Thomas and Jeff Grimes, 54-60. Bethesda, MD: National Association of School Psychologists.</unstructured_citation>
+</citation>
+<citation key="ref=19"><unstructured_citation>Khan, Asraul. 2019. The Impact of Large-Scale Forced Displacement on Rohingya Refugees and Host Communities in Cox's Bazar, Bangladesh. Dhaka: Innovations for Poverty Action.</unstructured_citation>
+</citation>
+<citation key="ref=20"><unstructured_citation>Kingston, Lindsey. 2015. "Protecting the World's Most Persecuted: The Responsibility to Protect and Burma's Rohingya Minority." The International Journal of Human Rights 19 (8): 1163-75 https://doi.org/10.1080/13642987.2015.1082831.</unstructured_citation>
+</citation>
+<citation key="ref=21"><unstructured_citation>Kohn, Shanna, Kim Foulds, Katie Maeve Murphy, and Charlotte Cole. 2020. "Creating a Sesame Street for the Syrian Response Region: How Media Can Help Address the Social and Emotional Needs of Children Affected by Conflict." Young Children 75 (1): 32-41. https://search.proquest.com/openview/b98905081a01d03f5c05527ccb6b1446/1?pq-origsite=gscholar&amp;amp;cbl=27755.</unstructured_citation>
+</citation>
+<citation key="ref=22"><unstructured_citation>Mayo Clinic. n.d. Somatic Symptom Disorder. Rochester, MN: Mayo Clinic. M.decins Sans Fronti.res. 2018. One Year On, Rohingya Refugees Live in Dire Camps, Facing an Uncertain Future and Legal Limbo. Cox's Bazar, Bangladesh: M.decins Sans Fronti.res.</unstructured_citation>
+</citation>
+<citation key="ref=23"><unstructured_citation>Merritt, Chiara. 2017. Protection in Protracted Refugee Situations: The Case of Rohingya Refugees in Bangladesh. BIGD Working Paper Series. Dhaka: BRAC University.</unstructured_citation>
+</citation>
+<citation key="ref=24"><unstructured_citation>Mohanty, Chandra Talpade. 2003. Feminism without Borders: Decolonizing Theory, Practicing Solidarity. Durham, NC: Duke University Press.</unstructured_citation>
+</citation>
+<citation key="ref=25"><unstructured_citation>Murphy, Katie Maeve, Hiro Yoshikawa, and Alice Wuermli. 2018. "Implementation Research for Early Childhood Development Programming in Humanitarian Contexts." Annals of the New York Academy of Sciences 1419 (1): 90-101. Project Information Management. 2018. PIM Matrix. Geneva: ICT 4 Peace. https://doi.org/10.1111/nyas.13691</unstructured_citation>
+</citation>
+<citation key="ref=26"><unstructured_citation>Richter, Linda M., Bernadette Daelmans, Joan Lombardi, Jody Heymann, Florencia Lopez Boo, Jere R. Behrman et al. 2016. "Investing in the Foundation of Sustainable Development: Pathways to Scale Up for Early Childhood Development." The Lancet 389 (10064): 103-18 https://doi.org/10.1016/s0140-6736(16)31698-1.</unstructured_citation>
+</citation>
+<citation key="ref=27"><unstructured_citation>Shonkoff, Jack, Linda Richter, Jacques van der Gaag, and Zulfiqar A. Bhutta. 2012. "An Integrated Scientific Framework for Child Survival and Early Childhood Development." Pediatrics 129 (2): 1-13 https://doi.org/10.1542/peds.2011-0366.</unstructured_citation>
+</citation>
+<citation key="ref=28"><unstructured_citation>UNDP (UN Development Programme). 2019. Impacts of the Rohingya Refugee Influx on Host Communities. Dhaka: United Nations Development Programme, Bangladesh Country Office https://doi.org/10.1111/nyas.13691.</unstructured_citation>
+</citation>
+<citation key="ref=29"><unstructured_citation>UNHCR (UN High Commissioner for Refugees). 2017. Contribution to the Fifteenth Coordination Meeting on International Migration. Geneva: UNHCR.</unstructured_citation>
+</citation>
+<citation key="ref=30"><unstructured_citation>UNHCR (UN High Commissioner for Refugees). 2017. Needs Assessment Handbook. Geneva: UNHCR.</unstructured_citation>
+</citation>
+<citation key="ref=31"><unstructured_citation>UNICEF (UN Children's Fund). 2019. Bangladesh Humanitarian Situation Report No. 49 (Rohingya Influx). Dhaka: UNICEF.</unstructured_citation>
+</citation>
+<citation key="ref=32"><unstructured_citation>UNOCHA (UN Office for the Coordination of Humanitarian Affairs). 2019. Financial Tracking System. New York: UNOCHA.</unstructured_citation>
+</citation>
+<citation key="ref=33"><unstructured_citation>Young, Mary E. 2007. "The ECD Agenda: Closing the Gap." In Early Child Development from Measurement to Action: Priority for Growth and Equity, edited by Mary E. Young and Linda M. Richardson, 1-16. Washington, DC: World Bank. https://web.oas.org/childhood/EN/Lists/Recursos%20%20Bibliografia/Attachments/16/14.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=34"><unstructured_citation>Zubairi, Asma, and Pauline Rose. 2018. Just Beginning: Addressing Inequality in Donor Funding for Early Childhood Development. Donor scorecard. London: Theirworld.</unstructured_citation>
+</citation>
+</citation_list>
+</journal_article>
+<journal_article publication_type="full_text"><titles><title>BRAC Humanitarian Play Lab Model: Promoting Healing, Learning, and Development
+for Rohingya Children</title>
+</titles>
+<contributors><person_name sequence="additional" contributor_role="author"><given_name>Erum</given_name>
+<surname>Mariam</surname>
+<affiliation>BRAC Institute of Education Development</affiliation>
+<ORCID>https://orcid.org/0000-0002-8711-3504</ORCID>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Jahanara</given_name>
+<surname>Ahmad</surname>
+<affiliation>BRAC Institute of Education Development</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Sarwat Sarah</given_name>
+<surname>Sarwar</surname>
+<affiliation>BRAC Institute of Education Development</affiliation>
+</person_name>
+</contributors>
+<publication_date><year>2021</year>
+</publication_date>
+<pages><first_page>96</first_page>
+</pages>
+<doi_data><doi>10.33682/u72g-v5me</doi>
+<resource>https://archive.nyu.edu/handle/2451/62226</resource>
+</doi_data>
+<citation_list><citation key="ref=1"><unstructured_citation>Alvarez, Shanna L., Samantha Meltzer-Brody, Marcia Mandel, and Linda Beeber. 2015. "Maternal Depression and Early Intervention: A Call for an Integration of Services." Infants and Young Children 28 (1): 72-87. https://www.doi.org/10.1097/IYC.0000000000000024 .</unstructured_citation>
+</citation>
+<citation key="ref=2"><unstructured_citation>BBC. 2020. "Myanmar Rohingya: What You Need to Know about the Crisis." BBC, January 23, 2020. https://www.bbc.com/news/world-asia-41566561.</unstructured_citation>
+</citation>
+<citation key="ref=3"><unstructured_citation>Bhatta, Saurav Dev, Tashmina Rahman, Md. Naibur Rahman, Uttam Sharma, and Lindsay Adams. 2020. The Landscape of Early Childhood Education in Bangladesh. World Bank Report Number: AUS0001357. Washington, DC: World Bank. http://documents1.worldbank.org/curated/en/720311583471084983/pdf/The-Landscape-of-Early-Childhood-Education-in-Bangladesh.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=4"><unstructured_citation>Hirsh-Pasek, Kathy, and Roberta Michnick Golinkoff. 2008. "Why Play = Learning." In Encyclopedia on Early Childhood Development, edited by Richard E. Tremblay, Michel Boivin, and Ray DeV. Peters. https://www.child-encyclopedia.com/play/according-experts/why-play-learning.</unstructured_citation>
+</citation>
+<citation key="ref=5"><unstructured_citation>Singla, Daisy R., Elias Kumbakumba, and Frances E. Aboud. 2015. "Effects of a Parenting Intervention to Address Maternal Psychological Wellbeing and Child Development and Growth in Rural Uganda: A Community-Based, Cluster-Randomised Trial." The Lancet Global Health 3(8): 458-69. https://doi.org/10.1016/S2214-109X(15)00099-6.</unstructured_citation>
+</citation>
+<citation key="ref=6"><unstructured_citation>Pyle, Angela, and Erica Danniels. 2017. "A Continuum of Play-Based Learning: The Role of the Teacher in Play-Based Pedagogy and the Fear of Hijacking Play." Early Education and Development 28(3): 274-89. https://doi.org/10.1080/10409289.2016.1220771.</unstructured_citation>
+</citation>
+<citation key="ref=7"><unstructured_citation>UNESCO (United Nations Educational, Scientific and Cultural Organization). 2015. "Humanitarian Aid for Education: Why It Matters and Why More Is Needed." UNESCO Key Messages: Policy Paper 21. Paris: UNESCO. https://en.unesco.org/gem-report/humanitarian-aid-education-why-it-matters-and-why-more-needed.</unstructured_citation>
+</citation>
+<citation key="ref=8"><unstructured_citation>UNHCR (United Nations High Commissioner for Refugees). n.d. "Rohingya Emergency." Geneva: UNHCR. https://www.unhcr.org/rohingya-emergency.html.</unstructured_citation>
+</citation>
+<citation key="ref=9"><unstructured_citation>UNHCR (United Nations High Commissioner for Refugees). 2017. "Global Trends: Forced Displacements in 2017." Geneva: UNHCR. https://www.unhcr.org/5b27be547.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=10"><unstructured_citation>UNHCR (United Nations High Commissioner for Refugees). 2018. "Global Trends: Forced Displacement in 2018." Geneva: UNHCR. https://www.unhcr.org/globaltrends2018/.</unstructured_citation>
+</citation>
+<citation key="ref=11"><unstructured_citation>UNICEF (United Nations International Children's Emergency Fund). 2018. "A Practical Guide to Developing Child Friendly Spaces." New York: UNICEF. https://www.humanitarianresponse.info/en/operations/afghanistan/document/practical-guide-developing-child-friendly-spaces-unicef.</unstructured_citation>
+</citation>
+</citation_list>
+</journal_article>
+<journal_article publication_type="full_text"><titles><title>Accessible Strategies to Support Children's Mental Health and Wellbeing in Emergencies:
+Experience from the Rohingya Refugee Camp</title>
+</titles>
+<contributors><person_name sequence="additional" contributor_role="author"><given_name>Samier</given_name>
+<surname>Mansur</surname>
+<affiliation>No Limit Generation</affiliation>
+</person_name>
+</contributors>
+<publication_date><year>2021</year>
+</publication_date>
+<pages><first_page>98</first_page>
+</pages>
+<doi_data><doi>10.33682/1cba-5m06</doi>
+<resource>https://archive.nyu.edu/handle/2451/62227</resource>
+</doi_data>
+<citation_list><citation key="ref=1"><unstructured_citation>Alexander, Paul. 2017. "Traumatized and Needy, Rohingya Children Make Up 60 Percent of Myanmar Refugees." VOA News, October 21, 2017. https://www.voanews.com/east-asia/traumatized-and-needy-rohingya-children-make-60-percent-myanmar-refugees.</unstructured_citation>
+</citation>
+<citation key="ref=2"><unstructured_citation>Alvarez, Hector A. Olvera, Laura D. Kubzansky, Matthew J. Campen, and George M. Slavich. 2018. "Early Life Stress, Air Pollution, Inflammation, and Disease: An Integrative Review and Immunologic Model of Social-Environmental Adversity and Lifespan Health." Neuroscience and Biobehavioral Reviews 92: 226-42. https://doi.org/10.1016/j.neubiorev.2018.06.002.</unstructured_citation>
+</citation>
+<citation key="ref=3"><unstructured_citation>Betancourt, Theresa S., Elizabeth A. Newnham, Christopher M. Layne, Soeun Kim, Alan M. Steinberg, Heidi Ellis, and Dina Birman. 2012. "Trauma History and Psychopathology in War-Affected Refugee Children Referred for Trauma-Related Mental Health Services in the United States." Journal of Traumatic Stress 25 (6): 682-90. https://doi.org/10.1002/jts.21749.</unstructured_citation>
+</citation>
+<citation key="ref=4"><unstructured_citation>Center on the Developing Child. n.d. Toxic Stress Derails Healthy Development. Cambridge, MA: Center on the Developing Child. https://developingchild.harvard.edu/resources/toxic-stress-derails-healthy-development.</unstructured_citation>
+</citation>
+<citation key="ref=5"><unstructured_citation>Charlson, Fiona, Mark van Ommeren, Abraham Flaxman, Joseph Cornett, Harvey Whiteford, and Shekhar Saxena. 2019. "New WHO Prevalence Estimates of Mental Disorders in Conflict Settings: A Systematic Review and Meta-Analysis." The Lancet 394 (10194): 240-48. https://doi.org/10.1016/S0140-6736(19)30934-1.</unstructured_citation>
+</citation>
+<citation key="ref=6"><unstructured_citation>"Contribution to the Fifteenth Coordination Meeting on International Migration." 2017. Geneva: United Nations High Commissioner for Refugees. https://www.un.org/en/development/desa/population/migration/events/coordination/15/documents/papers/14_UNHCR_nd.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=7"><unstructured_citation>Dominguez-Salas, Paula, Sharon E. Cox, Andrew M. Prentice, Branwen J. Hennig, and Sophie E. Moore. 2012. "Maternal Nutritional Status, C(1) Metabolism and Offspring DNA Methylation: A Review of Current Evidence in Human Subjects." Proceedings of the Nutrition Society 71 (1): 154-65. https://doi.org/10.1017/S0029665111003338.</unstructured_citation>
+</citation>
+<citation key="ref=8"><unstructured_citation>Esthimer, Marissa. 2014. World Confronts Largest Humanitarian Crisis since WWII. Washington, DC: Migration Policy Institute. https://www.migrationpolicy.org/article/world-confronts-largest-humanitarian-crisis-wwii.</unstructured_citation>
+</citation>
+<citation key="ref=9"><unstructured_citation>Hamdan-Mansour, Ayman, Nadin Abdel Razeq, Bayan AbdulHaq, Diana Arabiat, and Amani Khalil. 2017. "Displaced Syrian Children's Reported Physical and Mental Wellbeing." Global Child Mental Health Special Issue 22 (4): 186-93. https://doi.org/10.1111/camh.12237.</unstructured_citation>
+</citation>
+<citation key="ref=10"><unstructured_citation>IASC (Inter-Agency Standing Committee). 2007. Guidelines for Mental Health and Psychosocial Support in Emergency Settings. Geneva: World Health Organization. http://www.who.int/mental_health/emergencies/9781424334445/en.</unstructured_citation>
+</citation>
+<citation key="ref=11"><unstructured_citation>Monnat, Shannon M., and Raeven Faye Chandler. 2015. "Long Term Physical Health Consequences of Adverse Childhood Experiences." The Sociological Quarterly 56 (4): 723-52. https://doi.org/10.1111/tsq.12107.</unstructured_citation>
+</citation>
+<citation key="ref=12"><unstructured_citation>National Scientific Council on the Developing Child. 2010. "Persistent Fear and Anxiety Can Affect Young Children's Learning and Development." Working Paper No. 9. Cambridge, MA: Center on the Developing Child. https://developingchild.harvard.edu/resources/persistent-fear-and-anxietycan-affect-young-childrens-learning-and-development.</unstructured_citation>
+</citation>
+<citation key="ref=13"><unstructured_citation>Ramo-Fernandez, Laura, Anna Schneider, Sarah Wilker, and Iris-Tatjana Kolassa. 2015. "Epigenetic Alterations Associated with War Trauma and Childhood Maltreatment." Behavioral Sciences &amp;amp; the Law 33 (5): 701-21. https://doi.org/10.1002/bsl.2200.</unstructured_citation>
+</citation>
+<citation key="ref=14"><unstructured_citation>Richter, Linda, Maureen Black, Pia Britto, Bernadette Daelmans, Chris Desmond, Amanda Devercelli, Tarun Dua et al. 2019. "Early Childhood Development: An Imperative for Action and Measurement at Scale." BMJ Global Health 4 (Suppl. 4): e001302. https://doi.org/10.1136/bmjgh-2018-001302.</unstructured_citation>
+</citation>
+<citation key="ref=15"><unstructured_citation>Save the Children. 2019. Road to Recovery: Responding to Children's Mental Health in Conflict. London: Save the Children. https://resourcecentre.savethechildren.net/library/road-recovery-responding-childrens-mental-health-conflict.</unstructured_citation>
+</citation>
+<citation key="ref=16"><unstructured_citation>UNICEF (United Nations Children's Fund). 2016, December 9. Nearly a Quarter of the World's Children Live in Conflict or Disaster Stricken Countries. New York: UNICEF. https://www.unicef.org/press-releases/nearly-quarter-worldschildren-live-conflict-or-disaster-stricken-countries.</unstructured_citation>
+</citation>
+<citation key="ref=17"><unstructured_citation>UNICEF (United Nations Children's Fund). 2020. Child Displacement. New York: UNICEF. https://data.unicef.org/topic/child-migration-and-displacement/displacement.</unstructured_citation>
+</citation>
+<citation key="ref=18"><unstructured_citation>von Werthern, Martha., Katy Robjant, Zoe Chui, Rachel Schon, Livia Ottisova, Claire Mason, and Cornelius Katona. 2018. "The Impact of Immigration Detention on Mental Health: A Systematic Review." BMC Psychiatry 18 (382). https://doi.org/10.1186/s12888-018-1945-y.</unstructured_citation>
+</citation>
+<citation key="ref=19"><unstructured_citation>WHO (World Health Organization). 2020, June 8. "Violence against Children." Fact Sheet. Geneva: WHO. https://www.who.int/news-room/fact-sheets/detail/violence-against-children.</unstructured_citation>
+</citation>
+</citation_list>
+</journal_article>
+<journal_article publication_type="full_text"><titles><title>Newborns in Fragile and Humanitarian Settings: A Multi-Agency Partnership Roadmap</title>
+</titles>
+<contributors><person_name sequence="additional" contributor_role="author"><given_name>Saverio</given_name>
+<surname>Bellizzi</surname>
+<affiliation>World Health Organization</affiliation>
+<ORCID>https://orcid.org/0000-0002-4119-0803</ORCID>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Lori</given_name>
+<surname>McDougall</surname>
+<affiliation>The Partnership for Maternal, Newborn &amp; Child Health, WHO</affiliation>
+<ORCID>https://orcid.org/0000-0002-1885-5344</ORCID>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Sheila</given_name>
+<surname>Manji</surname>
+<affiliation>The Partnership for Maternal, Newborn &amp; Child Health, WHO</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Ornella</given_name>
+<surname>Lincetto</surname>
+<affiliation>WHO Department of Maternal Newborn Child and Adolescent Health and Ageing</affiliation>
+<ORCID>https://orcid.org/0000-0002-9420-9467</ORCID>
+</person_name>
+</contributors>
+<publication_date><year>2021</year>
+</publication_date>
+<pages><first_page>112</first_page>
+</pages>
+<doi_data><doi>10.33682/eqk0-0zek</doi>
+<resource>https://archive.nyu.edu/handle/2451/62228</resource>
+</doi_data>
+<citation_list><citation key="ref=1"><unstructured_citation>IAWG (Inter-Agency Working Group on Reproductive Health in Crises). 2019. Surviving Day One: Caring for Mothers and Newborns in Humanitarian Emergencies on the Day of Childbirth. New York: Inter-Agency Working on Reproductive Health in Crises and Save the Children US. https://healthynewbornnetwork.org/hnn-content/uploads/SavetheChildren-NBH-16Pager-ProductionV4.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=2"><unstructured_citation>"Newborn Health in Emergencies." 2020. London: Healthy Newborn Network, Save the Children Federation. https://healthynewbornnetwork.org/issue/emergencies/.</unstructured_citation>
+</citation>
+<citation key="ref=3"><unstructured_citation>Sami, Samira, Kate Kerber, Barbara Tomczyk, Ribka Amsalu, Debra Jackson, Elaine Scudder, Alexander Dimiti et al. 2017. "You Have to Take Action: Changing Knowledge and Attitudes towards Newborn Care Practices during Crisis in South Sudan." Reproductive Health Matters 25 (51): 124-39. https://doi.org/10.1080/09688080.2017.1405677.</unstructured_citation>
+</citation>
+<citation key="ref=4"><unstructured_citation>Save the Children, WHO, UNHCR, and UNICEF. 2020. Roadmap to Accelerate Progress for Every Newborn in Humanitarian Settings 2020-2025.</unstructured_citation>
+</citation>
+<citation key="ref=5"><unstructured_citation>Geneva: UNHCR, WHO, UNICEF, Save the Children US. https://www.healthynewbornnetwork.org/hnn-content/uploads/Roadmap-to-Accelerate-Progress-for-Every-Newborn-in-Humanitarian-Settings-1-1.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=6"><unstructured_citation>Shaker-Berbari, Linda, Hala Ghattas, Andrew G. Symon, and Annie S. Anderson. 2018. "Infant and Young Child Feeding in Emergencies: Organisational Policies and Activities during the Refugee Crisis in Lebanon." Maternal &amp;amp; Child Nutrition 14 (3): e12576. https://doi.org/10.1111/mcn.12576.</unstructured_citation>
+</citation>
+<citation key="ref=7"><unstructured_citation>UNICEF, WHO, World Bank, and UN-DESA Population Division. 2018. Levels and Trends in Child Mortality: Report 2018. New York: UNICEF, WHO, World Bank, UN-DESA Population Division. https://www.unicef.org/publications/index_103264.html.</unstructured_citation>
+</citation>
+<citation key="ref=8"><unstructured_citation>United Nations. 2020. "Goal 3: Ensure Healthy Lives and Promote Well-Being for All at All Ages." https://www.un.org/sustainabledevelopment/health/.</unstructured_citation>
+</citation>
+<citation key="ref=9"><unstructured_citation>United Nations Population Fund. 2015. Shelter from the Storm: A Transformative Agenda for Women and Girls in a Crisis-Prone World. New York: United Nations Population Fund.</unstructured_citation>
+</citation>
+<citation key="ref=10"><unstructured_citation>Victora, Cesar G., Rajiv Bahl, Aluisio J. D. Barros, Giovanny V. Franca, Susan Horton, Julia Krasevec, Simon Murch, Mary J. Sankar, Neff Walker, and Nigel C Rollins. 2016. "Breastfeeding in the 21st Century: Epidemiology, Mechanisms, and Lifelong Effect." The Lancet 387 (10017): 475-90. https://doi.org/10.1016/S0140-6736(15)01024-7.</unstructured_citation>
+</citation>
+<citation key="ref=11"><unstructured_citation>WHO. 2014. Every Newborn Action Plan Consultation 2014. Geneva: World Health Organization. https://www.who.int/maternal_child_adolescent/topics/newborn/enap_consultation/en/.</unstructured_citation>
+</citation>
+<citation key="ref=12"><unstructured_citation>WHO. 2016. Oxygen Therapy for Children. Geneva: World Health Organization. https://apps.who.int/iris/bitstream/handle/10665/204584/9789241549554_eng.pdf?sequence=1.</unstructured_citation>
+</citation>
+<citation key="ref=13"><unstructured_citation>WHO, UNICEF, Save the Children, and UNHCR. 2019. "A Declaration to Accelerate Newborn Health in Humanitarian Settings." Geneva: WHO, UNICEF, Save the Children, UNHCR.</unstructured_citation>
+</citation>
+<citation key="ref=14"><unstructured_citation>Wise, Paul H., and Gary L. Darmstadt. 2015. "Confronting Stillbirths and Newborn Deaths in Areas of Conflict and Political Instability: A Neglected Global Imperative." Paediatrics and International Child Health 35 (3): 220-26. https://doi.org/10.1179/2046905515Y.0000000027.</unstructured_citation>
+</citation>
+</citation_list>
+</journal_article>
+<journal_article publication_type="full_text"><titles><title>Supporting Maternal Mental Health and Nurturing Care in Humanitarian Settings</title>
+</titles>
+<contributors><person_name sequence="additional" contributor_role="author"><given_name>Bernadette</given_name>
+<surname>Daelmans</surname>
+<affiliation>WHO Child Health and Development Unit</affiliation>
+<ORCID>https://orcid.org/0000-0001-9044-9693</ORCID>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Mahalakshmi</given_name>
+<surname>Nair</surname>
+<affiliation>Mountainside Climbing</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Fahmy</given_name>
+<surname>Hanna</surname>
+<affiliation>WHO</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Ornella</given_name>
+<surname>Lincetto</surname>
+<affiliation>WHO Department of Maternal Newborn Child and Adolescent Health and Ageing</affiliation>
+<ORCID>https://orcid.org/0000-0002-9420-9467</ORCID>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Tarun</given_name>
+<surname>Dua</surname>
+<affiliation>Department of Mental Health and Substance Use, WHO</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Xanthe</given_name>
+<surname>Hunt</surname>
+<affiliation>Stellanbosch University</affiliation>
+<ORCID>https://orcid.org/0000-0001-7531-6665</ORCID>
+</person_name>
+</contributors>
+<publication_date><year>2021</year>
+</publication_date>
+<pages><first_page>119</first_page>
+</pages>
+<doi_data><doi>10.33682/9s48-6d0x</doi>
+<resource>https://archive.nyu.edu/handle/2451/62229</resource>
+</doi_data>
+<citation_list><citation key="ref=1"><unstructured_citation>Aboubaker, Samira, Egmond Samir Evers, Loulou Kobeissi, Lauren Francis, Robinah Najjemba, Nathan P. Miller, Steve Wall, Daniel Martinez, Joseph Vargas, and Per Ashorn. 2020. "The Availability of Global Guidance for the Promotion of Women's, Newborns', Children's, and Adolescents' Health and Nutrition in Conflicts." BMJ Global Health 5 (1): 1-8. https://doi.org/10.1136/bmjgh-2019-002060.</unstructured_citation>
+</citation>
+<citation key="ref=2"><unstructured_citation>Al Gasseer, Naeema, Elissa Dresden, Gwen Brumbaugh Keeney, and Nicole Warren. 2004. "Status of Women and Infants in Complex Humanitarian Emergencies." The Journal of Midwifery &amp;amp; Women's Health 49 (S1): 7-13. https://doi.org/10.1016/j.jmwh.2004.05.001.</unstructured_citation>
+</citation>
+<citation key="ref=3"><unstructured_citation>Alliance for Child Protection in Humanitarian Action. 2019. Minimum Standards for Child Protection in Humanitarian Action. https://alliancecpha.org/en/system/tdf/library/attachments/cpms_2019_final_en.pdf?file=1&amp;amp;type=node&amp;amp;id=35094.</unstructured_citation>
+</citation>
+<citation key="ref=4"><unstructured_citation>Casey, Sara E. 2015. "Evaluations of Reproductive Health Programs in Humanitarian Settings: A Systematic Review." Conflict and Health 9 (S1). https://doi.org/10.1186/1752-1505-9-s1-s1.</unstructured_citation>
+</citation>
+<citation key="ref=5"><unstructured_citation>Charlson, Fiona, Mark van Ommeren, Abraham Flaxman, Joseph Cornett, Harvey Whiteford, and Shekhar Saxena. 2019. "New WHO Prevalence Estimates of Mental Disorders in Conflict Settings: A Systematic Review and Meta-Analysis." The Lancet 394 (10149): 240-48. https://doi.org/10.1016/s0140-6736(19)30934-1.</unstructured_citation>
+</citation>
+<citation key="ref=6"><unstructured_citation>CHS Alliance, Groupe URD, and Sphere Association. 2014. Core Humanitarian Standard on Quality and Accountability. Geneva: CHS Alliance, Groupe URD, Sphere Association. https://corehumanitarianstandard.org/files/files/Core%20Humanitarian%20Standard%20-%20English.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=7"><unstructured_citation>CHS Alliance, Groupe URD, and Sphere Association. 2018. Core Humanitarian Standard on Quality and Accountability: Updated Guidance Notes and Indicators 2018. Geneva: CHS Alliance, Groupe URD, Sphere Association. https://corehumanitarianstandard.org/files/files/CHS_GN%26I_2018.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=8"><unstructured_citation>Chynoweth, Sarah K., Ribka Amsalu, Sara E. Casey, and Therese McGinn. 2018. "Implementing Sexual and Reproductive Health Care in Humanitarian Crises." The Lancet 391 (10132): 1770-71. https://doi.org/10.1016/S0140-6736(18)30803-1.</unstructured_citation>
+</citation>
+<citation key="ref=9"><unstructured_citation>Ehrlich, Matthew, Emily Harville, Xu Xiong, Pierre Buekens, Gabriella Pridjian, and Karen Elkind-Hirsch. 2010. "Loss of Resources and Hurricane Experience as Predictors of Postpartum Depression among Women in Southern Louisiana." Journal of Women's Health 19 (5): 877-84. https://doi.org/10.1089/jwh.2009.1693.</unstructured_citation>
+</citation>
+<citation key="ref=10"><unstructured_citation>El Chammay, Rabih, and Walid Ammar. 2014. "Syrian Crisis and Mental Health System Reform in Lebanon." The Lancet 384 (9942): 494. https://doi.org/10.1016/S0140-6736(14)61329-5.</unstructured_citation>
+</citation>
+<citation key="ref=11"><unstructured_citation>Epping-Jordan, JoAnne E., Mark van Ommeren, Hazem Nayef Ashour, Albert Maramis, Anita Marini, Andrew Mohanraj, Aqila Noori et al. 2015. "Beyond the Crisis: Building Back Better Mental Health Care in 10 Emergency-Affected Areas Using a Longer-Term Perspective." International Journal of Mental Health Systems 9 (1): 1-10. https://doi.org/10.1186/s13033-015-0007-9.</unstructured_citation>
+</citation>
+<citation key="ref=12"><unstructured_citation>Hirani, Shela Akbar Ali, and Solina Richter. 2019. "Maternal and Child Health During Forced Displacement." Journal of Nursing Scholarship 51 (3): 252-61. https://doi.org/10.1111/jnu.12460.</unstructured_citation>
+</citation>
+<citation key="ref=13"><unstructured_citation>IASC. 2015. Guidelines for Integrating Gender-Based Violence Interventions in Humanitarian Action: Reducing Risk, Promoting Resilience and Aiding Recovery. https://gbvguidelines.org/wp/wp-content/uploads/2015/09/2015-IASC-Gender-based-Violence-Guidelines_lo-res.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=14"><unstructured_citation>IASC. 2020. Mental Health and Psychosocial Support: Resources for COVID-19. https://interagencystandingcommittee.org/mental-health-and-psychosocialsupport-resources-covid-19.</unstructured_citation>
+</citation>
+<citation key="ref=15"><unstructured_citation>IAWG (Inter-agency Working Group on Reproductive Health in Crises), Save the Children, and UNICEF. 2019. Newborn Care Supply Kits for Humanitarian Settings: Manual. New York: Save the Children, WHO, and UNICEF. https://www.healthynewbornnetwork.org/hnn-content/uploads/Newborn-Care-Supply-Kits-Manual_DIGITAL-131219.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=16"><unstructured_citation>Morof, Diane F., Kate Kerber, Barbara Tomczyk, Joy Lawn, Curtis Blanton, Samira Sami, and Ribka Amsalu. 2014. "Neonatal Survival in Complex Humanitarian Emergencies: Setting an Evidence-Based Research Agenda." Conflict and Health 8 (1): 1-2. https://doi.org/10.1186/1752-1505-8-8.</unstructured_citation>
+</citation>
+<citation key="ref=17"><unstructured_citation>Rees, Susan J., Jane R. Fisher, Zachary Steel, Mohammed Mohsin, Nawal Nadar, Batool Moussa, Fatima Hassoun, Mariam Yousif, Yalini Krishna, and Batoul Khalil. 2019. "Prevalence and Risk Factors of Major Depressive Disorder among Women at Public Antenatal Clinics from Refugee, Conflict-Affected, and Australian-Born Backgrounds." JAMA Network Open 2 (5): e193442. https://doi.org/10.1001/jamanetworkopen.2019.3442.</unstructured_citation>
+</citation>
+<citation key="ref=18"><unstructured_citation>Save the Children and UNICEF. 2018. Newborn Health in Humanitarian Settings: Field Guide. New York: Save the Children, UNICEF. https://www.unicef.org/media/61561/file.</unstructured_citation>
+</citation>
+<citation key="ref=19"><unstructured_citation>Save the Children, WHO, UNHCR (UN High Commissioner for Refugees), and UNICEF (United Nations Children's Fund). 2020. Roadmap to</unstructured_citation>
+</citation>
+<citation key="ref=20"><unstructured_citation>Accelerate Progress for Every Newborn in Humanitarian Settings 2020-2025. Geneva: UNHCR, WHO, UNICEF, Save the Children US. https://www.healthynewbornnetwork.org/hnn-content/uploads/Roadmap-to-Accelerate-Progress-for-Every-Newborn-in-Humanitarian-Settings-1-1.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=21"><unstructured_citation>Silove, Derrick, Susan J. Rees, Alvin Kuowei Tay, Zelia Maria da Costa, Elisa Soares Savio, Cesarina Soares, and Wietse Tol. 2015. "Pathways to Perinatal Depressive Symptoms after Mass Conflict in Timor-Leste: A Modelling Analysis Using Cross-Sectional Data." The Lancet Psychiatry 2 (2): 161-67. https://doi.org/10.1016/S2215-0366(14)00054-6.</unstructured_citation>
+</citation>
+<citation key="ref=22"><unstructured_citation>Steel, Zachary, Tien Chey, Derrick Silove, Claire Marnane, Richard A. Bryant, and Mark van Ommeren. 2009. "Association of Torture and Other Potentially Traumatic Events with Mental Health Outcomes among Populations Exposed to Mass Conflict and Displacement: A Systematic Review and Meta-Analysis." Journal of the American Medical Association 302 (5): 537-49. https://doi.org/10.1001/jama.2009.1132.</unstructured_citation>
+</citation>
+<citation key="ref=23"><unstructured_citation>Stevenson, Kerrie, Reina Alameddine, Ghaith Rukbi, Mario Chahrouri, Jinan Usta, Bassem Saab, Phillip Bennett, Vivette Glover, and Rebecca M. Reynolds. 2019. "High Rates of Maternal Depression amongst Syrian Refugees in Lebanon: A Pilot Study." Scientific Reports 9 (1): 1-6. https://doi.org/10.1038/s41598-019-48247-5.</unstructured_citation>
+</citation>
+<citation key="ref=24"><unstructured_citation>Tobin, Carolyn L., Pam Di Napoli, and Cheryl Tatano Beck. 2018. "Refugee and Immigrant Women's Experience of Postpartum Depression: A Meta-Synthesis." Journal of Transcultural Nursing 29 (1): 84-100. https://doi.org/10.1177/1043659616686167.</unstructured_citation>
+</citation>
+<citation key="ref=25"><unstructured_citation>UNHCR (UN High Commissioner for Refugees). 2019. Global Trends: Forced Displacement in 2018. Geneva: UNHCR. https://www.unhcr.org/5d08d7ee7.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=26"><unstructured_citation>UN OCHA (UN Office for the Coordination of Humanitarian Affairs). 2019. Global Humanitarian Overview 2019: Trends in Humanitarian Needs and Assistance. New York: OCHA.</unstructured_citation>
+</citation>
+<citation key="ref=27"><unstructured_citation>Vos, Theo, Amanuel Alemu Abajobir, Kalkidan Hassen Abate, Cristiana Abbafati, Kaja M. Abbas, Foad Abd-Allah, Rizwan Suliankatchi Abdulkader et al. 2017. "Global, Regional, and National Incidence, Prevalence, and Years Lived with Disability for 328 Diseases and Injuries for 195 Countries, 1990-2016: A Systematic Analysis for the Global Burden of Disease Study 2016." The Lancet 390 (10100): 1211-59. https://doi.org/10.1016/S0140-6736(17)32154-2.</unstructured_citation>
+</citation>
+<citation key="ref=28"><unstructured_citation>WHO. 2018. Nurturing Care for Early Childhood Development: A Framework for Helping Children Survive and Thrive to Transform Health and Human Potential. Geneva: WHO. https://apps.who.int/iris/bitstream/handle/10665/272603/9789241514064-eng.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=29"><unstructured_citation>WHO. 2020a. Standards for Improving the Quality of Care for Small and Sick Newborns in Health Facilities. Geneva: WHO. https://www.who.int/publications/i/item/9789240010765.</unstructured_citation>
+</citation>
+<citation key="ref=30"><unstructured_citation>WHO. 2020b. Improving Early Childhood Development: WHO Guideline. Geneva: WHO. https://www.who.int/publications/i/item/improving-early-childhooddevelopment-who-guideline.</unstructured_citation>
+</citation>
+<citation key="ref=31"><unstructured_citation>WHO. Forthcoming. Child and Adolescent Health in Humanitarian Settings: Operational Guide – A Holistic Approach for Programme Managers. Cairo: WHO Regional Office for the Eastern Mediterranean.</unstructured_citation>
+</citation>
+<citation key="ref=32"><unstructured_citation>WHO and UNICEF. 2019. Survive and Thrive: Transforming Care for Every Small and Sick Newborn. Geneva: WHO. https://apps.who.int/iris/bitstream/handle/10665/326495/9789241515887-eng.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=33"><unstructured_citation>Zeid, Sarah, Kate Gilmore, Rajat Khosla, Heather Papowitz, Danielle Engel, Henia Dakkak, Njoki Rahab, Anita Sharma, and Mollie Fair. 2015. "Women's, Children's, and Adolescents' Health in Humanitarian and Other Crises." British Medical Journal 351: h4346. https://doi.org/10.1136/bmj.h4346.</unstructured_citation>
+</citation>
+</citation_list>
+</journal_article>
+<journal_article publication_type="full_text"><titles><title>Children with Developmental Disorders in Humanitarian Settings: A Call for Evidence and Action</title>
+</titles>
+<contributors><person_name sequence="additional" contributor_role="author"><given_name>Xanthe</given_name>
+<surname>Hunt</surname>
+<affiliation>Stellanbosch University</affiliation>
+<ORCID>https://orcid.org/0000-0001-7531-6665</ORCID>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Theresa</given_name>
+<surname>Betancourt</surname>
+<affiliation>Boston College School of Social Work</affiliation>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Laura</given_name>
+<surname>Pacione</surname>
+<affiliation>University of Toronto</affiliation>
+<ORCID>https://orcid.org/0000-0002-3683-4440</ORCID>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Mayada</given_name>
+<surname>Elsabbagh</surname>
+<affiliation>McGill University</affiliation>
+<ORCID>https://orcid.org/0000-0002-7311-9059</ORCID>
+</person_name>
+<person_name sequence="additional" contributor_role="author"><given_name>Chiara</given_name>
+<surname>Servili</surname>
+<affiliation>WHO Department of Mental Health and Substance Abuse</affiliation>
+<ORCID>https://orcid.org/0000-0002-1885-822X</ORCID>
+</person_name>
+</contributors>
+<publication_date><year>2021</year>
+</publication_date>
+<pages><first_page>132</first_page>
+</pages>
+<doi_data><doi>10.33682/6vgm-5n34</doi>
+<resource>https://archive.nyu.edu/handle/2451/62230</resource>
+</doi_data>
+<citation_list><citation key="ref=1"><unstructured_citation>Alipui, Nicholas, and Nicole Gerke. 2018. "The Refugee Crisis and the Rights of Children: Perspectives on Community‐Based Resettlement Programs." New Directions for Child and Adolescent Development 159: 91-98. https://doi.org/10.1002/cad.20228.</unstructured_citation>
+</citation>
+<citation key="ref=2"><unstructured_citation>Appleyard, Karen, and Joy D. Osofsky. 2003. "Parenting after Trauma: Supporting Parents and Caregivers in the Treatment of Children Impacted by Violence." Infant Mental Health Journal: Official Publication of The World Association for Infant Mental Health 24 (2): 111-25. https://doi.org/10.1002/imhj.10050.</unstructured_citation>
+</citation>
+<citation key="ref=3"><unstructured_citation>Barrett, Helen, Julie Marshall, and Juliet Goldbart. 2019. "Refugee Children with Communication Disability in Rwanda: Providing the Educational Services They Need." Forced Migration Review (60): 36-38. https://www.fmreview.org/sites/fmr/files/FMRdownloads/en/education-displacement/barrett-marshallgoldbart.pdf.</unstructured_citation>
+</citation>
+<citation key="ref=4"><unstructured_citation>Battle, Dolores E. 2015. "Persons with Communication Disabilities in Natural Disasters, War, and/or Conflict." Communication Disorders Quarterly 36 (4): 231-40. https://doi.org/10.1177/1525740114545980.</unstructured_citation>
+</citation>
+<citation key="ref=5"><unstructured_citation>Beatson, Jean E. 2013. "Supporting Refugee Somali Bantu Mothers with Children with Disabilities." Pediatric Nursing 39 (3): 142-45.</unstructured_citation>
+</citation>
+<citation key="ref=6"><unstructured_citation>Bhayana, Anjali, and Bhooma Bhayana. 2018. "Approach to Developmental Disabilities in Newcomer Families." Canadian Family Physician 64 (8): 567-73.</unstructured_citation>
+</citation>
+<citation key="ref=7"><unstructured_citation>Braithwaite, Jeanine, and Daniel Mont. 2009. "Disability and Poverty: A Survey of World Bank Poverty Assessments and Implications." Alter 3 (3): 219-32. https://doi.org/10.1016/j.alter.2008.10.002.</unstructured_citation>
+</citation>
+<citation key="ref=8"><unstructured_citation>Casillas, Christian E., and Daniel M. Kammen. 2010. "The Energy-Poverty-Climate Nexus." Science 330 (6008): 1181-82. https://doi.org/10.1126/science.1197412.</unstructured_citation>
+</citation>
+<citation key="ref=9"><unstructured_citation>Dababnah, Sarah, Serene Habayeb, Benjamin J. Bear, and Dana Hussein. 2019. "Feasibility of a Trauma-Informed Parent-Teacher Cooperative Training Program for Syrian Refugee Children with Autism." Autism 23 (5): 1300-10.</unstructured_citation>
+</citation>
+<citation key="ref=10"><unstructured_citation>Davidson, Natasha, Sue Skull, Gervase Chaney, Alexis Frydenberg, David Isaacs, Paul Kelly, Basiliki Lampropoulos et al. 2004. "Comprehensive Health Assessment for Newly Arrived Refugee Children in Australia." Journal of Paediatrics and Child Health 40 (9‐10): 562-68. https://doi.org/10.1111/j.1440-1754.2004.00465.x.</unstructured_citation>
+</citation>
+<citation key="ref=11"><unstructured_citation>Denov, Myriam, and Meaghan C. Shevell. 2019. "Social Work Practice with War-Affected Children and Families: The Importance of Family, Culture, Arts, and Participatory Approaches." Journal of Family Social Work (22) 1: 1-16. https://doi.org/10.1080/10522158.2019.1546809.</unstructured_citation>
+</citation>
+<citation key="ref=12"><unstructured_citation>Epping-Jordan, JoAnne E., Mark Van Ommeren, Hazem Nayef Ashour, Albert Maramis, Anita Marini, Andrew Mohanraj, Aqila Noori et al. 2015. "Beyond the Crisis: Building Back Better Mental Health Care in 10 Emergency-Affected Areas Using a Longer-Term Perspective." International Journal of Mental Health Systems 9 (1): 15. https://doi.org/10.1186/s13033-015-0007-9.</unstructured_citation>
+</citation>
+<citation key="ref=13"><unstructured_citation>Government of The Netherlands. 2019. International Conference on Mental Health and Psychosocial Support in Crisis Situations: Background Document and Recommendations. Amsterdam: Netherlands Ministry of Foreign Affairs.</unstructured_citation>
+</citation>
+<citation key="ref=14"><unstructured_citation>Hemingway, Laura, and Mark Priestley. 2006. "Natural Hazards, Human Vulnerability and Disabling Societies: A Disaster for Disabled People?" Review of Disability Studies 2 (3): 57-67. https://www.rdsjournal.org/index.php/journal/article/view/337.</unstructured_citation>
+</citation>
+<citation key="ref=15"><unstructured_citation>Henley, Joh, and Julie Robinson. 2011. "Mental Health Issues among Refugee Children and Adolescents." Clinical Psychologist 15 (2): 51-62. https://doi.org/10.1111/j.1742-9552.2011.00024.x.</unstructured_citation>
+</citation>
+<citation key="ref=16"><unstructured_citation>Hipper, Thomas J. Hipper, Renee Davis, Philip M. Massey, Renee M. Turchi, Keri M. Lubell, Laura E. Pechta, Dale A. Rose et al. 2018. "The Disaster Information Needs of Families of Children with Special Healthcare Needs: A Scoping Review." Health Security 16 (3): 178-92. https://doi.org/10.1089/hs.2018.0007.</unstructured_citation>
+</citation>
+<citation key="ref=17"><unstructured_citation>Hurley, Jennifer J., Saveta Saini, Rachel A. Warren, and Alissa J. Carberry. 2013. "Use of the Pyramid Model for Supporting Preschool Refugees." Early Child Development and Care 183 (1): 75-91. https://doi.org/10.1080/03004430.2012.655242.</unstructured_citation>
+</citation>
+<citation key="ref=18"><unstructured_citation>Inter-Agency Standing Committee. 2007. IASC Guidelines on Mental Health and Psychosocial Support in Emergency Settings. Geneva: Inter-Agency Standing Committee. Inter-Agency Standing Committee. 2019. Guidelines: Inclusion of Persons with Disabilities in Humanitarian Action. Geneva: Inter-Agency Standing Committee.</unstructured_citation>
+</citation>
+<citation key="ref=19"><unstructured_citation>Kroening, Abigail L. H., Jessica A. Moore, Therese R. Welch, Jill S. Halterman, and Susan L. Hyman. 2016. "Developmental Screening of Refugees: A Qualitative Study." Pediatrics 138 (3): e20160234. https://doi.org/10.1542/peds.2016-0234.</unstructured_citation>
+</citation>
+<citation key="ref=20"><unstructured_citation>Kronick, Rachel, C.cile Rousseau, and Janet Cleveland. 2015. "Asylum-Seeking Children's Experiences of Detention in Canada: A Qualitative Study." American Journal of Orthopsychiatry 85 (3): 287-94. https://doi.org/10.1037/ort0000061.</unstructured_citation>
+</citation>
+<citation key="ref=21"><unstructured_citation>Miles, M. 2002. "Formal and Informal Disability Resources for Afghan Reconstruction." Third World Quarterly 23 (5): 945-59. https://doi.org/10.1080/0143659022000028567.</unstructured_citation>
+</citation>
+<citation key="ref=22"><unstructured_citation>National Organization on Disability. 2005. Report on Special Needs Assessment for Katrina Evacuees (SNAKE) Project. Washington, DC: National Organization on Disability.</unstructured_citation>
+</citation>
+<citation key="ref=23"><unstructured_citation>Panter‐Brick, Catherine, Marie-Pascale Grimon, and Mark Eggerman. (2014). "Caregiver-Child Mental Health: A Prospective Study in Conflict and Refugee Settings." Journal of Child Psychology and Psychiatry 55 (4): 313-27. https://doi.org/10.1111/jcpp.12167.</unstructured_citation>
+</citation>
+<citation key="ref=24"><unstructured_citation>Peek, Lori, and Laura M. Stough. 2010. "Children with Disabilities in the Context of Disaster: A Social Vulnerability Perspective." Child Development 81 (4): 1260-70.</unstructured_citation>
+</citation>
+<citation key="ref=25"><unstructured_citation>Power, Rosalie, Mohammad Muhit, Eamin Heanoy, Tasneem Karim, Claire Galea, Nadia Badawi, and Gulam Khandaker. 2019. "Depression, Anxiety and Stress Among Caregivers of Adolescents with Cerebral Palsy in Rural Bangladesh." Disability and Rehabilitation, 1-8. https://doi.org/10.1080/09638288.2019.1692378.</unstructured_citation>
+</citation>
+<citation key="ref=26"><unstructured_citation>Reilly, Rachael. 2010. "Disabilities among Refugees and Conflict-Affected Populations." Forced Migration Review (35): 8.</unstructured_citation>
+</citation>
+<citation key="ref=27"><unstructured_citation>Save the Children. 2013. Save the Children Psychological First Aid Training Manual for Child Practitioners. Copenhagen: Save the Children Denmark. https://resourcecentre.savethechildren.net/library/save-children-psychological-first-aidtraining-manual-child-practitioners.</unstructured_citation>
+</citation>
+<citation key="ref=28"><unstructured_citation>Simmons, Kathleen B. 2010. "Addressing the Data Challenge." Forced Migration Review (35): 10.</unstructured_citation>
+</citation>
+<citation key="ref=29"><unstructured_citation>Stough, Laura M., Elizabeth McAdams Ducy, and Donghyun Kang. 2017. "Addressing the Needs of Children with Disabilities Experiencing Disaster or Terrorism." Current Psychiatry Reports 19 (4): 24. https://doi.org/10.1007/s11920-017-0776-8.</unstructured_citation>
+</citation>
+<citation key="ref=30"><unstructured_citation>UN Human Settlements Programme. 2007. Enhancing Urban Safety and Security: Global Report on Human Settlements, 2007. London: Earthscan. UN Office for the Coordination of Humanitarian Affairs. 2019. Global Humanitarian Overview. New York: UN Office for the Coordination of Humanitarian Affairs.</unstructured_citation>
+</citation>
+<citation key="ref=31"><unstructured_citation>UN Office for Disaster Risk Reduction. 2015. Sendai Framework for Disaster Risk Reduction 2015-2030 (SFDRR). Geneva: UN Office for Disaster Risk Reduction.</unstructured_citation>
+</citation>
+<citation key="ref=32"><unstructured_citation>WHO. 2011. World Report on Disability. Geneva: World Health Organization.</unstructured_citation>
+</citation>
+<citation key="ref=33"><unstructured_citation>WHO. 2013. Building Back Better: Sustainable Mental Health Care after Emergencies. Geneva: World Health Organization.</unstructured_citation>
+</citation>
+<citation key="ref=34"><unstructured_citation>WHO and UNHCR (UN High Commissioner for Refugees). 2015. mhGAP Humanitarian Intervention Guide (mhGAP-HIG): Clinical Management of Mental, Neurological and Substance Use Conditions in Humanitarian Emergencies. Geneva: WHO.</unstructured_citation>
+</citation>
+<citation key="ref=35"><unstructured_citation>Zuurmond, Maria, Velma Nyapera, Victoria Mwenda, James Kisia, Hilary Rono, and Jennifer Palmer. 2016. "Childhood Disability in Turkana, Kenya: Understanding How Carers Cope in a Complex Humanitarian Setting." African Journal of Disability 5 (1): 1-8. https://doi.org/10.4102/ajod.v5i1.277.</unstructured_citation>
+</citation>
+</citation_list>
+</journal_article>
+<journal_article publication_type="full_text"><titles><title>Book Review: Collaborative Cross-Cultural Research Methodologies in Early Care and Education Contexts
+edited by Samara Madrid Akpovo, Mary Jane Moran, and Robyn Brookshire</title>
+</titles>
+<contributors><person_name sequence="additional" contributor_role="author"><given_name>Amy Jo</given_name>
+<surname>Dowd</surname>
+<affiliation>The LEGO Foundation</affiliation>
+<ORCID>https://orcid.org/0000-0002-5194-340X</ORCID>
+</person_name>
+</contributors>
+<publication_date><year>2021</year>
+</publication_date>
+<pages><first_page>144</first_page>
+</pages>
+<doi_data><doi>10.33682/1kxn-8s2a</doi>
+<resource>https://archive.nyu.edu/handle/2451/62231</resource>
+</doi_data>
+</journal_article>
+<journal_article publication_type="full_text"><titles><title>Book Review: Early Childhood Development in Humanitarian Crises: South Sudanese
+Refugees in Uganda by Sweta Shah</title>
+</titles>
+<contributors><person_name sequence="additional" contributor_role="author"><given_name>Kate</given_name>
+<surname>Schwartz</surname>
+<affiliation>Global TIES for Children</affiliation>
+</person_name>
+</contributors>
+<publication_date><year>2021</year>
+</publication_date>
+<pages><first_page>147</first_page>
+</pages>
+<doi_data><doi>10.33682/cjcz-7wf3</doi>
+<resource>https://archive.nyu.edu/handle/2451/62232</resource>
+</doi_data>
+</journal_article>
+
+</journal>
+</body>
+</doi_batch>

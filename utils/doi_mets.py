@@ -15,12 +15,12 @@ class MetsHandler:
                 'issn media_type="' + main_table[2][1] + '"': main_table[2][2],
             },
             "journal_issue": {
-                "publication_date": {"year": main_table[5][0]},
-                "journal_volume": {"volume": main_table[5][1]},
-                "issue": main_table[5][2],
+                "publication_date": {"month": main_table[5][1], "day": main_table[5][2], "year": main_table[5][0]},
+                "journal_volume": {"volume": main_table[5][3]},
+                "issue": main_table[5][4],
                 "doi_data": {
-                    "doi": self.format_doi(main_table[5][3]),
-                    "resource": main_table[5][5],
+                    "doi": self.format_doi(main_table[5][5]),
+                    "resource": main_table[5][7],
                 },
             },
         }
