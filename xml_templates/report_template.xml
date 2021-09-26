@@ -3,14 +3,14 @@
 <doi_batch_id>{{ doi_batch_id }}</doi_batch_id>
 <timestamp>{{ timestamp }}</timestamp>
 <depositor>
-<depositor_name>Jonathan Greenberg</depositor_name>
-<email_address>jonathan.greenberg@nyu.edu</email_address>
+<depositor_name>{{ depositor_name }}</depositor_name>
+<email_address>{{ depositor_email }}</email_address>
 </depositor>
 <registrant>New York University</registrant>
 </head>
 <body>
-<journal>
-{{ issue_body }}
-</journal>
+<!-- add <report> template info below using following template mustache-->
+{{ report_body }}
+
 </body>
 </doi_batch>

@@ -1,12 +1,13 @@
 import sys
 
 from utils.gsheets_manager import retrieve_doi_mets, write_doi_mets
+from utils.sheets_creds_builder import refresh_credentials
 from utils.doi_mets import JournalMetsHandler, DoiMinter
 from global_settings import *
 
 
 if __name__ == "__main__":
-    if sys.argv[1] != "generate-pseudo-doi" and len(sys.argv) < 4:
+    if sys.argv[1] != "generate-pseudo-doi" and sys.argv[1] != "create-credentials" and len(sys.argv) < 4:
         print(
             """Insufficient number of inputs given. 
         Supply a command (build-doi = make proposed DOIs; build-xml = generate XMLs)
@@ -26,6 +27,17 @@ if __name__ == "__main__":
                   python doi_manager.py generate-pseudo-doi 2
         """
         )
+    elif len(sys.argv) < 2:
+        print(
+            """Insufficient number of inputs given.
+            Supply a command and if required, parameters.
+            Example:
+                python doi_manager.py create-credentials
+                python doi_manager.py build-xml serials 1lRSZcW-5me13p823kK7q_ow6cdZq1pw9-ohKENJ8N1k
+                python doi_manager.py generate-pseudo-doi 2
+            """
+        )
+
     else:
         if sys.argv[1] == "build-doi":
             print("Checking registry of previous DOIs and building proposed DOIs...")
@@ -69,6 +81,7 @@ if __name__ == "__main__":
                 print(session_xml_results)
             else:
                 print("Failed to create XML")
+
         elif sys.argv[1] == "generate-pseudo-doi":
             print("Checking registry of previous DOIs and building proposed DOIs...")
             dois = DoiMinter.mint(
@@ -77,5 +90,9 @@ if __name__ == "__main__":
             print("Proposed DOIs are: \n")
             for doi in dois:
                 print(doi)
+
+        elif sys.argv[1] == "create-credentials":
+            refresh_credentials()
+
         else:
             print("There may be a syntax error in your command entry. Try again.")
