@@ -57,7 +57,7 @@ doi_crossref_workflow
 
 ### Usage
 
-Our sample GSheet template is at: [https://docs.google.com/spreadsheets/d/1lRSZcW-5me13p823kK7q_ow6cdZq1pw9-ohKENJ8N1k/edit#gid=0](https://docs.google.com/spreadsheets/d/1lRSZcW-5me13p823kK7q_ow6cdZq1pw9-ohKENJ8N1k/edit#gid=0)
+Our sample GSheet template is at: [https://docs.google.com/spreadsheets/d/1tT8Dr0yfm2mkiCOjbrt2XbPus_mhFfSPP-1eIlpzkFo](https://docs.google.com/spreadsheets/d/1tT8Dr0yfm2mkiCOjbrt2XbPus_mhFfSPP-1eIlpzkFo)
 
 #### Dependencies
 
@@ -98,9 +98,6 @@ If a custom file name is required, place one as the parameter after the GSHEET, 
 <pre>python doi_manager.py generate-pseudo-doi 5</pre>
 
 To-Dos
-
-If we need to re-do the DOIs creation, we want it to overwrite the current DOIs but preserve the article metadata already there
-(or does it do that already?)
 
 Error exception handling for Sheets/Validation step for GSheet for each of the two functions
 
