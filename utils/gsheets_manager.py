@@ -4,7 +4,7 @@ from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 
-from utils.global_settings import (
+from global_settings import (
     G_CREDS_FILE,
     G_TOKEN_FILE,
     METS_SERIALS_TEMPLATE_RANGE,
@@ -66,6 +66,11 @@ def write_doi_mets(sheet_id, append_vals, retrieve_type="mets_main"):
     if retrieve_type == "mets_main":
         range = METS_SERIALS_DOI_COLUMN_RANGE + str(8 + len(append_vals))
         issue_doi_range = METS_SERIALS_ISSUE_DOI_COLUMN_RANGE
+    elif retrieve_type == "handles":
+        """
+        Here, we should set a range appropriate to the correct columns for writing Handles in a fashion similar to the approach in mets_main
+        """
+
     elif retrieve_type == "registry":
         range = REGISTRY_TEMPLATE_COLUMN_RANGE
 
@@ -76,6 +81,14 @@ def write_doi_mets(sheet_id, append_vals, retrieve_type="mets_main"):
     service = build("sheets", "v4", credentials=creds)
 
     sheet = service.spreadsheets()
+
+    """
+    Quick note about the append_vals below. It is currently set to write all DOIs provided in the list except for the last one, which is reserved for
+    the issue's DOI. The DOIs don't have any particular meaning at this point, so they are assigned without regard to order.
+    But when fed a list of Handles, we need to order them correctly in the append_vals parameter passed above so that 
+    the issue-level Handle is at the end of the list. Furthermore, the Handles have to be in the order of the articles in the GSheet rows,
+    otherwise they won't match the articles correctly.
+    """
 
     add_values_body = {"values": [append_vals[:-1]], "majorDimension": "COLUMNS"}
 
@@ -89,6 +102,13 @@ def write_doi_mets(sheet_id, append_vals, retrieve_type="mets_main"):
         )
         .execute()
     )
+
+    """
+    The step below is a second call to write the issue-level DOI to the correct place (treated as last proposed DOI in the list)
+    To moodify it to accommodate writing the Handle, the best approach would be to modify this range= parameter in the 
+    response_2 object below so that it refers to either the DOI or the Handle location in the issue metadata rows on the GSheet,
+    and is set above in the if/elif section
+    """
 
     add_values_body_issue_dois = {
         "values": [[append_vals[-1]]],
@@ -107,6 +127,8 @@ def write_doi_mets(sheet_id, append_vals, retrieve_type="mets_main"):
     )
 
     return response
+
+
 
 
 ### MORE SAMPLE CODE BELOW

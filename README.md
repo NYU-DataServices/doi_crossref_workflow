@@ -1,17 +1,19 @@
 # doi_crossref_workflow
 Workflow for establishing new NYU CrossRef DOIs and transforming required metatdata
 
-### Steps in automation workflow
+### Steps in automation workflow for journal content type (example)
 
- 1. Client fills in preliminary Google spreadsheet (copied from our template, but remaining in our owned Drive folder)  with title and publication info. At this point, these are mostly placeholders so we know how many DOIs to mint and how umbrella objects (e.g. a journal issue) relate to sub-objects (e.g. an article).
- 2. Script reads from template GSheet and populates a DOI grouping object with the bare metadata and the prefix (Libraries or Press; in this case, always Libraries) to be assigned 
- 3. Script proposes DOI suffixes, taking care not to create collision with current GSheet registry of NYU Libraries CrossRef DOIs (this may justify a read from that Registry first)
- 4. Script modifies original templated sheet with the new DOIs.
- 5. Client uses these DOIs to place them on electronic assets, e.g. the journal issue and article.
- 6. Client fills out the remainder of the template with full metadata
+ 1. Client fills in preliminary Google spreadsheet (copied from our template, but remaining in our owned Drive folder)  with journal title and publication info, then at least title and author info for each article in that issue. At this point, these are placeholders so we know how many DOIs to mint and how umbrella objects (e.g. a journal issue) relate to sub-objects (e.g. an article).
+ 2. Service provide runs script to read from template GSheet, then does a second call to the master DOI registry pull in list of previously registered DOIs from master GSheet (to prevent collision).
+ 3. In same step, script generates the correct number of unregistered draft DOIs and adds them to the template for each article.
+ 4. Client uses these DOIs to place them on electronic assets, e.g. the journal issue and article.
+ 6. Client fills out the remainder of the template with full metadata if not completed already.
  7. Second script reads the template again and transforms the full metadata to a valid XML record for upload to CrossRef. Script uses pre-established XML templates and fills it in with metadata gleaned from template GSheet
+ 8. XML is validated using CrossRef validator ([https://www.crossref.org/02publishers/parser.html](https://www.crossref.org/02publishers/parser.html))
+ 9. XML is sent to CrossRef to register and activate DOIs
+ 10. Master registry sheet is updated by hand to reflect newly registered DOIs
 
-### Proposed components
+### File Components
 
 <pre>
 doi_crossref_workflow
@@ -21,7 +23,7 @@ doi_crossref_workflow
 │───xml_templates/
 │   │  
 │   │───serials_template.xml
-|   │───serials_template.xml
+|   │───report_template.xml
 │   └───website_template.xml
 │   
 │   
@@ -30,9 +32,10 @@ doi_crossref_workflow
 │   │───__init__.py   
 │   │───doi_mets.py
 │   │───sheets_creds_builder.py
-│   └───gsheets_manager.py
+│   |───xml_builder.py   
+|   └───gsheets_manager.py
 │
-└───doi_manage.py
+└───doi_manager.py
 </pre>
 
 
@@ -68,7 +71,7 @@ Google's Sheets API modules
 
 2. <pre>cd doi_crossref_workflow</pre>
 
-3. Copy <pre>credentials.json</pre> and <pre>doi_workflow_token.pickle</pre> files to this directory
+3. Copy <pre>credentials.json</pre> and <pre>doi_workflow_token.pickle</pre> and <pre>global_settings.py</pre> files to this directory
 
 4. After patron fills out basic information (journal and issue info; titles of articles), we can generate proposed DOIs for them:
 
@@ -84,13 +87,15 @@ e.g.
 
 OPTION: A default filename for the XML output based on the serial title will be created
 
-If a custom file name is required, place one as the parameter after the GSHEET, omitting the .xml extension part of the name
+If a custom file name is required, place one as the parameter after the GSHEET, omitting the .xml extension part of the name, e.g.
 
-6. If successful resulting XML will be produced in a 'crossref_xml_output.xml' file.
+<pre>python doi_manager.py build-xml serials GSHEET-ID myJournal_vol10_issue1</pre>
+
+6. If successful resulting XML will be produced in a 'crossref_xml_output.xml' or a filename using the custom filename entered as a parameter.
 
 7. For cases where we just want to mint proposed DOIs to fill in gaps in legacy data, this option generates non-colliding DOIs based on our registry sheet and prints them out to terminal. The last parameter is the number of DOIs needed:
 
-<pre>python doi_manager.py generate-pseudo-doi 5
+<pre>python doi_manager.py generate-pseudo-doi 5</pre>
 
 To-Dos
 
@@ -99,6 +104,15 @@ If we need to re-do the DOIs creation, we want it to overwrite the current DOIs 
 
 Error exception handling for Sheets/Validation step for GSheet for each of the two functions
 
-Ability to custom name the output XML
-
 Ability to include certain fields (like an abstract, page numbers) or not (would require "template" metadata object with a dictionary structure that reflects the fields wanted, plus XML templates that work for that type)
+
+Expand content types beyond serials to include reports, plus make whole system more extensible for future content types:
+ - Review CrossRef XML formatting for report types
+ - Build GSheet template to collect information needed for a report content type
+ - Complete <pre>xml_templates/report_template.xml</pre> so that it is ready to use as report template
+ - Create a function that analyzes info received from GSheet and looks for missing columns/identifies whether this is a case with abstracts, page numbers, etc. Sends warning to users about missing info so that scripts can be halted rather than failing
+ - Compose <pre>doi_registration</pre> method to <pre>DoiMinter</pre> class so that minted DOIs can be written back to master NYU DOI sheet
+ - Adjust doi_manage.py for new FDA API call option to retrieve Handles. Steps are:
+    1. Add steps in doi_manager.py to kick off API calls, matches, and write to GSheet
+    2. Create new set of utils, dspace_manager.py, to make calls to FDA and match GSheet info to FDA info, return Handles to write to GSheet
+    3. Enhance write_doi_mets() function to accommodate writing Handles

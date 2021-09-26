@@ -1,0 +1,16 @@
+<doi_batch xmlns="http://www.crossref.org/schema/4.4.2" xmlns:jats="http://www.ncbi.nlm.nih.gov/JATS1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="4.4.2" xsi:schemaLocation="http://www.crossref.org/schema/4.4.2 http://www.crossref.org/schemas/crossref4.4.2.xsd">
+<head>
+<doi_batch_id>{{ doi_batch_id }}</doi_batch_id>
+<timestamp>{{ timestamp }}</timestamp>
+<depositor>
+<depositor_name>Jonathan Greenberg</depositor_name>
+<email_address>jonathan.greenberg@nyu.edu</email_address>
+</depositor>
+<registrant>New York University</registrant>
+</head>
+<body>
+<journal>
+{{ issue_body }}
+</journal>
+</body>
+</doi_batch>
