@@ -3,6 +3,7 @@ from random import random
 import uuid
 from datetime import datetime
 from global_settings import ALLOWED_CHARS, DEPOSITOR_NAME, DEPOSITOR_EMAIL_ADDRESS
+import re
 
 
 class MetsHandler:
@@ -32,6 +33,12 @@ class MetsHandler:
     @staticmethod
     def format_doi(url_doi):
         return url_doi.replace("https://doi.org/", "")
+
+    @staticmethod
+    def format_orcid(orcid_chars):
+        if not re.search(r'^http', orcid_chars):
+            return 'https://orcid.org/' + orcid_chars
+        return orcid_chars
 
     def access_xml_template(self):
         with open("xml_templates/" + self.mets_type + "_template.xml") as f:
@@ -99,7 +106,7 @@ class JournalMetsHandler(MetsHandler):
 
         author_info = {
             a_info[0].lower().strip().replace(",", "").replace(" ", "").replace(".", ""): {
-                "orcid": a_info[1],
+                "orcid": self.format_orcid(a_info[1]),
                 "role": a_info[3],
                 "affiliation": a_info[2],
             }
