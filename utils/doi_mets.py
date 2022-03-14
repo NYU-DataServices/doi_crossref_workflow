@@ -36,7 +36,7 @@ class MetsHandler:
 
     @staticmethod
     def format_orcid(orcid_chars):
-        if not re.search(r'^http', orcid_chars):
+        if not re.search(r'^http', orcid_chars) and len(orcid_chars) > 0:
             return 'https://orcid.org/' + orcid_chars
         return orcid_chars
 
