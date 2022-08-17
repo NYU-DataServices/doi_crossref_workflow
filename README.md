@@ -99,17 +99,25 @@ If a custom file name is required, place one as the parameter after the GSHEET, 
 
 To-Dos
 
-Error exception handling for Sheets/Validation step for GSheet for each of the two functions
 
-Ability to include certain fields (like an abstract, page numbers) or not (would require "template" metadata object with a dictionary structure that reflects the fields wanted, plus XML templates that work for that type)
-
-Expand content types beyond serials to include reports, plus make whole system more extensible for future content types:
- - Review CrossRef XML formatting for report types
- - Build GSheet template to collect information needed for a report content type
- - Complete <pre>xml_templates/report_template.xml</pre> so that it is ready to use as report template
+Quality Assurance/Error checking:
+ - Error exception handling for Sheets/Validation step for GSheet for each of the two functions
  - Create a function that analyzes info received from GSheet and looks for missing columns/identifies whether this is a case with abstracts, page numbers, etc. Sends warning to users about missing info so that scripts can be halted rather than failing
- - Compose <pre>doi_registration</pre> method to <pre>DoiMinter</pre> class so that minted DOIs can be written back to master NYU DOI sheet
- - Adjust doi_manage.py for new FDA API call option to retrieve Handles. Steps are:
+ - Ability to include certain fields (like an abstract, page numbers) or not (would require "template" metadata object with a dictionary structure that reflects the fields wanted, plus XML templates that work for that type)
+
+Enhance capabilities:
+
+ - Adjust doi_manage.py for new FDA API call option to retrieve Handles. Possible steps are:
     1. Add steps in doi_manager.py to kick off API calls, matches, and write to GSheet
     2. Create new set of utils, dspace_manager.py, to make calls to FDA and match GSheet info to FDA info, return Handles to write to GSheet
     3. Enhance write_doi_mets() function to accommodate writing Handles
+
+ - Expand content types beyond serials to include reports, plus make whole system more extensible for future content types. Possible steps:
+ 1. Review CrossRef XML formatting for report types
+ 2. Build GSheet template to collect information needed for a report content type
+ 3. Complete <pre>xml_templates/report_template.xml</pre> so that it is ready to use as report template
+
+
+ - Allow script to write registered DOIs to NYU's master sheet. Steps might include: 
+  1. Compose <pre>doi_registration</pre> method to <pre>DoiMinter</pre> class so that minted DOIs can be written back to master NYU DOI sheet
+ 
