@@ -104,6 +104,7 @@ Quality Assurance/Error checking:
  - Error exception handling for Sheets/Validation step for GSheet for each of the two functions
  - Create a function that analyzes info received from GSheet and looks for missing columns/identifies whether this is a case with abstracts, page numbers, etc. Sends warning to users about missing info so that scripts can be halted rather than failing
  - Ability to include certain fields (like an abstract, page numbers) or not (would require "template" metadata object with a dictionary structure that reflects the fields wanted, plus XML templates that work for that type)
+ - Automate the XML validation against CrossRef schema (rather than rely on manual checking using CR interface)
 
 Enhance capabilities:
 
