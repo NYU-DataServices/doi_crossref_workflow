@@ -1,0 +1,4 @@
+uuid
+google-api-client
+google-auth-httplib2
+google-autho-oauthlib
