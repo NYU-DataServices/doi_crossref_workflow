@@ -1,8 +1,10 @@
 import pickle
+import json
 import os.path
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
+from google.oauth2.credentials import Credentials
 
 from global_settings import (
     G_CREDS_FILE,
@@ -14,6 +16,7 @@ from global_settings import (
     REGISTRY_TEMPLATE_COLUMN_RANGE,
     METS_CITATIONS_TEMPLATE_RANGE,
     METS_AUTHORS_TEMPLATE_RANGE,
+    SCOPES,
 )
 
 
@@ -40,8 +43,7 @@ def retrieve_doi_mets(sheet_id, retrieve_type="mets_main"):
         range = REGISTRY_TEMPLATE_RANGE
 
     if os.path.exists(G_TOKEN_FILE):
-        with open(G_TOKEN_FILE, "rb") as token:
-            creds = pickle.load(token)
+        creds = Credentials.from_authorized_user_file(G_TOKEN_FILE)
 
     service = build("sheets", "v4", credentials=creds)
 

@@ -38,7 +38,7 @@ class MetsHandler:
     def format_orcid(orcid_chars):
         if not re.search(r'^http', orcid_chars) and len(orcid_chars) > 0:
             return 'https://orcid.org/' + orcid_chars
-        return orcid_chars
+        return orcid_chars 
 
     def access_xml_template(self):
         with open("xml_templates/" + self.mets_type + "_template.xml") as f:
@@ -62,6 +62,7 @@ class JournalMetsHandler(MetsHandler):
     Object representing metadata for a journal/serial (issue, authors, citations) as a native python object,
     transforming the GSheet list of list formatting into a dictionary. Also has ability
     to transform that dictionary into a valid XML for CrossRef registry
+    Depending on the template used, the spreadsheet coordinates may need to be changed
     """
 
     def assemble_patron_mets(self, main_table, citation_table, author_table):
@@ -71,24 +72,26 @@ class JournalMetsHandler(MetsHandler):
                 'issn media_type="' + main_table[2][1] + '"': main_table[2][2],
             },
             "journal_issue": {
-                "publication_date": {"month": main_table[5][1], "day": main_table[5][2], "year": main_table[5][0]},
-                "journal_volume": {"volume": main_table[5][3]},
-                "issue": main_table[5][4],
+                "publication_date": {"year": main_table[5][0]},
+                "journal_volume": {"volume": main_table[5][1]},
+                "issue": main_table[5][2],
                 "doi_data": {
-                    "doi": self.format_doi(main_table[5][5]),
-                    "resource": main_table[5][7],
+                    "doi": self.format_doi(main_table[5][3]),
+                    "resource": main_table[5][5],
                 },
             },
         }
-
+        """To avoid creating empty XML elements, comment out those columns that may not have values,
+        such as jats:abstract or pages.
+        """
         self.mets_articles_list = [
             {
                 'journal_article publication_type="full_text"': {
                     "titles": {"title": self.entry_normalizer(entry[1])},
                     "contributors": self.build_contributors(entry[2], author_table),
-                    "jats:abstract": {"jats:p": self.entry_normalizer(entry[7])},
+                    #"jats:abstract": {"jats:p": self.entry_normalizer(entry[7])},
                     "publication_date": {"year": main_table[5][0]},
-                    "pages": {"first_page": entry[3]},
+                    #"pages": {"first_page": entry[3]},
                     "doi_data": {
                         "doi": self.format_doi(entry[4]),
                         "resource": entry[6],
