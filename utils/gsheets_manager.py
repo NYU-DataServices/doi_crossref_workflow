@@ -77,8 +77,7 @@ def write_doi_mets(sheet_id, append_vals, retrieve_type="mets_main"):
         range = REGISTRY_TEMPLATE_COLUMN_RANGE
 
     if os.path.exists(G_TOKEN_FILE):
-        with open(G_TOKEN_FILE, "rb") as token:
-            creds = pickle.load(token)
+        creds = Credentials.from_authorized_user_file(G_TOKEN_FILE)
 
     service = build("sheets", "v4", credentials=creds)
 
