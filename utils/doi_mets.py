@@ -167,7 +167,7 @@ class JournalMetsHandler(MetsHandler):
         for citation in citations_list:
             modified_citations_list.append(
                 {
-                    'citation key="ref=' + str(refcount) + '"': {"unstructured_citation": self.entry_normalizer(citation)}
+                    'citation key="ref=' + str(refcount) + '"': {"unstructured_citation": citation}
                 }
             )
             refcount += 1
