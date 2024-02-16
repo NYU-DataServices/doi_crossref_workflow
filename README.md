@@ -71,7 +71,7 @@ Google's Sheets API modules
 
 2. <pre>cd doi_crossref_workflow</pre>
 
-3. Copy <pre>credentials.json</pre> and <pre>doi_workflow_token.pickle</pre> and <pre>global_settings.py</pre> files to this directory
+3. Copy <pre>credentials.json</pre> and <pre>doi_workflow_token.json</pre> and <pre>global_settings.py</pre> files to this directory
 
 4. After patron fills out basic information (journal and issue info; titles of articles), we can generate proposed DOIs for them:
 

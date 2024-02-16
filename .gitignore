@@ -1,6 +1,6 @@
 # Application-specific files
 credentials.json
-doi_workflow_token.pickle
+doi_workflow_token.json
 crossref_xml_output.xml
 global_settings.py
 
