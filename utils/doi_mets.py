@@ -339,7 +339,7 @@ class DoiMinter:
                     break
         return generated_dois
 
-    def doi_registration(list_dois,title="",journal="",date="",unit="",contact="",url="",handle=""):
+    def doi_registration(key, list_dois, unit=None, contact=None, url=None):
         """
         This function should write the DOIs passed as a pararamter (e.g. list of DOIs) to the registry GSheet
         In addition to the list of DOIs to register, it should include a series of optional parameters to write to the other columns of the sheet
@@ -347,3 +347,64 @@ class DoiMinter:
         overwriting what is there.
         :return:
         """
+        Journal = key[2][0]
+        Volume = key[5][3]
+        Issue = key[5][4]
+        Journal_information = f'{Journal}, {Volume} {Issue}'
+        # Issue Contents Metadata
+        Issue = key[8:]
+
+        if os.path.exists(G_TOKEN_FILE):
+            creds = Credentials.from_authorized_user_file(G_TOKEN_FILE)
+
+        service = build("sheets", "v4", credentials=creds)
+        sheet = service.spreadsheets()
+
+        # Get the value from MAIN_DOI_REGISTRY_SHEET
+        result = sheet.values().get(spreadsheetId=MAIN_DOI_REGISTRY_SHEET,
+                                    range=REGISTRY_TEMPLATE_TITLE_COLUMN_RANGE).execute()
+        column_values = result.get("values", [])
+        # Find where the blank in MAIN_DOI_REGISTRY_SHEET begins
+        index = column_values[-1][0]
+
+        # Get current date
+        current_date = datetime.now()
+        formatted_date = current_date.strftime('%Y-%m-%d')
+
+        # Add Journal data to MAIN_DOI_REGISTRY_SHEET
+        doi_index = -1
+        index = int(index) + 1
+        new_value = [index] + [Journal_information] + [Journal_information] + [formatted_date] + [unit, contact,
+                                                                                                  url] + [
+                        list_dois[doi_index]]
+        print(new_value)
+        body = {
+            'values': [new_value]
+        }
+
+        sheet.values().append(
+            spreadsheetId=MAIN_DOI_REGISTRY_SHEET,
+            range=REGISTRY_TEMPLATE_TITLE_COLUMN_RANGE,
+            valueInputOption="RAW",
+            body=body,
+        ).execute()
+
+        # Add Issue data to MAIN_DOI_REGISTRY_SHEET row by row
+        doi_index = 0
+        for row in Issue:
+            index = int(index) + 1
+            new_value = [index] + [row[1]] + [Journal_information] + [formatted_date] + [unit, contact, url] + [
+                list_dois[doi_index]]
+            doi_index = doi_index + 1
+            print(new_value)
+            body = {
+                'values': [new_value]
+            }
+
+            sheet.values().append(
+                spreadsheetId=MAIN_DOI_REGISTRY_SHEET,
+                range=REGISTRY_TEMPLATE_TITLE_COLUMN_RANGE,
+                valueInputOption="RAW",
+                body=body,
+            ).execute()
+

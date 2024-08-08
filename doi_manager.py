@@ -47,6 +47,7 @@ if __name__ == "__main__":
             )
             print("Writing proposed DOIs to patron metadata sheet...")
             write_doi_mets(sys.argv[3], dois)
+            DoiMinter.doi_registration(issue_level_mets, dois)
             print("Complete.")
 
         elif sys.argv[1] == "retrieve-fda-handles":
@@ -60,6 +61,7 @@ if __name__ == "__main__":
                 5. Write the Handles to the provided GSheet in the correct column using an updated write_doi_mets() function in utils/gsheets_manageer.py
                 6. Report that write-out was successful
             """
+
 
         elif sys.argv[1] == "build-xml":
             print("Retrieving metadata from template sheet...")
