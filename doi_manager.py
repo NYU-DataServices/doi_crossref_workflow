@@ -1,5 +1,6 @@
 import sys
 
+import os.path
 from utils.gsheets_manager import retrieve_doi_mets, write_doi_mets
 from utils.sheets_creds_builder import refresh_credentials
 from utils.doi_mets import JournalMetsHandler, DoiMinter

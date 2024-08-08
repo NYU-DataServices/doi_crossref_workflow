@@ -1,8 +1,16 @@
+import os.path
 from utils.gsheets_manager import retrieve_doi_mets
 from random import random
 import uuid
 from datetime import datetime
-from global_settings import ALLOWED_CHARS, DEPOSITOR_NAME, DEPOSITOR_EMAIL_ADDRESS
+from global_settings import (
+    ALLOWED_CHARS, DEPOSITOR_NAME, DEPOSITOR_EMAIL_ADDRESS,
+    G_TOKEN_FILE,
+    MAIN_DOI_REGISTRY_SHEET,
+    REGISTRY_TEMPLATE_TITLE_COLUMN_RANGE
+)
+from googleapiclient.discovery import build
+from google.oauth2.credentials import Credentials
 import re
 
 
