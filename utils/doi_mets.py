@@ -1,5 +1,5 @@
 import os.path
-from utils.gsheets_manager import retrieve_doi_mets
+from utils.gsheets_manager import retrieve_doi_mets, update_registrations
 from random import random
 import uuid
 from datetime import datetime
@@ -355,10 +355,12 @@ class DoiMinter:
         overwriting what is there.
         :return:
         """
+
         Journal = key[2][0]
         Volume = key[5][3]
         Issue = key[5][4]
         Journal_information = f'{Journal}, {Volume} {Issue}'
+        Journal_url = key[5][7]
         # Issue Contents Metadata
         Issue = key[8:]
 
@@ -382,37 +384,25 @@ class DoiMinter:
         # Add Journal data to MAIN_DOI_REGISTRY_SHEET
         doi_index = -1
         index = int(index) + 1
-        new_value = [index] + [Journal_information] + [Journal_information] + [formatted_date] + [unit, contact,
-                                                                                                  url] + [
-                        list_dois[doi_index]]
+        new_value = [index] + [Journal_information] + [Journal_information] + [formatted_date] + \
+                    [unit, contact, Journal_url] + [list_dois[doi_index]]
         print(new_value)
         body = {
             'values': [new_value]
         }
-
-        sheet.values().append(
-            spreadsheetId=MAIN_DOI_REGISTRY_SHEET,
-            range=REGISTRY_TEMPLATE_TITLE_COLUMN_RANGE,
-            valueInputOption="RAW",
-            body=body,
-        ).execute()
+        update_registrations(REGISTRY_TEMPLATE_TITLE_COLUMN_RANGE, body)
 
         # Add Issue data to MAIN_DOI_REGISTRY_SHEET row by row
         doi_index = 0
+
         for row in Issue:
+            print(len(row))
             index = int(index) + 1
-            new_value = [index] + [row[1]] + [Journal_information] + [formatted_date] + [unit, contact, url] + [
+            new_value = [index] + [row[1]] + [Journal_information] + [formatted_date] + [unit, contact, row[6]] + [
                 list_dois[doi_index]]
             doi_index = doi_index + 1
             print(new_value)
             body = {
                 'values': [new_value]
             }
-
-            sheet.values().append(
-                spreadsheetId=MAIN_DOI_REGISTRY_SHEET,
-                range=REGISTRY_TEMPLATE_TITLE_COLUMN_RANGE,
-                valueInputOption="RAW",
-                body=body,
-            ).execute()
-
+            update_registrations(REGISTRY_TEMPLATE_TITLE_COLUMN_RANGE, body)
