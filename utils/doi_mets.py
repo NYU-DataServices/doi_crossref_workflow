@@ -1,8 +1,16 @@
-from utils.gsheets_manager import retrieve_doi_mets
+import os.path
+from utils.gsheets_manager import retrieve_doi_mets, update_registrations
 from random import random
 import uuid
 from datetime import datetime
-from global_settings import ALLOWED_CHARS, DEPOSITOR_NAME, DEPOSITOR_EMAIL_ADDRESS
+from global_settings import (
+    ALLOWED_CHARS, DEPOSITOR_NAME, DEPOSITOR_EMAIL_ADDRESS,
+    G_TOKEN_FILE,
+    MAIN_DOI_REGISTRY_SHEET,
+    REGISTRY_TEMPLATE_TITLE_COLUMN_RANGE
+)
+from googleapiclient.discovery import build
+from google.oauth2.credentials import Credentials
 import re
 
 
@@ -339,7 +347,7 @@ class DoiMinter:
                     break
         return generated_dois
 
-    def doi_registration(list_dois,title="",journal="",date="",unit="",contact="",url="",handle=""):
+    def doi_registration(key, list_dois, unit=None, contact=None, url=None):
         """
         This function should write the DOIs passed as a pararamter (e.g. list of DOIs) to the registry GSheet
         In addition to the list of DOIs to register, it should include a series of optional parameters to write to the other columns of the sheet
@@ -347,3 +355,54 @@ class DoiMinter:
         overwriting what is there.
         :return:
         """
+
+        Journal = key[2][0]
+        Volume = key[5][3]
+        Issue = key[5][4]
+        Journal_information = f'{Journal}, {Volume} {Issue}'
+        Journal_url = key[5][7]
+        # Issue Contents Metadata
+        Issue = key[8:]
+
+        if os.path.exists(G_TOKEN_FILE):
+            creds = Credentials.from_authorized_user_file(G_TOKEN_FILE)
+
+        service = build("sheets", "v4", credentials=creds)
+        sheet = service.spreadsheets()
+
+        # Get the value from MAIN_DOI_REGISTRY_SHEET
+        result = sheet.values().get(spreadsheetId=MAIN_DOI_REGISTRY_SHEET,
+                                    range=REGISTRY_TEMPLATE_TITLE_COLUMN_RANGE).execute()
+        column_values = result.get("values", [])
+        # Find where the blank in MAIN_DOI_REGISTRY_SHEET begins
+        index = column_values[-1][0]
+
+        # Get current date
+        current_date = datetime.now()
+        formatted_date = current_date.strftime('%Y-%m-%d')
+
+        # Add Journal data to MAIN_DOI_REGISTRY_SHEET
+        doi_index = -1
+        index = int(index) + 1
+        new_value = [index] + [Journal_information] + [Journal_information] + [formatted_date] + \
+                    [unit, contact, Journal_url] + [list_dois[doi_index]]
+        print(new_value)
+        body = {
+            'values': [new_value]
+        }
+        update_registrations(REGISTRY_TEMPLATE_TITLE_COLUMN_RANGE, body)
+
+        # Add Issue data to MAIN_DOI_REGISTRY_SHEET row by row
+        doi_index = 0
+
+        for row in Issue:
+            print(len(row))
+            index = int(index) + 1
+            new_value = [index] + [row[1]] + [Journal_information] + [formatted_date] + [unit, contact, row[6]] + [
+                list_dois[doi_index]]
+            doi_index = doi_index + 1
+            print(new_value)
+            body = {
+                'values': [new_value]
+            }
+            update_registrations(REGISTRY_TEMPLATE_TITLE_COLUMN_RANGE, body)

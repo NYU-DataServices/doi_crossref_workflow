@@ -1,5 +1,6 @@
 import sys
 
+import os.path
 from utils.gsheets_manager import retrieve_doi_mets, write_doi_mets
 from utils.sheets_creds_builder import refresh_credentials
 from utils.doi_mets import JournalMetsHandler, DoiMinter
@@ -46,7 +47,17 @@ if __name__ == "__main__":
                 MAIN_DOI_REGISTRY_SHEET, len(issue_level_mets[8:])
             )
             print("Writing proposed DOIs to patron metadata sheet...")
+
+            input_unit = sys.argv[4] if len(sys.argv) > 4 else ""
+            input_contact = sys.argv[5] if len(sys.argv) > 5 else ""
+
+            if bool(input_unit) and len(input_unit) < 5:
+                print("Warning: Check input unit.")
+
+            if bool(input_contact) and len(input_contact) < 5:
+                print("Warning: Check input contact.")
             write_doi_mets(sys.argv[3], dois)
+            DoiMinter.doi_registration(issue_level_mets, dois, input_unit, input_contact)
             print("Complete.")
 
         elif sys.argv[1] == "retrieve-fda-handles":
@@ -60,6 +71,7 @@ if __name__ == "__main__":
                 5. Write the Handles to the provided GSheet in the correct column using an updated write_doi_mets() function in utils/gsheets_manageer.py
                 6. Report that write-out was successful
             """
+
 
         elif sys.argv[1] == "build-xml":
             print("Retrieving metadata from template sheet...")

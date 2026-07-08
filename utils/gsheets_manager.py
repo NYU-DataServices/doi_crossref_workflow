@@ -14,6 +14,7 @@ from global_settings import (
     METS_SERIALS_DOI_COLUMN_RANGE,
     METS_SERIALS_ISSUE_DOI_COLUMN_RANGE,
     REGISTRY_TEMPLATE_COLUMN_RANGE,
+    MAIN_DOI_REGISTRY_SHEET,
     METS_CITATIONS_TEMPLATE_RANGE,
     METS_AUTHORS_TEMPLATE_RANGE,
     SCOPES,
@@ -129,7 +130,20 @@ def write_doi_mets(sheet_id, append_vals, retrieve_type="mets_main"):
 
     return response
 
+def update_registrations(range, body):
+    if os.path.exists(G_TOKEN_FILE):
+        creds = Credentials.from_authorized_user_file(G_TOKEN_FILE)
 
+    service = build("sheets", "v4", credentials=creds)
+    sheet = service.spreadsheets()
+    response = (
+        sheet.values().append(
+            spreadsheetId=MAIN_DOI_REGISTRY_SHEET,
+            range=range,
+            valueInputOption="RAW",
+            body=body,
+        ).execute())
+    return response
 
 
 ### MORE SAMPLE CODE BELOW
