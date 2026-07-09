@@ -112,3 +112,5 @@ venv.bak/
 #Pycharm support
 .idea/
 .idea/*
+.DS_Store
+utils/.DS_Store

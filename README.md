@@ -83,9 +83,13 @@ e.g.
 
 5. This allows patron to then add the proposed DOIs to the e-copy and make the deposit in FDA, enabling Handle creation, record URL, etc. Patron then needs to finish filling out rest of GSheet so that we can make XML:
 
+NOTE: Before running the below command, make sure that the client has filled in all information properly in the Journal-Issue-Template sheet, as an error in a later line can lead to an incomplete write to the master sheet. 
+
 <pre>python doi_manager.py build-xml serials GSHEET-ID</pre>
 
 OPTION: A default filename for the XML output based on the serial title will be created
+
+NOTE: This step will also add the DOIs to the Master NYU Crossref DOIs sheet. Running multiple times will keep adding new DOIs to the client template. Do not run the above command without double-checking both sheets. 
 
 If a custom file name is required, place one as the parameter after the GSHEET, omitting the .xml extension part of the name, e.g.
 
