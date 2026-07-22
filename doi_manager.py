@@ -57,8 +57,11 @@ if __name__ == "__main__":
             if bool(input_contact) and len(input_contact) < 5:
                 print("Warning: Check input contact.")
             write_doi_mets(sys.argv[3], dois)
-            DoiMinter.doi_registration(issue_level_mets, dois, input_unit, input_contact)
-            print("Complete.")
+            registered = DoiMinter.doi_registration(issue_level_mets, dois, input_unit, input_contact)
+            if registered:
+                print("Complete.")
+            else:
+                print("Master registry sheet was not updated. Fix the issues above and re-run.")
 
         elif sys.argv[1] == "retrieve-fda-handles":
             print("Consulting FDA (archive.nyu.edu) for record information...")

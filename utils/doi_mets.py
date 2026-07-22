@@ -352,19 +352,54 @@ class DoiMinter:
                     break
         return generated_dois
 
+    @staticmethod
+    def validate_registration_row(row):
+        """
+        checks a single row destined for the master registry sheet for completeness and
+        correct formatting before it is ever sent to the gsheets api.
+        :param row: list representing one row to be appended, in column order
+            [index, title, journal_information, date, unit, contact, url, doi]
+        :return: (True, None) if the row is well formed, otherwise (False, reason)
+        """
+        expected_columns = 8
+        if len(row) != expected_columns:
+            return False, f"expected {expected_columns} columns, got {len(row)}: {row}"
+
+        index, title, journal_information, date, unit, contact, url, doi = row
+
+        if not isinstance(index, int):
+            return False, f"index is not an integer: {index!r}"
+
+        if not title or not str(title).strip():
+            return False, "missing title"
+
+        if not journal_information or not str(journal_information).strip():
+            return False, "missing journal information"
+
+        if not date or not re.match(r"^\d{4}-\d{2}-\d{2}$", str(date)):
+            return False, f"date is missing or badly formatted: {date!r}"
+
+        if not doi or not re.match(
+            r"^https://doi\.org/10\.33682/[A-Za-z0-9]{4}-[A-Za-z0-9]{3,4}$", str(doi)
+        ):
+            return False, f"doi is missing or badly formatted: {doi!r}"
+
+        return True, None
+
     def doi_registration(key, list_dois, unit=None, contact=None, url=None):
         """
-        This function should write the DOIs passed as a pararamter (e.g. list of DOIs) to the registry GSheet
-        In addition to the list of DOIs to register, it should include a series of optional parameters to write to the other columns of the sheet
-        as well as auto-increment column A. The write step should be treated as an append to the values already in the GSheet to prevent accidentally
-        overwriting what is there.
-        :return:
+        Builds every row (journal-level plus each article/issue-level row) that needs to be
+        added to the master registry gsheet, validates all of them, and only writes to the
+        sheet if every row passes validation. All rows are then sent in a single append call
+        instead of one call per row, so a failure partway through can't leave the registry
+        with an incomplete write.
+        :return: True if the rows were written, False if validation failed and nothing was written
         """
 
         Journal = key[2][0]
         Volume = key[5][3]
-        Issue = key[5][4]
-        Journal_information = f'{Journal}, {Volume} {Issue}'
+        Issue_num = key[5][4]
+        Journal_information = f'{Journal}, {Volume} {Issue_num}'
         Journal_url = key[5][7]
         # Issue Contents Metadata
         Issue = key[8:]
@@ -380,34 +415,47 @@ class DoiMinter:
                                     range=REGISTRY_TEMPLATE_TITLE_COLUMN_RANGE).execute()
         column_values = result.get("values", [])
         # Find where the blank in MAIN_DOI_REGISTRY_SHEET begins
-        index = column_values[-1][0]
+        index = int(column_values[-1][0])
 
         # Get current date
         current_date = datetime.now()
         formatted_date = current_date.strftime('%Y-%m-%d')
 
-        # Add Journal data to MAIN_DOI_REGISTRY_SHEET
+        # Build the journal-level row
         doi_index = -1
-        index = int(index) + 1
-        new_value = [index] + [Journal_information] + [Journal_information] + [formatted_date] + \
-                    [unit, contact, Journal_url] + [list_dois[doi_index]]
-        print(new_value)
+        index = index + 1
+        rows_to_write = [
+            [index, Journal_information, Journal_information, formatted_date,
+             unit, contact, Journal_url, list_dois[doi_index]]
+        ]
+
+        # Build the issue/article-level rows
+        doi_index = 0
+        for row in Issue:
+            index = index + 1
+            rows_to_write.append(
+                [index, row[1], Journal_information, formatted_date,
+                 unit, contact, row[6], list_dois[doi_index]]
+            )
+            doi_index = doi_index + 1
+
+        # Validate every row before writing anything to the sheet
+        errors = []
+        for row_num, row in enumerate(rows_to_write):
+            is_valid, reason = DoiMinter.validate_registration_row(row)
+            if not is_valid:
+                errors.append(f"row {row_num} ({row}): {reason}")
+
+        if errors:
+            print("Validation failed. No rows were written to the master registry sheet:")
+            for error in errors:
+                print(" - " + error)
+            return False
+
+        # All rows validated, write them all in a single append call
         body = {
-            'values': [new_value]
+            'values': rows_to_write
         }
         update_registrations(REGISTRY_TEMPLATE_TITLE_COLUMN_RANGE, body)
-
-        # Add Issue data to MAIN_DOI_REGISTRY_SHEET row by row
-        doi_index = 0
-
-        for row in Issue:
-            print(len(row))
-            index = int(index) + 1
-            new_value = [index] + [row[1]] + [Journal_information] + [formatted_date] + [unit, contact, row[6]] + [
-                list_dois[doi_index]]
-            doi_index = doi_index + 1
-            print(new_value)
-            body = {
-                'values': [new_value]
-            }
-            update_registrations(REGISTRY_TEMPLATE_TITLE_COLUMN_RANGE, body)
+        print(f"Wrote {len(rows_to_write)} rows to the master registry sheet.")
+        return True
