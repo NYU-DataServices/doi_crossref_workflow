@@ -115,13 +115,18 @@ class JournalMetsHandler(MetsHandler):
 
         # Lookup table based on patron-provided author name metadata to find orcid and affiliation information
 
+        # The Sheets API drops trailing blank cells from a row, so a row with an
+        # empty last column (e.g. Role) can arrive shorter than 4 entries; pad it
+        # back out instead of discarding the author entirely.
         author_info = {
             a_info[0].lower().strip().replace(",", "").replace(" ", "").replace(".", ""): {
                 "orcid": self.format_orcid(a_info[1]),
                 "role": a_info[3],
                 "affiliation": a_info[2],
             }
-            for a_info in author_table[2:] if len(a_info) == 4
+            for a_info in (
+                row + [""] * (4 - len(row)) for row in author_table[2:] if len(row) > 0
+            )
         }
 
         # First pass to populate names based on article metadata
