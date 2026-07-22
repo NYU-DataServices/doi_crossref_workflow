@@ -218,6 +218,7 @@ class JournalMetsHandler(MetsHandler):
                         [
                             self.starttag(tag) + content + self.endtag(tag)
                             for tag, content in v.items()
+                            if len(content) > 0
                         ]
                     )
                     insert_xml += self.endtag(k)
